@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Genshin_UtIl" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://Genshin_UtIl/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FolderConfIg.xbf" uri="ms-resource://Genshin_UtIl/Files/FolderConfIg.xbf">
+				<Candidate type="Path">
+					<Value>FolderConfIg.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SampleWIndow.xbf" uri="ms-resource://Genshin_UtIl/Files/SampleWIndow.xbf">
+				<Candidate type="Path">
+					<Value>SampleWIndow.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WIndowPage.xbf" uri="ms-resource://Genshin_UtIl/Files/WIndowPage.xbf">
+				<Candidate type="Path">
+					<Value>WIndowPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Pages">
+				<NamedResource name="ConfIgPage.xbf" uri="ms-resource://Genshin_UtIl/Files/Pages/ConfIgPage.xbf">
+					<Candidate type="Path">
+						<Value>Pages\ConfIgPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OpenFIleConfIg.xbf" uri="ms-resource://Genshin_UtIl/Files/Pages/OpenFIleConfIg.xbf">
+					<Candidate type="Path">
+						<Value>Pages\OpenFIleConfIg.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WIndowConfIg.xbf" uri="ms-resource://Genshin_UtIl/Files/Pages/WIndowConfIg.xbf">
+					<Candidate type="Path">
+						<Value>Pages\WIndowConfIg.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

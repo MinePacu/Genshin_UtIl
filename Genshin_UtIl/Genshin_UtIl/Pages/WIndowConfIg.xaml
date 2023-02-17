@@ -1,0 +1,201 @@
+﻿<Page
+    x:Class="Genshin_UtIl.Pages.WIndowConfIg"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Genshin_UtIl.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:labs="using:CommunityToolkit.Labs.WinUI"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel  Margin="120, 14, 120, 20" MaxWidth="1260" x:Name="PageStack">
+
+        <Grid ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0, 14, 0, 16" HorizontalAlignment="Center" x:Name="DIsplayLIstUI">
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="160"></RowDefinition>
+            </Grid.RowDefinitions>
+
+        </Grid>
+        
+        <TextBlock Text="디스플레이" FontWeight="Bold" Margin="0, 0, 0, 9"/>
+
+        <labs:SettingsCard
+            Header="모니터"
+            Description="원신을 실행할 모니터 선택"
+            Margin="0, 0, 0, 7">
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xe7f4;"/>
+            </labs:SettingsCard.HeaderIcon>
+            
+            <ComboBox 
+                Width="190" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0, 0, 6, 0"
+                x:Name="DIsPlaySelect" 
+                SelectionChanged="DIsplaySelectIonChanged"/>
+        </labs:SettingsCard>
+
+        <TextBlock Text="창" FontWeight="Bold" Margin="0, 20, 0, 9"/>
+
+        <labs:SettingsExpander
+            Header="게임 해상도"
+            Description="실행된 원신 게임 창의 가로, 세로 설정"
+            Margin="0, 0, 0, 7">
+            <labs:SettingsExpander.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xe713;"/>
+            </labs:SettingsExpander.HeaderIcon>
+
+            <TextBlock
+                Text="{x:Bind WindowResolutionString, Mode=TwoWay}" />
+            
+            <labs:SettingsExpander.Items>
+                <labs:SettingsCard
+                    Header="가로">
+                    <TextBox 
+                        Text="{x:Bind WindowWidthString, Mode=TwoWay}"
+                        Width="150"
+                        TextChanged="WIdthTetChanged"/>
+                </labs:SettingsCard>
+                <labs:SettingsCard
+                    Header="세로">
+                    <TextBox 
+                        Text="{x:Bind WindowHeightString, Mode=TwoWay}"
+                        Width="150"
+                        TextChanged="HeIghtTetChanged"/>
+                </labs:SettingsCard>
+            </labs:SettingsExpander.Items>
+        </labs:SettingsExpander>
+
+        <labs:SettingsCard
+            Header="창 모드"
+            Margin="0, 0, 0, 7">
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    VerticalAlignment="Center"
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xe7fb;"/>
+            </labs:SettingsCard.HeaderIcon>
+            <ComboBox 
+                Width="190" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0, 0, 6, 0" 
+                x:Name="WIndowmode" 
+                SelectionChanged="WIndowmodeSelectIonChanged"
+                SelectedIndex="{x:Bind Windowmode, Mode=TwoWay}">
+                <ComboBoxItem 
+                    Content="경계 없는 창"/>
+                <ComboBoxItem 
+                    Content="전체화면"/>
+                <ComboBoxItem 
+                    Content="창"/>
+            </ComboBox>
+        </labs:SettingsCard>
+
+        <labs:SettingsCard
+            Header="창 미리보기"
+            Margin="0, 0, 0, 7">
+            <Button 
+                Width="190" 
+                VerticalAlignment="Center" 
+                Content="창 미리보기"
+                x:Name="PreWIndow" 
+                Click="WIndowPrevIew"/>
+        </labs:SettingsCard>
+
+        <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 20, 0, 9"/>
+
+        <labs:SettingsCard
+            Header="해상도 제한"
+            Description="게임 해상도를 모니터 해상도보다 크게 설정하지 못하도록 제한합니다.">
+            <ToggleSwitch 
+                VerticalAlignment="Center"
+                Toggled="LImItWIndowSIze" 
+                x:Name="LImItWIndow"/>
+        </labs:SettingsCard>
+
+        <TextBlock Text="설정 적용" FontWeight="Bold" Margin="0, 20, 0, 9"/>
+
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                                Margin="0, 0, 0, 14"
+                                CornerRadius="7"
+                                BorderThickness="1"
+                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+            <Grid Margin="14, 14, 14, 14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="설정 적용" FontSize="14"/>
+                </Grid>
+
+                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="설정 적용" x:Name="ApplyConfIg" Click="ApplyConfIgFunc"
+                        Style="{StaticResource AccentButtonStyle}" />
+            </Grid>
+        </Border>
+
+        <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
+            <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>
+            <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsExpanded="True" Margin="0, 0, 0, 14" >
+
+                <Expander.Header>
+                    <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="140"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
+                            <SymbolIcon Symbol="Setting" Width="30"/>
+                        </Grid>
+
+                        <Grid Grid.Column="1" Margin="13, 0, 0, 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition Height="10"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="1" Text="개발자용 유틸" FontSize="14"/>
+                            <RichTextBlock Grid.Row="2" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" IsTextSelectionEnabled="False">
+                                <Paragraph>
+                                    개발자가 개발하면서 사용할 수 있는 유틸
+                                </Paragraph>
+                            </RichTextBlock>
+                        </Grid>
+                    </Grid>
+                </Expander.Header>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="49"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="UtIl_Text"/>
+                </Grid>
+
+            </Expander>
+        </StackPanel>
+        
+    </StackPanel>
+</Page>

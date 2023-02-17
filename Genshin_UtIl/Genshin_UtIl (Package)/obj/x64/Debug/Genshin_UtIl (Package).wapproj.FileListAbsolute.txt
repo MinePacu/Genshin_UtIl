@@ -1,0 +1,64 @@
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\App.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\WIndowPage.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.InteractiveExperiences.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.WinUI.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.AppLifecycle.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.AppNotifications.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.PushNotifications.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.System.Power.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.System.Projection.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\runtimes\win10-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Microsoft.Windows.SDK.NET.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\WinRT.Runtime.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Genshin_UtIl.deps.json
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\App.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\WIndowPage.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Genshin_UtIl.exe
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Genshin_UtIl.runtimeconfig.json
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Genshin_UtIl.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Genshin_UtIl.pdb
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\resources.pri
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\AppxManifest.xml
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl (Package).build.appxrecipe
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Microsoft.UI.Xaml.winmd
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Microsoft.UI.Text.winmd
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Microsoft.Web.WebView2.Core.winmd
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Microsoft.UI.Xaml.xml
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Microsoft.UI.Text.xml
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\Genshin_UtIl (Package).wapproj.AssemblyReference.cache
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\Genshin_UtIl (Package).wapproj.CoreCompileInputs.cache
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\Genshin_UtIl (Package).wapproj.CopyComplete
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\Genshin_UtIl.pri.xml
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\priconfig.xml
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\priconfig.xml.intermediate
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\unfiltered.layout.resfiles
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\unfiltered.layout.resfiles.intermediate
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\filtered.layout.resfiles
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\filtered.layout.resfiles.intermediate
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\excluded.layout.resfiles
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\excluded.layout.resfiles.intermediate
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\resources.resfiles
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\resources.resfiles.intermediate
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\pri.resfiles
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\pri.resfiles.intermediate
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\qualifiers.txt
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\qualifiers.txt.intermediate
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\ProjectArchitectures.txt
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\obj\x64\Debug\Genshin_UtIl (Package).wapproj.LastBuild.txt
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Pages\WIndowConfIg.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Pages\WIndowConfIg.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\FolderConfIg.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\SampleWIndow.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Pages\ConfIgPage.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Pages\OpenFIleConfIg.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\FolderConfIg.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Pages\ConfIgPage.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\Pages\OpenFIleConfIg.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x64\Debug\Genshin_UtIl\SampleWIndow.xbf

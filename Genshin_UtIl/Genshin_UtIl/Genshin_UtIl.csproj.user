@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="InitializeProgram.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\TutorIalPage\OpenFIleConfIgTutorIal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\TutorIalPage\ReShadeConfIgTutorIal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\TutorIalPage\WIndowConfIgTutorIal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TutorIal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ReShadeConfIg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FolderConfIg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ConfIgPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\OpenFIleConfIg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SampleWIndow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\WIndowConfIg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <None Update="WIndowPage.xaml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

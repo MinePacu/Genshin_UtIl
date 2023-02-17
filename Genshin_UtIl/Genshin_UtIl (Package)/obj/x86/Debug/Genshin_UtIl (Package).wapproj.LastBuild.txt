@@ -1,0 +1,37 @@
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\uap10.0\Microsoft.UI.Xaml.winmd
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\uap10.0\Microsoft.UI.Text.winmd
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\uap10.0\Microsoft.Web.WebView2.Core.winmd
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\bin\x86\Debug\net6.0-windows10.0.19041.0\App.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\bin\x86\Debug\net6.0-windows10.0.19041.0\WIndowPage.xbf
+C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\Redist\Debug\x86\ucrtbased.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\Images\SplashScreen.scale-200.png
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\Images\LockScreenLogo.scale-200.png
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\Images\Square150x150Logo.scale-200.png
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\Images\Square44x44Logo.scale-200.png
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\Images\StoreLogo.png
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\Images\Wide310x150Logo.scale-200.png
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl (Package)\bin\x86\Debug\resources.pri
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.WinUI.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\lib\net5.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\runtimes\win10-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.1.2\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\subin\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.26\lib\Microsoft.Windows.SDK.NET.dll
+C:\Users\subin\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.26\lib\WinRT.Runtime.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\bin\x86\Debug\net6.0-windows10.0.19041.0\Genshin_UtIl.deps.json
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\obj\x86\Debug\net6.0-windows10.0.19041.0\App.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\obj\x86\Debug\net6.0-windows10.0.19041.0\WIndowPage.xbf
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\obj\x86\Debug\net6.0-windows10.0.19041.0\apphost.exe
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\bin\x86\Debug\net6.0-windows10.0.19041.0\Genshin_UtIl.runtimeconfig.json
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\bin\x86\Debug\net6.0-windows10.0.19041.0\Genshin_UtIl.dll
+H:\Visual_Studio\Genshin_UtIl\Genshin_UtIl\Genshin_UtIl\bin\x86\Debug\net6.0-windows10.0.19041.0\Genshin_UtIl.pdb

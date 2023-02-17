@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    이 패키지 매니페스트 파일은 빌드 프로세스에 의해 생성됩니다.
+
+    이 파일을 다시 생성하면 변경 내용이 손실됩니다. 이 파일의 오류를 수정하려면 소스 .appxmanifest 파일을 편집하십시오.
+
+    패키지 매니페스트 파일에 대한 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=241727을 참조하십시오.
+  -->
+  <Identity Name="afbc60f2-c748-42b0-ad3e-1085c8b47b8d" Publisher="CN=subin" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>Genshin_UtIl (Package)</DisplayName>
+    <PublisherDisplayName>subin</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22000.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22000.0" />
+    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.1" MinVersion="1002.543.1943.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.30704.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug.UWPDesktop" MinVersion="14.0.30704.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="KO-KR" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="Genshin_UtIl\Genshin_UtIl.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Genshin_UtIl (Package)" Description="Genshin_UtIl (Package)" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="Images\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="Microsoft.Build.DesktopBridge.Tasks.dll" Version="17.2.32408.312" />
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETFramework,Version=v4.5.1" />
+    <build:Item Name="VisualStudio" Version="17.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2022" />
+    <build:Item Name="OperatingSystem" Version="10.0.25178.1000 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.2.32427.441" />
+    <build:Item Name="ProjectGUID" Value="a2c6b270-e243-41b1-afb5-a26862d56026" />
+    <build:Item Name="Microsoft.UniversalCRT.Debug" Version="10.0.22000.0" />
+    <build:Item Name="makepri.exe" Version="10.0.22000.194 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>

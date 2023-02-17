@@ -1,0 +1,317 @@
+﻿<Page
+    x:Class="Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Genshin_UtIl.Pages.TutorIalPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
+        <TextBlock Text="게임 열기" FontWeight="Bold" Margin="0, 7, 0, 9"/>
+
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}" x:Name="OpenFIle_"
+                                Margin="0, 0, 0, 7"
+                                CornerRadius="7"
+                                BorderThickness="1"
+                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+            <Grid Margin="14, 14, 14, 14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="게임" FontSize="14"/>
+                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" CanDrag="False" IsTextSelectionEnabled="False">
+                        <Paragraph>
+                            창 설정에서 설정된 항목들을 저장하고 게임을 엽니다
+                        </Paragraph>
+                    </RichTextBlock>
+                </Grid>
+
+                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="게임 열기" x:Name="OpenFIle"
+                        Style="{StaticResource AccentButtonStyle}"/>
+            </Grid>
+        </Border>
+        
+        <InfoBar Title="게임 열기" IsOpen="True" IsClosable="False" Margin="0, 0, 0, 20">
+            <InfoBar.Content>
+                <StackPanel Margin="0, -9, 0, 14">
+                    <RichTextBlock IsTextSelectionEnabled="False">
+                        <Paragraph>
+                            게임을 클라이언트를 통해서 열지 않고 바로 게임 파일을 실행합니다.
+                        </Paragraph>
+                    </RichTextBlock>
+                </StackPanel>
+            </InfoBar.Content>
+        </InfoBar>
+        
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                                Margin="0, 0, 0, 7"
+                                CornerRadius="7"
+                                BorderThickness="1"
+                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+            <Grid Margin="14, 14, 14, 14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="클라이언트" FontSize="14"/>
+                    <TextBlock Grid.Row="1" VerticalAlignment="Center" Text="참조 - 클라이언트로 여는 게임은 경계 없는 창모드가 적용되지 않습니다." FontSize="12" 
+                               Foreground="{ThemeResource TextFillColorSecondary}"/>
+                </Grid>
+
+                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="클라이언트 열기" x:Name="OpenClIentFIle"
+                        Style="{StaticResource AccentButtonStyle}"/>
+            </Grid>
+        </Border>
+        
+        <InfoBar Title="클라이언트로 게임 열기" IsOpen="True" IsClosable="False" Margin="0, 0, 0, 20">
+            <InfoBar.Content>
+                <StackPanel Margin="0, -9, 0, 14">
+                    <RichTextBlock CanDrag="False" IsTextSelectionEnabled="False">
+                        <Paragraph>
+                            게임을 클라이언트를 통해서 열기 위해 클라이언트를 엽니다.
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock CanDrag="False" IsTextSelectionEnabled="False">
+                        <Paragraph>
+                            단, 클라이언트로 여는 게임 창은 일반적인 창 모드와 전체화면 모드는 지원하지만, 경계 없는 창 모드가 적용되지 않습니다.
+                        </Paragraph>
+                    </RichTextBlock>
+                </StackPanel>
+            </InfoBar.Content>
+        </InfoBar>
+
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                                Margin="0, 0, 0, 14"
+                                CornerRadius="7"
+                                BorderThickness="1"
+                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+            <Grid Margin="14, 14, 14, 14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 필터로 게임 열기" FontSize="14"/>
+                    <TextBlock Grid.Row="1" VerticalAlignment="Center" Text="ReShade 필터 프로그램를 이용하여 게임을 엽니다" FontSize="12"
+                               Foreground="{ThemeResource TextFillColorSecondary}"/>
+                </Grid>
+
+                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="게임 열기" x:Name="OpenFIlterFIle"
+                        Style="{StaticResource AccentButtonStyle}"/>
+            </Grid>
+        </Border>
+
+        <InfoBar Title="ReShade 필티로 게임 열기" IsOpen="True" IsClosable="False" Margin="0, 0, 0, 20">
+            <InfoBar.Content>
+                <StackPanel Margin="0, -9, 0, 14">
+                    <InfoBar Title="참조" Margin="0, 0, 0, 14" IsOpen="True" IsClosable="False">
+                        <RichTextBlock Margin="0, -9, 0, 14" IsTextSelectionEnabled="False">
+                            <Paragraph>
+                                ReShade 필터 페이지에서 ReShade 이용이 켜져 있고 게임 실행 페이지에서 ReShade 폴더가 설정되어 있어야 이 기능을 이용할 수 있습니다.
+                            </Paragraph>
+                        </RichTextBlock>
+                    </InfoBar>
+                    <RichTextBlock>
+                        <Paragraph>
+                            ReShade 필터를 이용하여 게임을 엽니다.
+                        </Paragraph>
+                    </RichTextBlock>
+                </StackPanel>
+            </InfoBar.Content>
+        </InfoBar>
+
+        <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 7, 0, 9"/>
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                                Margin="0, 0, 0, 7"
+                                CornerRadius="7"
+                                BorderThickness="1"
+                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+            <Grid Margin="14, 14, 14, 14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="원신 폴더" FontSize="14" />
+                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" x:Name="FolderStrIng" CanDrag="False" IsTextSelectionEnabled="False">
+                        <Paragraph>
+                            폴더 -
+                        </Paragraph>
+                    </RichTextBlock>
+                </Grid>
+                
+                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="폴더 설정" x:Name="FolderConfIg" />
+            </Grid>
+        </Border>
+
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                                Margin="0, 0, 0, 14"
+                                CornerRadius="7"
+                                BorderThickness="1"
+                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+            <Grid Margin="14, 14, 14, 14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 폴더" FontSize="14"/>
+                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" x:Name="ReshadeFolderStrIng" CanDrag="False" IsTextSelectionEnabled="False">
+                        <Paragraph>
+                            폴더 -
+                        </Paragraph>
+                    </RichTextBlock>
+                </Grid>
+
+                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="폴더 설정" x:Name="ReShadeFolderConfIg" />
+            </Grid>
+        </Border>
+
+
+        <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 7, 0, 9"/>
+
+        <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="0, 0, 0, 9" >
+
+            <Expander.Header>
+                <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="140"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
+                        <SymbolIcon Symbol="Setting" Width="30"/>
+                    </Grid>
+
+                    <Grid Grid.Column="1" Margin="13, 0, 0, 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="9"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="9"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="1" Text="추가 인수" FontSize="14"/>
+                        <TextBlock Grid.Row="2" Text="게임을 실행하면서 추가할 인수 설정" FontSize="12" 
+                               Foreground="{ThemeResource TextFillColorSecondary}"/>
+                    </Grid>
+                </Grid>
+            </Expander.Header>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="49"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="ExtraFCon" Height="130"
+                         PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
+            </Grid>
+
+        </Expander>
+        
+        <InfoBar Title="추가 인수" IsOpen="True" IsClosable="False" Margin="0, 0, 0, 20">
+            <InfoBar.Content>
+                <StackPanel Margin="0, -9, 0, 14">
+                    <RichTextBlock CanDrag="False" IsTextSelectionEnabled="False">
+                        <Paragraph>
+                            게임을 열 때 추가로 이용할 인수를 정의합니다. 이 인수는 게임 창 설정보다 우선됩니다.
+                        </Paragraph>
+                    </RichTextBlock>
+                </StackPanel>
+            </InfoBar.Content>
+        </InfoBar>
+
+        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                                Margin="0, 0, 0, 9"
+                                CornerRadius="7"
+                                BorderThickness="1"
+                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+            <Grid Margin="14, 14, 14, 14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 자동 다시 시작" FontSize="14"/>
+                    <HyperlinkButton Grid.Row="1" Margin="-13, -13, 0, -14" VerticalAlignment="Center" FontWeight="Bold" Content="이 기능에 대한 자세한 정보" FontSize="12" x:Name="ReStartReShadeTu"/>
+                </Grid>
+
+                <ToggleSwitch Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 0, -47, 0" />
+            </Grid>
+        </Border>
+
+        <InfoBar Title="ReShade 다시 시작" IsOpen="True" IsClosable="False" Margin="0, 0, 0, 20">
+            <InfoBar.Content>
+                <StackPanel Margin="0, -9, 0, 14">
+                    <InfoBar Title="참조" Margin="0, 0, 0, 14" IsOpen="True" IsClosable="False">
+                        <RichTextBlock Margin="0, -9, 0, 14" IsTextSelectionEnabled="False">
+                            <Paragraph>
+                                ReShade 필터 페이지에서 ReShade 이용이 켜져 있고 게임 실행 페이지에서 ReShade 폴더가 설정되어 있어야 이 기능을 켤 수 있습니다.
+                            </Paragraph>
+                        </RichTextBlock>
+                    </InfoBar>
+                    <RichTextBlock>
+                        <Paragraph>
+                            컴퓨터를 켜고 처음으로 ReShade 필터를 적용하여 게임을 열었을 때 ReShade 필터가 켜지지 않아 사용자가 게임을 다시 시작해야하는 불편함에 만든 기능입니다.
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock>
+                        <Paragraph>
+                            이 옵션을 킨 후에 게임 실행 탭에서 ReShade 필터와 함께 게임을 열면 게임을 켜자마자 자동으로 ReShade 필터와 게임을 다시 시작합니다.
+                        </Paragraph>
+                    </RichTextBlock>
+                </StackPanel>
+            </InfoBar.Content>
+        </InfoBar>
+    </StackPanel>
+</Page>
