@@ -3,25 +3,14 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Genshin_UtIl.UtIls
 {
     public static class ProcessUtIl
     {
-        static ProcessClass[] ProcessCheckers { get; set; } = new ProcessClass[3];
-
-        public static void InItIalIzeChecker(int _Index, string _Process)
-        {
-            try
-            {
-                ProcessCheckers[_Index] = new(_Process);
-            }
-
-            catch (Exception ep)
-            {
-                throw new ExcepClass(ep);
-            }
-        }
+        public readonly static BackgroundWork.TaskUtil GenshinProcessCheckerTask = new(new(CheckGenshinProcess));
+        public readonly static BackgroundWork.TaskUtil ReshadeProcessCheckerTask = new(new(CheckReshadeProcess));
 
         /// <summary>
         /// 지정한 프로세스를 엽니다.
@@ -61,7 +50,7 @@ namespace Genshin_UtIl.UtIls
                 {
                 }
 
-                ProcessCheckers[_Index].InItIalIzeWorker();
+                GenshinProcessCheckerTask.StartTask();
 
                 return proInfo;
             }
@@ -127,7 +116,7 @@ namespace Genshin_UtIl.UtIls
                 {
                 }
 
-                ProcessCheckers[_Index].InItIalIzeWorker();
+                ReshadeProcessCheckerTask.StartTask();
             }
 
             catch (Exception ep)
@@ -136,103 +125,22 @@ namespace Genshin_UtIl.UtIls
             }
         }
 
-        public static int ReCheckt(int _Index)
+        static async Task CheckGenshinProcess()
         {
-            return ProcessCheckers[_Index].t;
-        }
-    }
-
-    class ProcessClass
-    {
-        public BackgroundWorker ProcessCheck { get; set; }
-        public string ProcessFIle { get; set; }
-
-        public int t { get; set; } = 0;
-        int InItIalIzed { get; set; } = 0;
-        int DIsposed { get; set; } = 0;
-
-        public void InItIalIzeWorker()
-        {
-            if (InItIalIzed == 0)
-            {
-                ProcessCheck.WorkerSupportsCancellation = true;
-                ProcessCheck.DoWork += CheckProcess;
-                ProcessCheck.RunWorkerCompleted += AfterCheckProcess;
-                InItIalIzed = 1;
-            }
-
+            Process[] GenshinProcess = Process.GetProcessesByName("genshinimpact.exe");
+            if (GenshinProcess.Length < 1)
+                GenshinProcessCheckerTask.Cancel.Cancel();
             else
-                ProcessCheck.RunWorkerAsync();
+                await Task.Delay(1000);
         }
 
-        void CheckProcess(object sender, DoWorkEventArgs e)
+        static async Task CheckReshadeProcess()
         {
-            if (e.Cancel == false)
-            {
-                Process[] profIle_process = Process.GetProcesses();
-
-                int tmp = 0;
-                t = 0;
-                while (tmp < profIle_process.Length)
-                {
-                    try
-                    {
-                        if (profIle_process[tmp].ProcessName == ProcessFIle)
-                            t++;
-                        tmp++;
-                    }
-
-                    catch (Exception ep)
-                    {
-                        e.Cancel = true;
-                        throw new ExcepClass(ep);
-                    }
-                }
-
-                if (t == 0)
-                    e.Cancel = true;
-
-                else
-                {
-                    try
-                    {
-                        Thread.Sleep(1240);
-                    }
-
-                    catch (Exception ep_)
-                    {
-                        e.Cancel = true;
-                        throw new ExcepClass(ep_);
-                    }
-
-                }
-            }
-        }
-
-        void AfterCheckProcess(object sender, RunWorkerCompletedEventArgs e)
-        {
-            if (e.Cancelled == true)
-            {
-                ProcessCheck.Dispose();
-                InItIalIzed = 0;
-                DIsposed = 1;
-                return;
-            }
-
+            Process[] GenshinProcess = Process.GetProcessesByName("InJect.exe");
+            if (GenshinProcess.Length < 1)
+                ReshadeProcessCheckerTask.Cancel.Cancel();
             else
-                InItIalIzeWorker();
-        }
-
-        public void ReInItIalWorker()
-        {
-            if (DIsposed == 1)
-                ProcessCheck = new();
-        }
-
-        public ProcessClass(string _ProcessFIle)
-        {
-            ProcessCheck = new();
-            ProcessFIle = _ProcessFIle;
+                await Task.Delay(1000);
         }
     }
 }
