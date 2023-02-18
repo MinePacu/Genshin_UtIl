@@ -37,6 +37,7 @@ namespace Genshin_UtIl
             var apppresenter = (OverlappedPresenter) thiswindow.Presenter;
 
             apppresenter.IsMaximizable = false;
+            apppresenter.IsMinimizable = false;
             apppresenter.IsResizable = false;
 
             DisplayArea displayAr = DisplayArea.GetFromWindowId(UtIls.WinAppSdk.WinUIWindow.GetWindowIdFromWindow(this), DisplayAreaFallback.Nearest);
