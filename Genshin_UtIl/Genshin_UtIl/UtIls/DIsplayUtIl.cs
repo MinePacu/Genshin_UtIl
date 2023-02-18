@@ -34,6 +34,9 @@ namespace Genshin_UtIl.UtIls
         public static async Task InitializeDisplayList()
         {
             DIsplayLIst.Clear();
+            DIsplay_strIng_LIst.Clear();
+            DIsplay_strIng_LIst_Sorted.Clear();
+
 
             DISPLAY_DEVICE d = new();
             Devmode dev = new();

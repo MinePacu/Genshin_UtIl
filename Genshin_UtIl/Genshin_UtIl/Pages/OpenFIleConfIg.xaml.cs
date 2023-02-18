@@ -75,26 +75,20 @@ namespace Genshin_UtIl.Pages
 
         void OpenFIleFunc(object sender, RoutedEventArgs e)
         {
-            ProcessUtIl.InItIalIzeChecker(0, "GenshinImpact.exe");
             ProcessUtIl.OpenProcess(0, ConfIg.Instance.GenshInFolder.GenshInFolder + "\\GenshinImpact.exe");
 
-            if (ProcessUtIl.ReCheckt(0) > 0)
+            //if (ProcessUtIl.ReCheckt(0) > 0)
                 OpenFIle.Content = "다시 시작";
-            else
-                return;
         }
 
         void OpenClIentFIleFunc(object sender, RoutedEventArgs e)
         {
             try
             {
-                ProcessUtIl.InItIalIzeChecker(1, "launcher.exe");
                 ProcessUtIl.OpenProcess(1, ConfIg.Instance.GenshInFolder.GenshInFolder.Replace("Genshin Impact game", "") + "launcher.exe");
 
-                if (ProcessUtIl.ReCheckt(1) > 0)
+                //if (ProcessUtIl.ReCheckt(1) > 0)
                     OpenClIentFIle.Content = "다시 시작";
-                else
-                    return;
             }
 
             catch (ExcepClass ep)
@@ -107,7 +101,6 @@ namespace Genshin_UtIl.Pages
         {
             try
             {
-                ProcessUtIl.InItIalIzeChecker(2, "GenshinImpact.exe");
                 ProcessUtIl.OpenProcess(2, ConfIg.Instance.GenshInFolder.ReshadeFolder + "InJect.exe");
             }
 
@@ -241,18 +234,12 @@ namespace Genshin_UtIl.Pages
             if (InItIalIzed == 0)
             {
                 processchecker.WorkerSupportsCancellation = true;
-                processchecker.DoWork += ProcessChecker_Worker;
+                //processchecker.DoWork += ProcessChecker_Worker;
             }
 
             else
                 processchecker.RunWorkerAsync();
         }
         
-        void ProcessChecker_Worker(object sender, DoWorkEventArgs e)
-        {
-            t[0] = ProcessUtIl.ReCheckt(0);
-            t[1] = ProcessUtIl.ReCheckt(1);
-            t[2] = ProcessUtIl.ReCheckt(2);
-        }
     }
 }
