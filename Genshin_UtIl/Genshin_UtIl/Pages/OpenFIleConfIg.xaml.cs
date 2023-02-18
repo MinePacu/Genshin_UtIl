@@ -25,7 +25,7 @@ namespace Genshin_UtIl.Pages
 
             ((Run) para.Inlines[0]).Text = "폴더 - " + ConfIg.Instance.GenshInFolder.GenshInFolder;
 
-            if (ConfIg.Instance.Dev == 0)
+            if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
 
             else

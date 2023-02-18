@@ -40,6 +40,8 @@ namespace Genshin_UtIl
             apppresenter.IsMinimizable = false;
             apppresenter.IsResizable = false;
 
+            apppresenter.SetBorderAndTitleBar(true, false);
+
             DisplayArea displayAr = DisplayArea.GetFromWindowId(UtIls.WinAppSdk.WinUIWindow.GetWindowIdFromWindow(this), DisplayAreaFallback.Nearest);
             var Center = thiswindow.Position;
             Center.X = (displayAr.WorkArea.Width - thiswindow.Size.Width) / 2;

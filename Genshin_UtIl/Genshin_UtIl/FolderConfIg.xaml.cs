@@ -23,7 +23,7 @@ namespace Genshin_UtIl
             if (FolderStrIng.Text == "폴더 - ")
                 ApplyConfIg.IsEnabled = false;
 
-            if (ConfIg.Instance.Dev == 0)
+            if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
 
             else

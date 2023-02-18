@@ -20,7 +20,7 @@ namespace Genshin_UtIl.Pages
         {
             this.InitializeComponent();
 
-            if (ConfIg.Instance.Dev == 0)
+            if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
 
             else

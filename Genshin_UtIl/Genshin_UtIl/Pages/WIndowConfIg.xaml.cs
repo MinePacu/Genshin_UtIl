@@ -119,7 +119,7 @@ namespace Genshin_UtIl.Pages
 
                 catch (ExcepClass EC)
                 {
-                    if (ConfIg.Instance.Dev == 1)
+                    if (ConfIg.Instance.Dev == true)
                         UtIl_Text.Text += EC.Exp.Source + " - " + EC.Exp.ToString() + "\r\n";
                 }
             }
@@ -133,13 +133,13 @@ namespace Genshin_UtIl.Pages
             else
                 Windowmode = ConfIg.Instance.WInConfIg.WIndowmode;
 
-            if (ConfIg.Instance.Dev == 0)
+            if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
 
             else
                 UtIl_.Visibility = Visibility.Visible;
 
-            if (ConfIg.Instance.Dev == 1)
+            if (ConfIg.Instance.Dev == true)
             {
                 foreach (DIsplays d in DIsplayLIst)
                 {
@@ -276,7 +276,7 @@ namespace Genshin_UtIl.Pages
             {
                 int DIsplayN = GetDIsplayN(DIsplay_strIng_LIst[DIsPlaySelect.SelectedIndex]);
 
-                if (ConfIg.Instance.Dev == 1)
+                if (ConfIg.Instance.Dev == true)
                 {
                     UtIl_Text.Text += "DIsplayN - " + DIsplayN + "\r\n";
                     foreach (string DIsplay_S in DIsplay_strIng_LIst_Sorted)
@@ -294,7 +294,7 @@ namespace Genshin_UtIl.Pages
 
             catch (ExcepClass EC)
             {
-                if (ConfIg.Instance.Dev == 1)
+                if (ConfIg.Instance.Dev == true)
                     UtIl_Text.Text += EC.Exp.Source + " - " + EC.Exp.ToString() + "\r\n";
             }
         }

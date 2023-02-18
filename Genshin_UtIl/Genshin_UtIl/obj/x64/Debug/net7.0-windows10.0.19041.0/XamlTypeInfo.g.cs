@@ -246,29 +246,29 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
             _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
             _typeNameTable[19] = "Genshin_UtIl.InitializeProgram";
             _typeNameTable[20] = "String";
-            _typeNameTable[21] = "Genshin_UtIl.Pages.ConfIgPage";
-            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[24] = "Genshin_UtIl.Pages.OpenFIleConfIg";
-            _typeNameTable[25] = "CommunityToolkit.Labs.WinUI.SettingsCard";
-            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
-            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[28] = "CommunityToolkit.Labs.WinUI.ContentAlignment";
-            _typeNameTable[29] = "Genshin_UtIl.Pages.ReShadeConfIg";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.InfoBar";
-            _typeNameTable[31] = "System.Windows.Input.ICommand";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
-            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
-            _typeNameTable[36] = "Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal";
-            _typeNameTable[37] = "Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal";
-            _typeNameTable[38] = "Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal";
-            _typeNameTable[39] = "CommunityToolkit.Labs.WinUI.SettingsExpander";
-            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[41] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[42] = "Genshin_UtIl.Pages.WIndowConfIg";
-            _typeNameTable[43] = "Int32";
+            _typeNameTable[21] = "CommunityToolkit.Labs.WinUI.SettingsCard";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[24] = "CommunityToolkit.Labs.WinUI.ContentAlignment";
+            _typeNameTable[25] = "Genshin_UtIl.Pages.ConfIgPage";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[28] = "Int32";
+            _typeNameTable[29] = "Genshin_UtIl.Pages.OpenFIleConfIg";
+            _typeNameTable[30] = "Genshin_UtIl.Pages.ReShadeConfIg";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.InfoBar";
+            _typeNameTable[32] = "System.Windows.Input.ICommand";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
+            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
+            _typeNameTable[37] = "Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal";
+            _typeNameTable[38] = "Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal";
+            _typeNameTable[39] = "Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal";
+            _typeNameTable[40] = "CommunityToolkit.Labs.WinUI.SettingsExpander";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[42] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[43] = "Genshin_UtIl.Pages.WIndowConfIg";
             _typeNameTable[44] = "Genshin_UtIl.SampleWIndow";
             _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.NavigationView";
             _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
@@ -309,29 +309,29 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
             _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
             _typeTable[19] = typeof(global::Genshin_UtIl.InitializeProgram);
             _typeTable[20] = typeof(global::System.String);
-            _typeTable[21] = typeof(global::Genshin_UtIl.Pages.ConfIgPage);
-            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[24] = typeof(global::Genshin_UtIl.Pages.OpenFIleConfIg);
-            _typeTable[25] = typeof(global::CommunityToolkit.Labs.WinUI.SettingsCard);
-            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
-            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[28] = typeof(global::CommunityToolkit.Labs.WinUI.ContentAlignment);
-            _typeTable[29] = typeof(global::Genshin_UtIl.Pages.ReShadeConfIg);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
-            _typeTable[31] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
-            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
-            _typeTable[36] = typeof(global::Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal);
-            _typeTable[37] = typeof(global::Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal);
-            _typeTable[38] = typeof(global::Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal);
-            _typeTable[39] = typeof(global::CommunityToolkit.Labs.WinUI.SettingsExpander);
-            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.ItemsControl);
-            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[42] = typeof(global::Genshin_UtIl.Pages.WIndowConfIg);
-            _typeTable[43] = typeof(global::System.Int32);
+            _typeTable[21] = typeof(global::CommunityToolkit.Labs.WinUI.SettingsCard);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[24] = typeof(global::CommunityToolkit.Labs.WinUI.ContentAlignment);
+            _typeTable[25] = typeof(global::Genshin_UtIl.Pages.ConfIgPage);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[28] = typeof(global::System.Int32);
+            _typeTable[29] = typeof(global::Genshin_UtIl.Pages.OpenFIleConfIg);
+            _typeTable[30] = typeof(global::Genshin_UtIl.Pages.ReShadeConfIg);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
+            _typeTable[32] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
+            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
+            _typeTable[37] = typeof(global::Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal);
+            _typeTable[38] = typeof(global::Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal);
+            _typeTable[39] = typeof(global::Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal);
+            _typeTable[40] = typeof(global::CommunityToolkit.Labs.WinUI.SettingsExpander);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.ItemsControl);
+            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[43] = typeof(global::Genshin_UtIl.Pages.WIndowConfIg);
             _typeTable[44] = typeof(global::Genshin_UtIl.SampleWIndow);
             _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
             _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
@@ -388,17 +388,17 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
         private object Activate_13_FolderConfIg() { return new global::Genshin_UtIl.FolderConfIg(); }
         private object Activate_15_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
         private object Activate_19_InitializeProgram() { return new global::Genshin_UtIl.InitializeProgram(); }
-        private object Activate_21_ConfIgPage() { return new global::Genshin_UtIl.Pages.ConfIgPage(); }
-        private object Activate_24_OpenFIleConfIg() { return new global::Genshin_UtIl.Pages.OpenFIleConfIg(); }
-        private object Activate_25_SettingsCard() { return new global::CommunityToolkit.Labs.WinUI.SettingsCard(); }
-        private object Activate_29_ReShadeConfIg() { return new global::Genshin_UtIl.Pages.ReShadeConfIg(); }
-        private object Activate_30_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
-        private object Activate_35_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
-        private object Activate_36_OpenFIleConfIgTutorIal() { return new global::Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal(); }
-        private object Activate_37_ReShadeConfIgTutorIal() { return new global::Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal(); }
-        private object Activate_38_WIndowConfIgTutorIal() { return new global::Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal(); }
-        private object Activate_39_SettingsExpander() { return new global::CommunityToolkit.Labs.WinUI.SettingsExpander(); }
-        private object Activate_42_WIndowConfIg() { return new global::Genshin_UtIl.Pages.WIndowConfIg(); }
+        private object Activate_21_SettingsCard() { return new global::CommunityToolkit.Labs.WinUI.SettingsCard(); }
+        private object Activate_25_ConfIgPage() { return new global::Genshin_UtIl.Pages.ConfIgPage(); }
+        private object Activate_29_OpenFIleConfIg() { return new global::Genshin_UtIl.Pages.OpenFIleConfIg(); }
+        private object Activate_30_ReShadeConfIg() { return new global::Genshin_UtIl.Pages.ReShadeConfIg(); }
+        private object Activate_31_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
+        private object Activate_36_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
+        private object Activate_37_OpenFIleConfIgTutorIal() { return new global::Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal(); }
+        private object Activate_38_ReShadeConfIgTutorIal() { return new global::Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal(); }
+        private object Activate_39_WIndowConfIgTutorIal() { return new global::Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal(); }
+        private object Activate_40_SettingsExpander() { return new global::CommunityToolkit.Labs.WinUI.SettingsExpander(); }
+        private object Activate_43_WIndowConfIg() { return new global::Genshin_UtIl.Pages.WIndowConfIg(); }
         private object Activate_44_SampleWIndow() { return new global::Genshin_UtIl.SampleWIndow(); }
         private object Activate_45_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
         private object Activate_55_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
@@ -549,31 +549,9 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Genshin_UtIl.Pages.ConfIgPage
-                userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_ConfIgPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 22:   //  Microsoft.UI.Xaml.Controls.Page
-                xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 23:   //  Microsoft.UI.Xaml.Controls.UserControl
-                xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 24:   //  Genshin_UtIl.Pages.OpenFIleConfIg
-                userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_OpenFIleConfIg;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 25:   //  CommunityToolkit.Labs.WinUI.SettingsCard
+            case 21:   //  CommunityToolkit.Labs.WinUI.SettingsCard
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
-                userType.Activator = Activate_25_SettingsCard;
+                userType.Activator = Activate_21_SettingsCard;
                 userType.AddMemberName("Header");
                 userType.AddMemberName("Description");
                 userType.AddMemberName("HeaderIcon");
@@ -584,15 +562,15 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 26:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+            case 22:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
                 xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 27:   //  Microsoft.UI.Xaml.Controls.IconElement
+            case 23:   //  Microsoft.UI.Xaml.Controls.IconElement
                 xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  CommunityToolkit.Labs.WinUI.ContentAlignment
+            case 24:   //  CommunityToolkit.Labs.WinUI.ContentAlignment
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Right", global::CommunityToolkit.Labs.WinUI.ContentAlignment.Right);
                 userType.AddEnumValue("Left", global::CommunityToolkit.Labs.WinUI.ContentAlignment.Left);
@@ -600,16 +578,45 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  Genshin_UtIl.Pages.ReShadeConfIg
+            case 25:   //  Genshin_UtIl.Pages.ConfIgPage
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_ReShadeConfIg;
+                userType.Activator = Activate_25_ConfIgPage;
+                userType.AddMemberName("AppColor");
+                userType.AddMemberName("IsUseDeveloperUtil");
+                userType.AddMemberName("FirstPage");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  Microsoft.UI.Xaml.Controls.InfoBar
+            case 26:   //  Microsoft.UI.Xaml.Controls.Page
+                xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 27:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 28:   //  Int32
+                xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 29:   //  Genshin_UtIl.Pages.OpenFIleConfIg
+                userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_29_OpenFIleConfIg;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 30:   //  Genshin_UtIl.Pages.ReShadeConfIg
+                userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_30_ReShadeConfIg;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  Microsoft.UI.Xaml.Controls.InfoBar
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_30_InfoBar;
+                userType.Activator = Activate_31_InfoBar;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.InfoBar.Content");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Title");
@@ -628,21 +635,21 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 31:   //  System.Windows.Input.ICommand
+            case 32:   //  System.Windows.Input.ICommand
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Style
+            case 33:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Controls.IconSource
+            case 34:   //  Microsoft.UI.Xaml.Controls.IconSource
                 xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
+            case 35:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Informational", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational);
                 userType.AddEnumValue("Success", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success);
@@ -651,36 +658,36 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 35:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
+            case 36:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal
+            case 37:   //  Genshin_UtIl.Pages.TutorIalPage.OpenFIleConfIgTutorIal
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_36_OpenFIleConfIgTutorIal;
+                userType.Activator = Activate_37_OpenFIleConfIgTutorIal;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal
+            case 38:   //  Genshin_UtIl.Pages.TutorIalPage.ReShadeConfIgTutorIal
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_37_ReShadeConfIgTutorIal;
+                userType.Activator = Activate_38_ReShadeConfIgTutorIal;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 38:   //  Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal
+            case 39:   //  Genshin_UtIl.Pages.TutorIalPage.WIndowConfIgTutorIal
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_38_WIndowConfIgTutorIal;
+                userType.Activator = Activate_39_WIndowConfIgTutorIal;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 39:   //  CommunityToolkit.Labs.WinUI.SettingsExpander
+            case 40:   //  CommunityToolkit.Labs.WinUI.SettingsExpander
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsControl"));
-                userType.Activator = Activate_39_SettingsExpander;
+                userType.Activator = Activate_40_SettingsExpander;
                 userType.SetContentPropertyName("CommunityToolkit.Labs.WinUI.SettingsExpander.Content");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Header");
@@ -692,17 +699,17 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 40:   //  Microsoft.UI.Xaml.Controls.ItemsControl
+            case 41:   //  Microsoft.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  Microsoft.UI.Xaml.UIElement
+            case 42:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 42:   //  Genshin_UtIl.Pages.WIndowConfIg
+            case 43:   //  Genshin_UtIl.Pages.WIndowConfIg
                 userType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_42_WIndowConfIg;
+                userType.Activator = Activate_43_WIndowConfIg;
                 userType.AddMemberName("WindowWidthString");
                 userType.AddMemberName("WindowHeightString");
                 userType.AddMemberName("WindowResolutionString");
@@ -710,10 +717,6 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 userType.AddMemberName("Windowmode");
                 userType.SetIsLocalType();
                 xamlType = userType;
-                break;
-
-            case 43:   //  Int32
-                xamlType = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 44:   //  Genshin_UtIl.SampleWIndow
@@ -1135,692 +1138,722 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsCard)instance;
             that.ContentAlignment = (global::CommunityToolkit.Labs.WinUI.ContentAlignment)Value;
         }
-        private object get_21_InfoBar_Content(object instance)
+        private object get_21_ConfIgPage_AppColor(object instance)
+        {
+            var that = (global::Genshin_UtIl.Pages.ConfIgPage)instance;
+            return that.AppColor;
+        }
+        private void set_21_ConfIgPage_AppColor(object instance, object Value)
+        {
+            var that = (global::Genshin_UtIl.Pages.ConfIgPage)instance;
+            that.AppColor = (global::System.Int32)Value;
+        }
+        private object get_22_ConfIgPage_IsUseDeveloperUtil(object instance)
+        {
+            var that = (global::Genshin_UtIl.Pages.ConfIgPage)instance;
+            return that.IsUseDeveloperUtil;
+        }
+        private void set_22_ConfIgPage_IsUseDeveloperUtil(object instance, object Value)
+        {
+            var that = (global::Genshin_UtIl.Pages.ConfIgPage)instance;
+            that.IsUseDeveloperUtil = (global::System.Boolean)Value;
+        }
+        private object get_23_ConfIgPage_FirstPage(object instance)
+        {
+            var that = (global::Genshin_UtIl.Pages.ConfIgPage)instance;
+            return that.FirstPage;
+        }
+        private void set_23_ConfIgPage_FirstPage(object instance, object Value)
+        {
+            var that = (global::Genshin_UtIl.Pages.ConfIgPage)instance;
+            that.FirstPage = (global::System.Int32)Value;
+        }
+        private object get_24_InfoBar_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.Content;
         }
-        private void set_21_InfoBar_Content(object instance, object Value)
+        private void set_24_InfoBar_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_22_InfoBar_Title(object instance)
+        private object get_25_InfoBar_Title(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.Title;
         }
-        private void set_22_InfoBar_Title(object instance, object Value)
+        private void set_25_InfoBar_Title(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_23_InfoBar_IsOpen(object instance)
+        private object get_26_InfoBar_IsOpen(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.IsOpen;
         }
-        private void set_23_InfoBar_IsOpen(object instance, object Value)
+        private void set_26_InfoBar_IsOpen(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.IsOpen = (global::System.Boolean)Value;
         }
-        private object get_24_InfoBar_IsClosable(object instance)
+        private object get_27_InfoBar_IsClosable(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.IsClosable;
         }
-        private void set_24_InfoBar_IsClosable(object instance, object Value)
+        private void set_27_InfoBar_IsClosable(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.IsClosable = (global::System.Boolean)Value;
         }
-        private object get_25_InfoBar_ActionButton(object instance)
+        private object get_28_InfoBar_ActionButton(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.ActionButton;
         }
-        private void set_25_InfoBar_ActionButton(object instance, object Value)
+        private void set_28_InfoBar_ActionButton(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.ActionButton = (global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase)Value;
         }
-        private object get_26_InfoBar_CloseButtonCommand(object instance)
+        private object get_29_InfoBar_CloseButtonCommand(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.CloseButtonCommand;
         }
-        private void set_26_InfoBar_CloseButtonCommand(object instance, object Value)
+        private void set_29_InfoBar_CloseButtonCommand(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.CloseButtonCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_27_InfoBar_CloseButtonCommandParameter(object instance)
+        private object get_30_InfoBar_CloseButtonCommandParameter(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.CloseButtonCommandParameter;
         }
-        private void set_27_InfoBar_CloseButtonCommandParameter(object instance, object Value)
+        private void set_30_InfoBar_CloseButtonCommandParameter(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.CloseButtonCommandParameter = (global::System.Object)Value;
         }
-        private object get_28_InfoBar_CloseButtonStyle(object instance)
+        private object get_31_InfoBar_CloseButtonStyle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.CloseButtonStyle;
         }
-        private void set_28_InfoBar_CloseButtonStyle(object instance, object Value)
+        private void set_31_InfoBar_CloseButtonStyle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.CloseButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
         }
-        private object get_29_InfoBar_ContentTemplate(object instance)
+        private object get_32_InfoBar_ContentTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.ContentTemplate;
         }
-        private void set_29_InfoBar_ContentTemplate(object instance, object Value)
+        private void set_32_InfoBar_ContentTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.ContentTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_30_InfoBar_IconSource(object instance)
+        private object get_33_InfoBar_IconSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.IconSource;
         }
-        private void set_30_InfoBar_IconSource(object instance, object Value)
+        private void set_33_InfoBar_IconSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
         }
-        private object get_31_InfoBar_IsIconVisible(object instance)
+        private object get_34_InfoBar_IsIconVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.IsIconVisible;
         }
-        private void set_31_InfoBar_IsIconVisible(object instance, object Value)
+        private void set_34_InfoBar_IsIconVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.IsIconVisible = (global::System.Boolean)Value;
         }
-        private object get_32_InfoBar_Message(object instance)
+        private object get_35_InfoBar_Message(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.Message;
         }
-        private void set_32_InfoBar_Message(object instance, object Value)
+        private void set_35_InfoBar_Message(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.Message = (global::System.String)Value;
         }
-        private object get_33_InfoBar_Severity(object instance)
+        private object get_36_InfoBar_Severity(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.Severity;
         }
-        private void set_33_InfoBar_Severity(object instance, object Value)
+        private void set_36_InfoBar_Severity(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             that.Severity = (global::Microsoft.UI.Xaml.Controls.InfoBarSeverity)Value;
         }
-        private object get_34_InfoBar_TemplateSettings(object instance)
+        private object get_37_InfoBar_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.TemplateSettings;
         }
-        private object get_35_SettingsExpander_Content(object instance)
+        private object get_38_SettingsExpander_Content(object instance)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             return that.Content;
         }
-        private void set_35_SettingsExpander_Content(object instance, object Value)
+        private void set_38_SettingsExpander_Content(object instance, object Value)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_36_SettingsExpander_Header(object instance)
+        private object get_39_SettingsExpander_Header(object instance)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             return that.Header;
         }
-        private void set_36_SettingsExpander_Header(object instance, object Value)
+        private void set_39_SettingsExpander_Header(object instance, object Value)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_37_SettingsExpander_Description(object instance)
+        private object get_40_SettingsExpander_Description(object instance)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             return that.Description;
         }
-        private void set_37_SettingsExpander_Description(object instance, object Value)
+        private void set_40_SettingsExpander_Description(object instance, object Value)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             that.Description = (global::System.Object)Value;
         }
-        private object get_38_SettingsExpander_HeaderIcon(object instance)
+        private object get_41_SettingsExpander_HeaderIcon(object instance)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             return that.HeaderIcon;
         }
-        private void set_38_SettingsExpander_HeaderIcon(object instance, object Value)
+        private void set_41_SettingsExpander_HeaderIcon(object instance, object Value)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_39_SettingsExpander_ItemsHeader(object instance)
+        private object get_42_SettingsExpander_ItemsHeader(object instance)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             return that.ItemsHeader;
         }
-        private void set_39_SettingsExpander_ItemsHeader(object instance, object Value)
+        private void set_42_SettingsExpander_ItemsHeader(object instance, object Value)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             that.ItemsHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_40_SettingsExpander_ItemsFooter(object instance)
+        private object get_43_SettingsExpander_ItemsFooter(object instance)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             return that.ItemsFooter;
         }
-        private void set_40_SettingsExpander_ItemsFooter(object instance, object Value)
+        private void set_43_SettingsExpander_ItemsFooter(object instance, object Value)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             that.ItemsFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_41_SettingsExpander_IsExpanded(object instance)
+        private object get_44_SettingsExpander_IsExpanded(object instance)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             return that.IsExpanded;
         }
-        private void set_41_SettingsExpander_IsExpanded(object instance, object Value)
+        private void set_44_SettingsExpander_IsExpanded(object instance, object Value)
         {
             var that = (global::CommunityToolkit.Labs.WinUI.SettingsExpander)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_42_WIndowConfIg_WindowWidthString(object instance)
+        private object get_45_WIndowConfIg_WindowWidthString(object instance)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             return that.WindowWidthString;
         }
-        private void set_42_WIndowConfIg_WindowWidthString(object instance, object Value)
+        private void set_45_WIndowConfIg_WindowWidthString(object instance, object Value)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             that.WindowWidthString = (global::System.String)Value;
         }
-        private object get_43_WIndowConfIg_WindowHeightString(object instance)
+        private object get_46_WIndowConfIg_WindowHeightString(object instance)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             return that.WindowHeightString;
         }
-        private void set_43_WIndowConfIg_WindowHeightString(object instance, object Value)
+        private void set_46_WIndowConfIg_WindowHeightString(object instance, object Value)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             that.WindowHeightString = (global::System.String)Value;
         }
-        private object get_44_WIndowConfIg_WindowResolutionString(object instance)
+        private object get_47_WIndowConfIg_WindowResolutionString(object instance)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             return that.WindowResolutionString;
         }
-        private void set_44_WIndowConfIg_WindowResolutionString(object instance, object Value)
+        private void set_47_WIndowConfIg_WindowResolutionString(object instance, object Value)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             that.WindowResolutionString = (global::System.String)Value;
         }
-        private object get_45_WIndowConfIg_IsLimitGameResolution(object instance)
+        private object get_48_WIndowConfIg_IsLimitGameResolution(object instance)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             return that.IsLimitGameResolution;
         }
-        private void set_45_WIndowConfIg_IsLimitGameResolution(object instance, object Value)
+        private void set_48_WIndowConfIg_IsLimitGameResolution(object instance, object Value)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             that.IsLimitGameResolution = (global::System.Boolean)Value;
         }
-        private object get_46_WIndowConfIg_Windowmode(object instance)
+        private object get_49_WIndowConfIg_Windowmode(object instance)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             return that.Windowmode;
         }
-        private void set_46_WIndowConfIg_Windowmode(object instance, object Value)
+        private void set_49_WIndowConfIg_Windowmode(object instance, object Value)
         {
             var that = (global::Genshin_UtIl.Pages.WIndowConfIg)instance;
             that.Windowmode = (global::System.Int32)Value;
         }
-        private object get_47_NavigationView_IsBackButtonVisible(object instance)
+        private object get_50_NavigationView_IsBackButtonVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsBackButtonVisible;
         }
-        private void set_47_NavigationView_IsBackButtonVisible(object instance, object Value)
+        private void set_50_NavigationView_IsBackButtonVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsBackButtonVisible = (global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible)Value;
         }
-        private object get_48_NavigationView_IsSettingsVisible(object instance)
+        private object get_51_NavigationView_IsSettingsVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsSettingsVisible;
         }
-        private void set_48_NavigationView_IsSettingsVisible(object instance, object Value)
+        private void set_51_NavigationView_IsSettingsVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsSettingsVisible = (global::System.Boolean)Value;
         }
-        private object get_49_NavigationView_MenuItems(object instance)
+        private object get_52_NavigationView_MenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItems;
         }
-        private object get_50_NavigationView_AlwaysShowHeader(object instance)
+        private object get_53_NavigationView_AlwaysShowHeader(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.AlwaysShowHeader;
         }
-        private void set_50_NavigationView_AlwaysShowHeader(object instance, object Value)
+        private void set_53_NavigationView_AlwaysShowHeader(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.AlwaysShowHeader = (global::System.Boolean)Value;
         }
-        private object get_51_NavigationView_AutoSuggestBox(object instance)
+        private object get_54_NavigationView_AutoSuggestBox(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.AutoSuggestBox;
         }
-        private void set_51_NavigationView_AutoSuggestBox(object instance, object Value)
+        private void set_54_NavigationView_AutoSuggestBox(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.AutoSuggestBox = (global::Microsoft.UI.Xaml.Controls.AutoSuggestBox)Value;
         }
-        private object get_52_NavigationView_CompactModeThresholdWidth(object instance)
+        private object get_55_NavigationView_CompactModeThresholdWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.CompactModeThresholdWidth;
         }
-        private void set_52_NavigationView_CompactModeThresholdWidth(object instance, object Value)
+        private void set_55_NavigationView_CompactModeThresholdWidth(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.CompactModeThresholdWidth = (global::System.Double)Value;
         }
-        private object get_53_NavigationView_CompactPaneLength(object instance)
+        private object get_56_NavigationView_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.CompactPaneLength;
         }
-        private void set_53_NavigationView_CompactPaneLength(object instance, object Value)
+        private void set_56_NavigationView_CompactPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.CompactPaneLength = (global::System.Double)Value;
         }
-        private object get_54_NavigationView_ContentOverlay(object instance)
+        private object get_57_NavigationView_ContentOverlay(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ContentOverlay;
         }
-        private void set_54_NavigationView_ContentOverlay(object instance, object Value)
+        private void set_57_NavigationView_ContentOverlay(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ContentOverlay = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_55_NavigationView_DisplayMode(object instance)
+        private object get_58_NavigationView_DisplayMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.DisplayMode;
         }
-        private object get_56_NavigationView_ExpandedModeThresholdWidth(object instance)
+        private object get_59_NavigationView_ExpandedModeThresholdWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ExpandedModeThresholdWidth;
         }
-        private void set_56_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
+        private void set_59_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ExpandedModeThresholdWidth = (global::System.Double)Value;
         }
-        private object get_57_NavigationView_FooterMenuItems(object instance)
+        private object get_60_NavigationView_FooterMenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.FooterMenuItems;
         }
-        private object get_58_NavigationView_FooterMenuItemsSource(object instance)
+        private object get_61_NavigationView_FooterMenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.FooterMenuItemsSource;
         }
-        private void set_58_NavigationView_FooterMenuItemsSource(object instance, object Value)
+        private void set_61_NavigationView_FooterMenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.FooterMenuItemsSource = (global::System.Object)Value;
         }
-        private object get_59_NavigationView_Header(object instance)
+        private object get_62_NavigationView_Header(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.Header;
         }
-        private void set_59_NavigationView_Header(object instance, object Value)
+        private void set_62_NavigationView_Header(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_60_NavigationView_HeaderTemplate(object instance)
+        private object get_63_NavigationView_HeaderTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.HeaderTemplate;
         }
-        private void set_60_NavigationView_HeaderTemplate(object instance, object Value)
+        private void set_63_NavigationView_HeaderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_61_NavigationView_IsBackEnabled(object instance)
+        private object get_64_NavigationView_IsBackEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsBackEnabled;
         }
-        private void set_61_NavigationView_IsBackEnabled(object instance, object Value)
+        private void set_64_NavigationView_IsBackEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsBackEnabled = (global::System.Boolean)Value;
         }
-        private object get_62_NavigationView_IsPaneOpen(object instance)
+        private object get_65_NavigationView_IsPaneOpen(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsPaneOpen;
         }
-        private void set_62_NavigationView_IsPaneOpen(object instance, object Value)
+        private void set_65_NavigationView_IsPaneOpen(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsPaneOpen = (global::System.Boolean)Value;
         }
-        private object get_63_NavigationView_IsPaneToggleButtonVisible(object instance)
+        private object get_66_NavigationView_IsPaneToggleButtonVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsPaneToggleButtonVisible;
         }
-        private void set_63_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
+        private void set_66_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsPaneToggleButtonVisible = (global::System.Boolean)Value;
         }
-        private object get_64_NavigationView_IsPaneVisible(object instance)
+        private object get_67_NavigationView_IsPaneVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsPaneVisible;
         }
-        private void set_64_NavigationView_IsPaneVisible(object instance, object Value)
+        private void set_67_NavigationView_IsPaneVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsPaneVisible = (global::System.Boolean)Value;
         }
-        private object get_65_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
+        private object get_68_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsTitleBarAutoPaddingEnabled;
         }
-        private void set_65_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
+        private void set_68_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsTitleBarAutoPaddingEnabled = (global::System.Boolean)Value;
         }
-        private object get_66_NavigationView_MenuItemContainerStyle(object instance)
+        private object get_69_NavigationView_MenuItemContainerStyle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemContainerStyle;
         }
-        private void set_66_NavigationView_MenuItemContainerStyle(object instance, object Value)
+        private void set_69_NavigationView_MenuItemContainerStyle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemContainerStyle = (global::Microsoft.UI.Xaml.Style)Value;
         }
-        private object get_67_NavigationView_MenuItemContainerStyleSelector(object instance)
+        private object get_70_NavigationView_MenuItemContainerStyleSelector(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemContainerStyleSelector;
         }
-        private void set_67_NavigationView_MenuItemContainerStyleSelector(object instance, object Value)
+        private void set_70_NavigationView_MenuItemContainerStyleSelector(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemContainerStyleSelector = (global::Microsoft.UI.Xaml.Controls.StyleSelector)Value;
         }
-        private object get_68_NavigationView_MenuItemTemplate(object instance)
+        private object get_71_NavigationView_MenuItemTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemTemplate;
         }
-        private void set_68_NavigationView_MenuItemTemplate(object instance, object Value)
+        private void set_71_NavigationView_MenuItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_69_NavigationView_MenuItemTemplateSelector(object instance)
+        private object get_72_NavigationView_MenuItemTemplateSelector(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemTemplateSelector;
         }
-        private void set_69_NavigationView_MenuItemTemplateSelector(object instance, object Value)
+        private void set_72_NavigationView_MenuItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_70_NavigationView_MenuItemsSource(object instance)
+        private object get_73_NavigationView_MenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemsSource;
         }
-        private void set_70_NavigationView_MenuItemsSource(object instance, object Value)
+        private void set_73_NavigationView_MenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemsSource = (global::System.Object)Value;
         }
-        private object get_71_NavigationView_OpenPaneLength(object instance)
+        private object get_74_NavigationView_OpenPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.OpenPaneLength;
         }
-        private void set_71_NavigationView_OpenPaneLength(object instance, object Value)
+        private void set_74_NavigationView_OpenPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.OpenPaneLength = (global::System.Double)Value;
         }
-        private object get_72_NavigationView_OverflowLabelMode(object instance)
+        private object get_75_NavigationView_OverflowLabelMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.OverflowLabelMode;
         }
-        private void set_72_NavigationView_OverflowLabelMode(object instance, object Value)
+        private void set_75_NavigationView_OverflowLabelMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.OverflowLabelMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode)Value;
         }
-        private object get_73_NavigationView_PaneCustomContent(object instance)
+        private object get_76_NavigationView_PaneCustomContent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneCustomContent;
         }
-        private void set_73_NavigationView_PaneCustomContent(object instance, object Value)
+        private void set_76_NavigationView_PaneCustomContent(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneCustomContent = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_74_NavigationView_PaneDisplayMode(object instance)
+        private object get_77_NavigationView_PaneDisplayMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneDisplayMode;
         }
-        private void set_74_NavigationView_PaneDisplayMode(object instance, object Value)
+        private void set_77_NavigationView_PaneDisplayMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneDisplayMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode)Value;
         }
-        private object get_75_NavigationView_PaneFooter(object instance)
+        private object get_78_NavigationView_PaneFooter(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneFooter;
         }
-        private void set_75_NavigationView_PaneFooter(object instance, object Value)
+        private void set_78_NavigationView_PaneFooter(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_76_NavigationView_PaneHeader(object instance)
+        private object get_79_NavigationView_PaneHeader(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneHeader;
         }
-        private void set_76_NavigationView_PaneHeader(object instance, object Value)
+        private void set_79_NavigationView_PaneHeader(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_77_NavigationView_PaneTitle(object instance)
+        private object get_80_NavigationView_PaneTitle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneTitle;
         }
-        private void set_77_NavigationView_PaneTitle(object instance, object Value)
+        private void set_80_NavigationView_PaneTitle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneTitle = (global::System.String)Value;
         }
-        private object get_78_NavigationView_PaneToggleButtonStyle(object instance)
+        private object get_81_NavigationView_PaneToggleButtonStyle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneToggleButtonStyle;
         }
-        private void set_78_NavigationView_PaneToggleButtonStyle(object instance, object Value)
+        private void set_81_NavigationView_PaneToggleButtonStyle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneToggleButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
         }
-        private object get_79_NavigationView_SelectedItem(object instance)
+        private object get_82_NavigationView_SelectedItem(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.SelectedItem;
         }
-        private void set_79_NavigationView_SelectedItem(object instance, object Value)
+        private void set_82_NavigationView_SelectedItem(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_80_NavigationView_SelectionFollowsFocus(object instance)
+        private object get_83_NavigationView_SelectionFollowsFocus(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.SelectionFollowsFocus;
         }
-        private void set_80_NavigationView_SelectionFollowsFocus(object instance, object Value)
+        private void set_83_NavigationView_SelectionFollowsFocus(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.SelectionFollowsFocus = (global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus)Value;
         }
-        private object get_81_NavigationView_SettingsItem(object instance)
+        private object get_84_NavigationView_SettingsItem(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.SettingsItem;
         }
-        private object get_82_NavigationView_ShoulderNavigationEnabled(object instance)
+        private object get_85_NavigationView_ShoulderNavigationEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ShoulderNavigationEnabled;
         }
-        private void set_82_NavigationView_ShoulderNavigationEnabled(object instance, object Value)
+        private void set_85_NavigationView_ShoulderNavigationEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ShoulderNavigationEnabled = (global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled)Value;
         }
-        private object get_83_NavigationView_TemplateSettings(object instance)
+        private object get_86_NavigationView_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.TemplateSettings;
         }
-        private object get_84_NavigationViewItem_Icon(object instance)
+        private object get_87_NavigationViewItem_Icon(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.Icon;
         }
-        private void set_84_NavigationViewItem_Icon(object instance, object Value)
+        private void set_87_NavigationViewItem_Icon(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.Icon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_85_NavigationViewItem_CompactPaneLength(object instance)
+        private object get_88_NavigationViewItem_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.CompactPaneLength;
         }
-        private object get_86_NavigationViewItem_HasUnrealizedChildren(object instance)
+        private object get_89_NavigationViewItem_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_86_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
+        private void set_89_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_87_NavigationViewItem_InfoBadge(object instance)
+        private object get_90_NavigationViewItem_InfoBadge(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.InfoBadge;
         }
-        private void set_87_NavigationViewItem_InfoBadge(object instance, object Value)
+        private void set_90_NavigationViewItem_InfoBadge(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.InfoBadge = (global::Microsoft.UI.Xaml.Controls.InfoBadge)Value;
         }
-        private object get_88_NavigationViewItem_IsChildSelected(object instance)
+        private object get_91_NavigationViewItem_IsChildSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsChildSelected;
         }
-        private void set_88_NavigationViewItem_IsChildSelected(object instance, object Value)
+        private void set_91_NavigationViewItem_IsChildSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsChildSelected = (global::System.Boolean)Value;
         }
-        private object get_89_NavigationViewItem_IsExpanded(object instance)
+        private object get_92_NavigationViewItem_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsExpanded;
         }
-        private void set_89_NavigationViewItem_IsExpanded(object instance, object Value)
+        private void set_92_NavigationViewItem_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_90_NavigationViewItem_MenuItems(object instance)
+        private object get_93_NavigationViewItem_MenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItems;
         }
-        private object get_91_NavigationViewItem_MenuItemsSource(object instance)
+        private object get_94_NavigationViewItem_MenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItemsSource;
         }
-        private void set_91_NavigationViewItem_MenuItemsSource(object instance, object Value)
+        private void set_94_NavigationViewItem_MenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.MenuItemsSource = (global::System.Object)Value;
         }
-        private object get_92_NavigationViewItem_SelectsOnInvoked(object instance)
+        private object get_95_NavigationViewItem_SelectsOnInvoked(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.SelectsOnInvoked;
         }
-        private void set_92_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
+        private void set_95_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.SelectsOnInvoked = (global::System.Boolean)Value;
         }
-        private object get_93_NavigationViewItemBase_IsSelected(object instance)
+        private object get_96_NavigationViewItemBase_IsSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             return that.IsSelected;
         }
-        private void set_93_NavigationViewItemBase_IsSelected(object instance, object Value)
+        private void set_96_NavigationViewItemBase_IsSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             that.IsSelected = (global::System.Boolean)Value;
@@ -1977,511 +2010,529 @@ namespace Genshin_UtIl.Genshin_UtIl_XamlTypeInfo
                 xamlMember.Getter = get_20_SettingsCard_ContentAlignment;
                 xamlMember.Setter = set_20_SettingsCard_ContentAlignment;
                 break;
+            case "Genshin_UtIl.Pages.ConfIgPage.AppColor":
+                userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.ConfIgPage");
+                xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "AppColor", "Int32");
+                xamlMember.Getter = get_21_ConfIgPage_AppColor;
+                xamlMember.Setter = set_21_ConfIgPage_AppColor;
+                break;
+            case "Genshin_UtIl.Pages.ConfIgPage.IsUseDeveloperUtil":
+                userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.ConfIgPage");
+                xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsUseDeveloperUtil", "Boolean");
+                xamlMember.Getter = get_22_ConfIgPage_IsUseDeveloperUtil;
+                xamlMember.Setter = set_22_ConfIgPage_IsUseDeveloperUtil;
+                break;
+            case "Genshin_UtIl.Pages.ConfIgPage.FirstPage":
+                userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.ConfIgPage");
+                xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "FirstPage", "Int32");
+                xamlMember.Getter = get_23_ConfIgPage_FirstPage;
+                xamlMember.Setter = set_23_ConfIgPage_FirstPage;
+                break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.Content":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_InfoBar_Content;
-                xamlMember.Setter = set_21_InfoBar_Content;
+                xamlMember.Getter = get_24_InfoBar_Content;
+                xamlMember.Setter = set_24_InfoBar_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.Title":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Title", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_InfoBar_Title;
-                xamlMember.Setter = set_22_InfoBar_Title;
+                xamlMember.Getter = get_25_InfoBar_Title;
+                xamlMember.Setter = set_25_InfoBar_Title;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.IsOpen":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_InfoBar_IsOpen;
-                xamlMember.Setter = set_23_InfoBar_IsOpen;
+                xamlMember.Getter = get_26_InfoBar_IsOpen;
+                xamlMember.Setter = set_26_InfoBar_IsOpen;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.IsClosable":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsClosable", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_InfoBar_IsClosable;
-                xamlMember.Setter = set_24_InfoBar_IsClosable;
+                xamlMember.Getter = get_27_InfoBar_IsClosable;
+                xamlMember.Setter = set_27_InfoBar_IsClosable;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.ActionButton":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "ActionButton", "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_InfoBar_ActionButton;
-                xamlMember.Setter = set_25_InfoBar_ActionButton;
+                xamlMember.Getter = get_28_InfoBar_ActionButton;
+                xamlMember.Setter = set_28_InfoBar_ActionButton;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommand":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "CloseButtonCommand", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_InfoBar_CloseButtonCommand;
-                xamlMember.Setter = set_26_InfoBar_CloseButtonCommand;
+                xamlMember.Getter = get_29_InfoBar_CloseButtonCommand;
+                xamlMember.Setter = set_29_InfoBar_CloseButtonCommand;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommandParameter":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "CloseButtonCommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_InfoBar_CloseButtonCommandParameter;
-                xamlMember.Setter = set_27_InfoBar_CloseButtonCommandParameter;
+                xamlMember.Getter = get_30_InfoBar_CloseButtonCommandParameter;
+                xamlMember.Setter = set_30_InfoBar_CloseButtonCommandParameter;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonStyle":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "CloseButtonStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_InfoBar_CloseButtonStyle;
-                xamlMember.Setter = set_28_InfoBar_CloseButtonStyle;
+                xamlMember.Getter = get_31_InfoBar_CloseButtonStyle;
+                xamlMember.Setter = set_31_InfoBar_CloseButtonStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.ContentTemplate":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_InfoBar_ContentTemplate;
-                xamlMember.Setter = set_29_InfoBar_ContentTemplate;
+                xamlMember.Getter = get_32_InfoBar_ContentTemplate;
+                xamlMember.Setter = set_32_InfoBar_ContentTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.IconSource":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_InfoBar_IconSource;
-                xamlMember.Setter = set_30_InfoBar_IconSource;
+                xamlMember.Getter = get_33_InfoBar_IconSource;
+                xamlMember.Setter = set_33_InfoBar_IconSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.IsIconVisible":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsIconVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_InfoBar_IsIconVisible;
-                xamlMember.Setter = set_31_InfoBar_IsIconVisible;
+                xamlMember.Getter = get_34_InfoBar_IsIconVisible;
+                xamlMember.Setter = set_34_InfoBar_IsIconVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.Message":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Message", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_InfoBar_Message;
-                xamlMember.Setter = set_32_InfoBar_Message;
+                xamlMember.Getter = get_35_InfoBar_Message;
+                xamlMember.Setter = set_35_InfoBar_Message;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.Severity":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Severity", "Microsoft.UI.Xaml.Controls.InfoBarSeverity");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_InfoBar_Severity;
-                xamlMember.Setter = set_33_InfoBar_Severity;
+                xamlMember.Getter = get_36_InfoBar_Severity;
+                xamlMember.Setter = set_36_InfoBar_Severity;
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBar.TemplateSettings":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_InfoBar_TemplateSettings;
+                xamlMember.Getter = get_37_InfoBar_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CommunityToolkit.Labs.WinUI.SettingsExpander.Content":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.Labs.WinUI.SettingsExpander");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_SettingsExpander_Content;
-                xamlMember.Setter = set_35_SettingsExpander_Content;
+                xamlMember.Getter = get_38_SettingsExpander_Content;
+                xamlMember.Setter = set_38_SettingsExpander_Content;
                 break;
             case "CommunityToolkit.Labs.WinUI.SettingsExpander.Header":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.Labs.WinUI.SettingsExpander");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_SettingsExpander_Header;
-                xamlMember.Setter = set_36_SettingsExpander_Header;
+                xamlMember.Getter = get_39_SettingsExpander_Header;
+                xamlMember.Setter = set_39_SettingsExpander_Header;
                 break;
             case "CommunityToolkit.Labs.WinUI.SettingsExpander.Description":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.Labs.WinUI.SettingsExpander");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Description", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_SettingsExpander_Description;
-                xamlMember.Setter = set_37_SettingsExpander_Description;
+                xamlMember.Getter = get_40_SettingsExpander_Description;
+                xamlMember.Setter = set_40_SettingsExpander_Description;
                 break;
             case "CommunityToolkit.Labs.WinUI.SettingsExpander.HeaderIcon":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.Labs.WinUI.SettingsExpander");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_38_SettingsExpander_HeaderIcon;
-                xamlMember.Setter = set_38_SettingsExpander_HeaderIcon;
+                xamlMember.Getter = get_41_SettingsExpander_HeaderIcon;
+                xamlMember.Setter = set_41_SettingsExpander_HeaderIcon;
                 break;
             case "CommunityToolkit.Labs.WinUI.SettingsExpander.ItemsHeader":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.Labs.WinUI.SettingsExpander");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "ItemsHeader", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_SettingsExpander_ItemsHeader;
-                xamlMember.Setter = set_39_SettingsExpander_ItemsHeader;
+                xamlMember.Getter = get_42_SettingsExpander_ItemsHeader;
+                xamlMember.Setter = set_42_SettingsExpander_ItemsHeader;
                 break;
             case "CommunityToolkit.Labs.WinUI.SettingsExpander.ItemsFooter":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.Labs.WinUI.SettingsExpander");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "ItemsFooter", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_SettingsExpander_ItemsFooter;
-                xamlMember.Setter = set_40_SettingsExpander_ItemsFooter;
+                xamlMember.Getter = get_43_SettingsExpander_ItemsFooter;
+                xamlMember.Setter = set_43_SettingsExpander_ItemsFooter;
                 break;
             case "CommunityToolkit.Labs.WinUI.SettingsExpander.IsExpanded":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.Labs.WinUI.SettingsExpander");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_SettingsExpander_IsExpanded;
-                xamlMember.Setter = set_41_SettingsExpander_IsExpanded;
+                xamlMember.Getter = get_44_SettingsExpander_IsExpanded;
+                xamlMember.Setter = set_44_SettingsExpander_IsExpanded;
                 break;
             case "Genshin_UtIl.Pages.WIndowConfIg.WindowWidthString":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.WIndowConfIg");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "WindowWidthString", "String");
-                xamlMember.Getter = get_42_WIndowConfIg_WindowWidthString;
-                xamlMember.Setter = set_42_WIndowConfIg_WindowWidthString;
+                xamlMember.Getter = get_45_WIndowConfIg_WindowWidthString;
+                xamlMember.Setter = set_45_WIndowConfIg_WindowWidthString;
                 break;
             case "Genshin_UtIl.Pages.WIndowConfIg.WindowHeightString":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.WIndowConfIg");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "WindowHeightString", "String");
-                xamlMember.Getter = get_43_WIndowConfIg_WindowHeightString;
-                xamlMember.Setter = set_43_WIndowConfIg_WindowHeightString;
+                xamlMember.Getter = get_46_WIndowConfIg_WindowHeightString;
+                xamlMember.Setter = set_46_WIndowConfIg_WindowHeightString;
                 break;
             case "Genshin_UtIl.Pages.WIndowConfIg.WindowResolutionString":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.WIndowConfIg");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "WindowResolutionString", "String");
-                xamlMember.Getter = get_44_WIndowConfIg_WindowResolutionString;
-                xamlMember.Setter = set_44_WIndowConfIg_WindowResolutionString;
+                xamlMember.Getter = get_47_WIndowConfIg_WindowResolutionString;
+                xamlMember.Setter = set_47_WIndowConfIg_WindowResolutionString;
                 break;
             case "Genshin_UtIl.Pages.WIndowConfIg.IsLimitGameResolution":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.WIndowConfIg");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsLimitGameResolution", "Boolean");
-                xamlMember.Getter = get_45_WIndowConfIg_IsLimitGameResolution;
-                xamlMember.Setter = set_45_WIndowConfIg_IsLimitGameResolution;
+                xamlMember.Getter = get_48_WIndowConfIg_IsLimitGameResolution;
+                xamlMember.Setter = set_48_WIndowConfIg_IsLimitGameResolution;
                 break;
             case "Genshin_UtIl.Pages.WIndowConfIg.Windowmode":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Genshin_UtIl.Pages.WIndowConfIg");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Windowmode", "Int32");
-                xamlMember.Getter = get_46_WIndowConfIg_Windowmode;
-                xamlMember.Setter = set_46_WIndowConfIg_Windowmode;
+                xamlMember.Getter = get_49_WIndowConfIg_Windowmode;
+                xamlMember.Setter = set_49_WIndowConfIg_Windowmode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackButtonVisible":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsBackButtonVisible", "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_47_NavigationView_IsBackButtonVisible;
-                xamlMember.Setter = set_47_NavigationView_IsBackButtonVisible;
+                xamlMember.Getter = get_50_NavigationView_IsBackButtonVisible;
+                xamlMember.Setter = set_50_NavigationView_IsBackButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsSettingsVisible":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsSettingsVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_48_NavigationView_IsSettingsVisible;
-                xamlMember.Setter = set_48_NavigationView_IsSettingsVisible;
+                xamlMember.Getter = get_51_NavigationView_IsSettingsVisible;
+                xamlMember.Setter = set_51_NavigationView_IsSettingsVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItems":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_NavigationView_MenuItems;
+                xamlMember.Getter = get_52_NavigationView_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AlwaysShowHeader":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "AlwaysShowHeader", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_NavigationView_AlwaysShowHeader;
-                xamlMember.Setter = set_50_NavigationView_AlwaysShowHeader;
+                xamlMember.Getter = get_53_NavigationView_AlwaysShowHeader;
+                xamlMember.Setter = set_53_NavigationView_AlwaysShowHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AutoSuggestBox":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "AutoSuggestBox", "Microsoft.UI.Xaml.Controls.AutoSuggestBox");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_NavigationView_AutoSuggestBox;
-                xamlMember.Setter = set_51_NavigationView_AutoSuggestBox;
+                xamlMember.Getter = get_54_NavigationView_AutoSuggestBox;
+                xamlMember.Setter = set_54_NavigationView_AutoSuggestBox;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactModeThresholdWidth":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "CompactModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_NavigationView_CompactModeThresholdWidth;
-                xamlMember.Setter = set_52_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Getter = get_55_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Setter = set_55_NavigationView_CompactModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactPaneLength":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_53_NavigationView_CompactPaneLength;
-                xamlMember.Setter = set_53_NavigationView_CompactPaneLength;
+                xamlMember.Getter = get_56_NavigationView_CompactPaneLength;
+                xamlMember.Setter = set_56_NavigationView_CompactPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ContentOverlay":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "ContentOverlay", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_NavigationView_ContentOverlay;
-                xamlMember.Setter = set_54_NavigationView_ContentOverlay;
+                xamlMember.Getter = get_57_NavigationView_ContentOverlay;
+                xamlMember.Setter = set_57_NavigationView_ContentOverlay;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.DisplayMode":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "DisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_55_NavigationView_DisplayMode;
+                xamlMember.Getter = get_58_NavigationView_DisplayMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ExpandedModeThresholdWidth":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "ExpandedModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_56_NavigationView_ExpandedModeThresholdWidth;
-                xamlMember.Setter = set_56_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Getter = get_59_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Setter = set_59_NavigationView_ExpandedModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItems":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "FooterMenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_57_NavigationView_FooterMenuItems;
+                xamlMember.Getter = get_60_NavigationView_FooterMenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItemsSource":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "FooterMenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_58_NavigationView_FooterMenuItemsSource;
-                xamlMember.Setter = set_58_NavigationView_FooterMenuItemsSource;
+                xamlMember.Getter = get_61_NavigationView_FooterMenuItemsSource;
+                xamlMember.Setter = set_61_NavigationView_FooterMenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.Header":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_59_NavigationView_Header;
-                xamlMember.Setter = set_59_NavigationView_Header;
+                xamlMember.Getter = get_62_NavigationView_Header;
+                xamlMember.Setter = set_62_NavigationView_Header;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.HeaderTemplate":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_60_NavigationView_HeaderTemplate;
-                xamlMember.Setter = set_60_NavigationView_HeaderTemplate;
+                xamlMember.Getter = get_63_NavigationView_HeaderTemplate;
+                xamlMember.Setter = set_63_NavigationView_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackEnabled":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsBackEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_61_NavigationView_IsBackEnabled;
-                xamlMember.Setter = set_61_NavigationView_IsBackEnabled;
+                xamlMember.Getter = get_64_NavigationView_IsBackEnabled;
+                xamlMember.Setter = set_64_NavigationView_IsBackEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneOpen":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_62_NavigationView_IsPaneOpen;
-                xamlMember.Setter = set_62_NavigationView_IsPaneOpen;
+                xamlMember.Getter = get_65_NavigationView_IsPaneOpen;
+                xamlMember.Setter = set_65_NavigationView_IsPaneOpen;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneToggleButtonVisible":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsPaneToggleButtonVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_NavigationView_IsPaneToggleButtonVisible;
-                xamlMember.Setter = set_63_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Getter = get_66_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Setter = set_66_NavigationView_IsPaneToggleButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneVisible":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsPaneVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_NavigationView_IsPaneVisible;
-                xamlMember.Setter = set_64_NavigationView_IsPaneVisible;
+                xamlMember.Getter = get_67_NavigationView_IsPaneVisible;
+                xamlMember.Setter = set_67_NavigationView_IsPaneVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabled":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsTitleBarAutoPaddingEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_NavigationView_IsTitleBarAutoPaddingEnabled;
-                xamlMember.Setter = set_65_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Getter = get_68_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Setter = set_68_NavigationView_IsTitleBarAutoPaddingEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyle":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_NavigationView_MenuItemContainerStyle;
-                xamlMember.Setter = set_66_NavigationView_MenuItemContainerStyle;
+                xamlMember.Getter = get_69_NavigationView_MenuItemContainerStyle;
+                xamlMember.Setter = set_69_NavigationView_MenuItemContainerStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyleSelector":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_NavigationView_MenuItemContainerStyleSelector;
-                xamlMember.Setter = set_67_NavigationView_MenuItemContainerStyleSelector;
+                xamlMember.Getter = get_70_NavigationView_MenuItemContainerStyleSelector;
+                xamlMember.Setter = set_70_NavigationView_MenuItemContainerStyleSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplate":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItemTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_NavigationView_MenuItemTemplate;
-                xamlMember.Setter = set_68_NavigationView_MenuItemTemplate;
+                xamlMember.Getter = get_71_NavigationView_MenuItemTemplate;
+                xamlMember.Setter = set_71_NavigationView_MenuItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplateSelector":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItemTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_NavigationView_MenuItemTemplateSelector;
-                xamlMember.Setter = set_69_NavigationView_MenuItemTemplateSelector;
+                xamlMember.Getter = get_72_NavigationView_MenuItemTemplateSelector;
+                xamlMember.Setter = set_72_NavigationView_MenuItemTemplateSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemsSource":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_NavigationView_MenuItemsSource;
-                xamlMember.Setter = set_70_NavigationView_MenuItemsSource;
+                xamlMember.Getter = get_73_NavigationView_MenuItemsSource;
+                xamlMember.Setter = set_73_NavigationView_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OpenPaneLength":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_NavigationView_OpenPaneLength;
-                xamlMember.Setter = set_71_NavigationView_OpenPaneLength;
+                xamlMember.Getter = get_74_NavigationView_OpenPaneLength;
+                xamlMember.Setter = set_74_NavigationView_OpenPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelMode":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "OverflowLabelMode", "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_72_NavigationView_OverflowLabelMode;
-                xamlMember.Setter = set_72_NavigationView_OverflowLabelMode;
+                xamlMember.Getter = get_75_NavigationView_OverflowLabelMode;
+                xamlMember.Setter = set_75_NavigationView_OverflowLabelMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneCustomContent":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "PaneCustomContent", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_NavigationView_PaneCustomContent;
-                xamlMember.Setter = set_73_NavigationView_PaneCustomContent;
+                xamlMember.Getter = get_76_NavigationView_PaneCustomContent;
+                xamlMember.Setter = set_76_NavigationView_PaneCustomContent;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneDisplayMode":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "PaneDisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_NavigationView_PaneDisplayMode;
-                xamlMember.Setter = set_74_NavigationView_PaneDisplayMode;
+                xamlMember.Getter = get_77_NavigationView_PaneDisplayMode;
+                xamlMember.Setter = set_77_NavigationView_PaneDisplayMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneFooter":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "PaneFooter", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_75_NavigationView_PaneFooter;
-                xamlMember.Setter = set_75_NavigationView_PaneFooter;
+                xamlMember.Getter = get_78_NavigationView_PaneFooter;
+                xamlMember.Setter = set_78_NavigationView_PaneFooter;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneHeader":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "PaneHeader", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_NavigationView_PaneHeader;
-                xamlMember.Setter = set_76_NavigationView_PaneHeader;
+                xamlMember.Getter = get_79_NavigationView_PaneHeader;
+                xamlMember.Setter = set_79_NavigationView_PaneHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneTitle":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "PaneTitle", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_NavigationView_PaneTitle;
-                xamlMember.Setter = set_77_NavigationView_PaneTitle;
+                xamlMember.Getter = get_80_NavigationView_PaneTitle;
+                xamlMember.Setter = set_80_NavigationView_PaneTitle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneToggleButtonStyle":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "PaneToggleButtonStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_NavigationView_PaneToggleButtonStyle;
-                xamlMember.Setter = set_78_NavigationView_PaneToggleButtonStyle;
+                xamlMember.Getter = get_81_NavigationView_PaneToggleButtonStyle;
+                xamlMember.Setter = set_81_NavigationView_PaneToggleButtonStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectedItem":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_NavigationView_SelectedItem;
-                xamlMember.Setter = set_79_NavigationView_SelectedItem;
+                xamlMember.Getter = get_82_NavigationView_SelectedItem;
+                xamlMember.Setter = set_82_NavigationView_SelectedItem;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectionFollowsFocus":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "SelectionFollowsFocus", "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_NavigationView_SelectionFollowsFocus;
-                xamlMember.Setter = set_80_NavigationView_SelectionFollowsFocus;
+                xamlMember.Getter = get_83_NavigationView_SelectionFollowsFocus;
+                xamlMember.Setter = set_83_NavigationView_SelectionFollowsFocus;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SettingsItem":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "SettingsItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_NavigationView_SettingsItem;
+                xamlMember.Getter = get_84_NavigationView_SettingsItem;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ShoulderNavigationEnabled":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "ShoulderNavigationEnabled", "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_NavigationView_ShoulderNavigationEnabled;
-                xamlMember.Setter = set_82_NavigationView_ShoulderNavigationEnabled;
+                xamlMember.Getter = get_85_NavigationView_ShoulderNavigationEnabled;
+                xamlMember.Setter = set_85_NavigationView_ShoulderNavigationEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.TemplateSettings":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_NavigationView_TemplateSettings;
+                xamlMember.Getter = get_86_NavigationView_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.Icon":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "Icon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_NavigationViewItem_Icon;
-                xamlMember.Setter = set_84_NavigationViewItem_Icon;
+                xamlMember.Getter = get_87_NavigationViewItem_Icon;
+                xamlMember.Setter = set_87_NavigationViewItem_Icon;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.CompactPaneLength":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_85_NavigationViewItem_CompactPaneLength;
+                xamlMember.Getter = get_88_NavigationViewItem_CompactPaneLength;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.HasUnrealizedChildren":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_NavigationViewItem_HasUnrealizedChildren;
-                xamlMember.Setter = set_86_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Getter = get_89_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Setter = set_89_NavigationViewItem_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.InfoBadge":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "InfoBadge", "Microsoft.UI.Xaml.Controls.InfoBadge");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_NavigationViewItem_InfoBadge;
-                xamlMember.Setter = set_87_NavigationViewItem_InfoBadge;
+                xamlMember.Getter = get_90_NavigationViewItem_InfoBadge;
+                xamlMember.Setter = set_90_NavigationViewItem_InfoBadge;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsChildSelected":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsChildSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_NavigationViewItem_IsChildSelected;
-                xamlMember.Setter = set_88_NavigationViewItem_IsChildSelected;
+                xamlMember.Getter = get_91_NavigationViewItem_IsChildSelected;
+                xamlMember.Setter = set_91_NavigationViewItem_IsChildSelected;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsExpanded":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_NavigationViewItem_IsExpanded;
-                xamlMember.Setter = set_89_NavigationViewItem_IsExpanded;
+                xamlMember.Getter = get_92_NavigationViewItem_IsExpanded;
+                xamlMember.Setter = set_92_NavigationViewItem_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItems":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_NavigationViewItem_MenuItems;
+                xamlMember.Getter = get_93_NavigationViewItem_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItemsSource":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_NavigationViewItem_MenuItemsSource;
-                xamlMember.Setter = set_91_NavigationViewItem_MenuItemsSource;
+                xamlMember.Getter = get_94_NavigationViewItem_MenuItemsSource;
+                xamlMember.Setter = set_94_NavigationViewItem_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvoked":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "SelectsOnInvoked", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_NavigationViewItem_SelectsOnInvoked;
-                xamlMember.Setter = set_92_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Getter = get_95_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Setter = set_95_NavigationViewItem_SelectsOnInvoked;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItemBase.IsSelected":
                 userType = (global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase");
                 xamlMember = new global::Genshin_UtIl.Genshin_UtIl_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_NavigationViewItemBase_IsSelected;
-                xamlMember.Setter = set_93_NavigationViewItemBase_IsSelected;
+                xamlMember.Getter = get_96_NavigationViewItemBase_IsSelected;
+                xamlMember.Setter = set_96_NavigationViewItemBase_IsSelected;
                 break;
             }
             return xamlMember;

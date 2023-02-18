@@ -12,26 +12,28 @@ namespace Genshin_UtIl.Pages
     /// </summary>
     public sealed partial class ConfIgPage : Page
     {
+        public int AppColor { get; set; }
+
+        public bool IsUseDeveloperUtil { get; set; }
+
+        public int FirstPage { get; set; }
+
         public ConfIgPage()
         {
             this.InitializeComponent();
 
-            AppTh_.SelectedIndex = ConfIg.Instance.AppTh;
+            AppColor = ConfIg.Instance.AppTh;
 
-            if (ConfIg.Instance.Dev == 1)
-                UtIlToggle.IsOn = true;
-
-            else
-                UtIlToggle.IsOn = false;
+            IsUseDeveloperUtil = ConfIg.Instance.Dev;
 
             if (ConfIg.Instance.FIrstPage == "WIndow")
-                PageCon_.SelectedIndex = 0;
+                FirstPage = 0;
 
             else if (ConfIg.Instance.FIrstPage == "ReShadeCon")
-                PageCon_.SelectedIndex = 1;
+                FirstPage = 1;
 
             else if(ConfIg.Instance.FIrstPage == "OpenGameCon")
-                PageCon_.SelectedIndex = 2;
+                FirstPage = 2;
         }
 
         void AppThChanged(object sender, SelectionChangedEventArgs e)
@@ -64,10 +66,10 @@ namespace Genshin_UtIl.Pages
             var tmp = (ToggleSwitch) sender;
 
             if (tmp.IsOn == false)
-                ConfIg.Instance.Dev = 0;
+                ConfIg.Instance.Dev = false;
 
             else if (tmp.IsOn == true)
-                ConfIg.Instance.Dev = 1;
+                ConfIg.Instance.Dev = true;
         }
 
         void PageConChanged(object sender, SelectionChangedEventArgs e)

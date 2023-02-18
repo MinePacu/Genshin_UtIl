@@ -26,7 +26,7 @@ namespace Genshin_UtIl.UtIls
             public ReStartConfIg ReStartConf { get; set; } = new();
 
             public int AppTh { get; set; } = 0;
-            public int Dev { get; set; } = 0;
+            public bool Dev { get; set; } = false;
 
         }
 
