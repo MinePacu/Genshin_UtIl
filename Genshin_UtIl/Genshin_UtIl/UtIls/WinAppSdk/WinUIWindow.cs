@@ -21,5 +21,7 @@ namespace Genshin_UtIl.UtIls.WinAppSdk
 
             return AppWindow.GetFromWindowId(wndId);
         }
+
+        public static WindowId GetWindowIdFromWindow(Window window) => Win32Interop.GetWindowIdFromWindow(WindowNative.GetWindowHandle(window));
     }
 }

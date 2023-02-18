@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 using Genshin_UtIl.UtIls.Display.Enum;
 using Genshin_UtIl.UtIls.Display.Structure;
@@ -22,6 +23,7 @@ namespace Genshin_UtIl.UtIls
 
         public static List<string> DIsplay_strIng_LIst_Sorted { get; } = new();
 
+        public readonly static BackgroundWork.TaskUtil DisplayLoadTask = new(new(InitializeDisplayList));
 
         /// <summary>
         /// - 기능
@@ -29,7 +31,7 @@ namespace Genshin_UtIl.UtIls
         /// - 예외
         /// <br/>ㅤ<see cref="ExcepClass"/>
         /// </summary> 
-        public static void InitializeDisplayList()
+        public static async Task InitializeDisplayList()
         {
             DISPLAY_DEVICE d = new();
             Devmode dev = new();
@@ -71,6 +73,8 @@ namespace Genshin_UtIl.UtIls
             {
                 throw new ExcepClass(ep);
             }
+
+            await Task.Delay(10000);
         }
 
         public static void SortDIsplayLIst()

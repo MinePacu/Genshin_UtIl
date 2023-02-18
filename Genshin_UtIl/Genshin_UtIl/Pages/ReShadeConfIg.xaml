@@ -5,36 +5,31 @@
     xmlns:local="using:Genshin_UtIl.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:labs="using:CommunityToolkit.Labs.WinUI"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
 
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 9"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 이용" FontSize="14"/>
-                    <HyperlinkButton Grid.Row="1" Margin="-13, -13, 0, -14" FontWeight="Bold" VerticalAlignment="Center" Content="이 기능에 대한 자세한 정보" FontSize="12" Click="ReShadeTuFunc"/>
-                </Grid>
-
-                <ToggleSwitch Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 0, -47, 0" Toggled="ReShadeFunc"/>
-            </Grid>
-        </Border>
+        <labs:SettingsCard
+            Header="ReShade 켜기">
+            <labs:SettingsCard.Description>
+                <HyperlinkButton 
+                    FontWeight="Bold" 
+                    VerticalAlignment="Center" 
+                    Content="이 기능에 대한 자세한 정보" 
+                    FontSize="12" 
+                    Click="ReShadeTuFunc"/>
+            </labs:SettingsCard.Description>
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xf8a5;"/>
+            </labs:SettingsCard.HeaderIcon>
+            <ToggleSwitch
+                VerticalAlignment="Center"
+                Toggled="ReShadeFunc"/>
+        </labs:SettingsCard>
         
         <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
             <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>

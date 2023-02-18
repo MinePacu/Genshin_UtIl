@@ -13,6 +13,7 @@
     <UseWindowsForms>False</UseWindowsForms>
 	<SelfContained>true</SelfContained>
 	<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+	<BaseOutputPath>H:\Visual_Studio__\Genshin_UtIl_Debug</BaseOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="FolderConfIg.xaml" />

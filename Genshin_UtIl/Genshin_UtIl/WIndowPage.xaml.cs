@@ -44,6 +44,8 @@ namespace Genshin_UtIl
             {
                 WIndowUtIl.SetTItleDark(WindowNative.GetWindowHandle(this), 1);
             }
+
+            DIsplayUtIl.DisplayLoadTask.StartTask();
         }
 
         List<(string PageStrIng, Type page)> _pages = new()

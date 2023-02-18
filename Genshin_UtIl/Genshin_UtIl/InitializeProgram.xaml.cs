@@ -9,6 +9,7 @@ using Genshin_UtIl.UtIls;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 
+
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -37,6 +38,12 @@ namespace Genshin_UtIl
 
             apppresenter.IsMaximizable = false;
             apppresenter.IsResizable = false;
+
+            DisplayArea displayAr = DisplayArea.GetFromWindowId(UtIls.WinAppSdk.WinUIWindow.GetWindowIdFromWindow(this), DisplayAreaFallback.Nearest);
+            var Center = thiswindow.Position;
+            Center.X = (displayAr.WorkArea.Width - thiswindow.Size.Width) / 2;
+            Center.Y = (displayAr.WorkArea.Height - thiswindow.Size.Height) / 2;
+            thiswindow.Move(Center);
 
             FindGenshinFolder();
         }
