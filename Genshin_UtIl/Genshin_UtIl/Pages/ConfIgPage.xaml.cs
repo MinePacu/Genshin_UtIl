@@ -1,6 +1,11 @@
 ﻿using Genshin_UtIl.UtIls;
+using Genshin_UtIl.UtIls.AppColor.Enum;
+using Genshin_UtIl.UtIls.Dwm;
+
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+
+using WinRT.Interop;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -44,6 +49,11 @@ namespace Genshin_UtIl.Pages
             {
                 WIndowUtIl.Fra.RequestedTheme = ElementTheme.Default;
                 WIndowUtIl.N.RequestedTheme = ElementTheme.Default;
+
+                if (SysUtIl.GetAppTh() == Appth.Dark)
+                {
+                    DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
+                }
             }
 
             else if (Appc.SelectedIndex == 1)

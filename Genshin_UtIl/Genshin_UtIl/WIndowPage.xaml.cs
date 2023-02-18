@@ -1,4 +1,7 @@
 ﻿using Genshin_UtIl.UtIls;
+using Genshin_UtIl.UtIls.AppColor.Enum;
+using Genshin_UtIl.UtIls.Dwm;
+
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
@@ -40,10 +43,8 @@ namespace Genshin_UtIl
 
             // NavIgateFIrstPage();
 
-            if (ConfIg.Instance.AppTh == 2)
-            {
-                WIndowUtIl.SetTItleDark(WindowNative.GetWindowHandle(this), 1);
-            }
+            if (SysUtIl.GetAppTh() == Appth.Dark)
+                DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
 
             DIsplayUtIl.DisplayLoadTask.StartTask();
         }
