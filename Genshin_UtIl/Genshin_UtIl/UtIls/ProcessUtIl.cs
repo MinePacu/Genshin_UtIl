@@ -9,6 +9,7 @@ namespace Genshin_UtIl.UtIls
     public static class ProcessUtIl
     {
         public readonly static BackgroundWork.TaskUtil GenshinProcessCheckerTask = new(new(CheckGenshinProcess));
+        public readonly static BackgroundWork.TaskUtil ClientProcessCheckerTask = new(new(CheckClientProcess));
         public readonly static BackgroundWork.TaskUtil ReshadeProcessCheckerTask = new(new(CheckReshadeProcess));
 
         /// <summary>
@@ -49,7 +50,10 @@ namespace Genshin_UtIl.UtIls
                 {
                 }
 
-                GenshinProcessCheckerTask.StartTask();
+                if (_Index == 0)
+                    GenshinProcessCheckerTask.StartTask();
+                else if (_Index == 1)
+                    ClientProcessCheckerTask.StartTask();
 
                 return proInfo;
             }
@@ -126,16 +130,25 @@ namespace Genshin_UtIl.UtIls
 
         static async Task CheckGenshinProcess()
         {
-            Process[] GenshinProcess = Process.GetProcessesByName("genshinimpact.exe");
+            Process[] GenshinProcess = Process.GetProcessesByName("genshinimpact");
             if (GenshinProcess.Length < 1)
                 GenshinProcessCheckerTask.Cancel.Cancel();
             else
                 await Task.Delay(1000);
         }
 
+        static async Task CheckClientProcess()
+        {
+            Process[] ClientProcess = Process.GetProcessesByName("launcher");
+            if (ClientProcess.Length < 1)
+                ClientProcessCheckerTask.Cancel.Cancel();
+            else
+                await Task.Delay(1000);
+        }
+
         static async Task CheckReshadeProcess()
         {
-            Process[] GenshinProcess = Process.GetProcessesByName("InJect.exe");
+            Process[] GenshinProcess = Process.GetProcessesByName("InJect");
             if (GenshinProcess.Length < 1)
                 ReshadeProcessCheckerTask.Cancel.Cancel();
             else

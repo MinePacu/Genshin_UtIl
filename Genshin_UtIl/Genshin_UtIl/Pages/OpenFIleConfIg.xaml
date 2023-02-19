@@ -14,7 +14,11 @@
         <labs:SettingsCard
             Header="게임"
             Description="창 설정에서 설정된 항목들을 저장하고 게임을 엽니다.">
-
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xe7fc;"/>
+            </labs:SettingsCard.HeaderIcon>
             <Button 
                 Width="190"
                 VerticalAlignment="Center"
@@ -27,7 +31,11 @@
         <labs:SettingsCard
             Header="클라이언트"
             Description="참조 - 클라이언트로 여는 게임은 경계 없는 창모드가 적용되지 않습니다.">
-
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xe967;"/>
+            </labs:SettingsCard.HeaderIcon>
             <Button  
                 Width="190" 
                 VerticalAlignment="Center"
@@ -40,7 +48,11 @@
         <labs:SettingsCard
             Header="ReShade 필터로 게임 열기"
             Description="ReShade 필터 프로그램를 이용하여 게임을 엽니다.">
-
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xf8a5;"/>
+            </labs:SettingsCard.HeaderIcon>
             <Button 
                 Width="190"
                 VerticalAlignment="Center" 
@@ -59,6 +71,11 @@
                     x:Name="GenshinFolderTextBlock"
                     Text="{x:Bind Path=GenshinFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
             </labs:SettingsCard.Description>
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xe8b7;"/>
+            </labs:SettingsCard.HeaderIcon>
             <Button
                 Width="190" 
                 VerticalAlignment="Center" 
@@ -74,6 +91,11 @@
                     x:Name="ReshadeFolderTextBlock"
                     Text="{x:Bind Path=ReshadeFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
             </labs:SettingsCard.Description>
+            <labs:SettingsCard.HeaderIcon>
+                <FontIcon 
+                    FontFamily="Segoe Fluent Icons" 
+                    Glyph="&#xe8b7;"/>
+            </labs:SettingsCard.HeaderIcon>
             <Button
                 Width="190"
                 VerticalAlignment="Center" 

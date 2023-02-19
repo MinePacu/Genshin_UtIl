@@ -131,9 +131,6 @@ namespace Genshin_UtIl.Pages
             try
             {
                 ProcessUtIl.OpenProcess(1, ConfIg.Instance.GenshInFolder.GenshInFolder.Replace("Genshin Impact game", "") + "launcher.exe");
-
-                //if (ProcessUtIl.ReCheckt(1) > 0)
-                    OpenClIentFIle.Content = "다시 시작";
             }
 
             catch (ExcepClass ep)
