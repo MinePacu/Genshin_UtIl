@@ -1,9 +1,15 @@
 ﻿using Genshin_UtIl.UtIls;
+using Genshin_UtIl.UtIls.AppColor.Enum;
+using Genshin_UtIl.UtIls.Dwm;
+
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
 using WinRT.Interop;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -14,14 +20,52 @@ namespace Genshin_UtIl
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FolderConfIg : Window
+    public partial class FolderConfIg : Window, INotifyPropertyChanged
     {
+        public string _GenshinFolderString = "폴더 - ";
+        public string _ReshadeFolderString = "폴다 - ";
+
+        public bool _IsApplyEnabled = false;
+
+        public string GenshinFolderString 
+        {
+            get => _GenshinFolderString;
+            set
+            {
+                _GenshinFolderString = value;
+                NotifyPropertyChanged();
+            }
+        }
+        public string ReshadeFolderString 
+        {
+            get => _ReshadeFolderString;
+            set
+            {
+                _ReshadeFolderString = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public bool IsApplyEnabled
+        {
+            get => _IsApplyEnabled;
+            set
+            {
+                _IsApplyEnabled = value;
+                NotifyPropertyChanged("IsApplyEnabled");
+            }
+        }
+
         public FolderConfIg()
         {
             this.InitializeComponent();
 
-            if (FolderStrIng.Text == "폴더 - ")
-                ApplyConfIg.IsEnabled = false;
+            GenshinFolderTextBlock.DataContext = this;
+            ReshadeFolderTextBlock.DataContext = this;
+            ApplyConfIg.DataContext = this;
+
+            if (GenshinFolderString == "폴더 - ")
+                IsApplyEnabled = false;
 
             if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
@@ -35,6 +79,9 @@ namespace Genshin_UtIl
             appWIndow.Resize(new(ConfIg.Instance.ProgramWIndowWIdth, ConfIg.Instance.ProgramWIndowHeIght));
 
             WIndowUtIl.Hwnd = WindowNative.GetWindowHandle(this);
+
+            if (SysUtIl.GetAppTh() == Appth.Dark)
+                _ = DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
         }
 
         async void FolderConfIgFunc(object sender, RoutedEventArgs e)
@@ -54,10 +101,10 @@ namespace Genshin_UtIl
                 {
                     if (FolderUtIl.CheckFIle(folder.Path, "GenshinImpact.exe") == 1)
                     {
-                        FolderStrIng.Text = "폴더 - " + folder.Path;
+                        GenshinFolderString = "폴더 - " + folder.Path;
 
-                        if (FolderStrIng.Text == "폴더 - " == false)
-                            ApplyConfIg.IsEnabled = true;
+                        if (GenshinFolderString == "폴더 - " == false)
+                            IsApplyEnabled = true;
                     }
 
                     else
@@ -102,7 +149,7 @@ namespace Genshin_UtIl
                 if (folder == null == false)
                 {
                     if (FolderUtIl.CheckFIle(folder.Path, "ReShade64.dll") == 1)
-                        ReshadeFolderStrIng.Text = "폴더 - " + folder.Path;
+                        ReshadeFolderString = "폴더 - " + folder.Path;
 
                     else
                     {
@@ -135,9 +182,9 @@ namespace Genshin_UtIl
             var WInPage = new WIndowPage();
             WInPage.Activate();
 
-            FolderUtIl.GenshInFolder = FolderStrIng.Text.Replace("폴더 - ", "");
+            FolderUtIl.GenshInFolder = GenshinFolderString.Replace("폴더 - ", "");
 
-            ConfIg.Instance.GenshInFolder.GenshInFolder = FolderStrIng.Text.Replace("폴더 - ", "");
+            ConfIg.Instance.GenshInFolder.GenshInFolder = GenshinFolderString.Replace("폴더 - ", "");
             ConfIg.Instance.FIrstOpenProgram = 0;
 
             this.Close();
@@ -149,6 +196,15 @@ namespace Genshin_UtIl
             WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
 
             return AppWindow.GetFromWindowId(wndId);
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler == null == false)
+                handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

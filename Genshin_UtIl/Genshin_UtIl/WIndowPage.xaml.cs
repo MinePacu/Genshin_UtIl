@@ -54,8 +54,30 @@ namespace Genshin_UtIl
             else
                 appwIndow.Move(new(ConfIg.Instance.Programconfig.x, ConfIg.Instance.Programconfig.y));
 
-            if (SysUtIl.GetAppTh() == Appth.Dark)
-                _ = DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
+            if (ConfIg.Instance.AppTh == 0)
+            {
+                WIndowUtIl.Fra.RequestedTheme = ElementTheme.Default;
+                WIndowUtIl.N.RequestedTheme = ElementTheme.Default;
+
+                if (SysUtIl.GetAppTh() == Appth.Dark)
+                    DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
+                else
+                    DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, false);
+            }
+
+            else if (ConfIg.Instance.AppTh == 1)
+            {
+                WIndowUtIl.Fra.RequestedTheme = ElementTheme.Light;
+                WIndowUtIl.N.RequestedTheme = ElementTheme.Light;
+                DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, false);
+            }
+
+            else if (ConfIg.Instance.AppTh == 2)
+            {
+                WIndowUtIl.Fra.RequestedTheme = ElementTheme.Dark;
+                WIndowUtIl.N.RequestedTheme = ElementTheme.Dark;
+                DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
+            }
 
             DIsplayUtIl.DisplayLoadTask.StartTask();
         }

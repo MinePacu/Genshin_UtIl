@@ -5,91 +5,60 @@
     xmlns:local="using:Genshin_UtIl"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:labs="using:CommunityToolkit.Labs.WinUI"
     mc:Ignorable="d">
 
     <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
         <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 7, 0, 9"/>
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 7"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
 
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
+        <labs:SettingsCard
+            Header="원신 폴더">
+            <labs:SettingsCard.Description>
+                <TextBlock
+                    x:Name="GenshinFolderTextBlock"
+                    Text="{x:Bind Path=GenshinFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+            </labs:SettingsCard.Description>
 
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="원신 폴더" FontSize="14"/>
-                    <TextBlock Grid.Row="1" x:Name="FolderStrIng" VerticalAlignment="Center" Text="폴더 - " FontSize="12"/>
-                </Grid>
+            <Button 
+                Width="190"
+                VerticalAlignment="Center"
+                Content="폴더 설정"
+                x:Name="FolderConfIgUI" 
+                Click="FolderConfIgFunc"
+                Style="{StaticResource AccentButtonStyle}" />
+        </labs:SettingsCard>
 
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="폴더 설정" x:Name="FolderConfIgUI" Click="FolderConfIgFunc"
-                        Style="{StaticResource AccentButtonStyle}" />
-            </Grid>
-        </Border>
+        <labs:SettingsCard
+            Header="Reshade 폴더 (선택)">
+            <labs:SettingsCard.Description>
+                <TextBlock
+                    x:Name="ReshadeFolderTextBlock"
+                    Text="{x:Bind Path=ReshadeFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+            </labs:SettingsCard.Description>
 
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 14"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 폴더 (선택)" FontSize="14"/>
-                    <TextBlock Grid.Row="1" x:Name="ReshadeFolderStrIng" VerticalAlignment="Center" Text="폴더 - " FontSize="12"/>
-                </Grid>
-
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="폴더 설정" x:Name="ReShadeFolderConfIg" Click="ReShadeFolderConfIgFunc"
-                        Style="{StaticResource AccentButtonStyle}" />
-            </Grid>
-        </Border>
+            <Button
+                Width="190"
+                VerticalAlignment="Center" 
+                Content="폴더 설정" 
+                x:Name="ReShadeFolderConfIg" 
+                Click="ReShadeFolderConfIgFunc"
+                Style="{StaticResource AccentButtonStyle}" />
+        </labs:SettingsCard>
 
         <TextBlock Text="설정 적용" FontWeight="Bold" Margin="0, 7, 0, 9"/>
 
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 14"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
+        <labs:SettingsCard
+            Header="설정 적용"
+            Description="설정 적용하면 주 설정 창을 엽니다.">
 
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="설정 적용" FontSize="14"/>
-                    <TextBlock Grid.Row="1" VerticalAlignment="Center" Text="설정 적용하면 주 설정 창을 엽니다" FontSize="12"/>
-                </Grid>
-
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="설정 적용" x:Name="ApplyConfIg" Click="ApplyConfIgFunc"/>
-            </Grid>
-        </Border>
+            <Button 
+                Width="190" 
+                VerticalAlignment="Center" 
+                Content="설정 적용" 
+                x:Name="ApplyConfIg" 
+                Click="ApplyConfIgFunc"
+                IsEnabled="{Binding IsApplyEnabled, Mode=TwoWay}"/>
+        </labs:SettingsCard>
 
         <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
             <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>

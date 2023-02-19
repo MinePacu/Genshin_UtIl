@@ -51,21 +51,23 @@ namespace Genshin_UtIl.Pages
                 WIndowUtIl.N.RequestedTheme = ElementTheme.Default;
 
                 if (SysUtIl.GetAppTh() == Appth.Dark)
-                {
                     DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
-                }
+                else
+                    DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, false);
             }
 
             else if (Appc.SelectedIndex == 1)
             {
                 WIndowUtIl.Fra.RequestedTheme = ElementTheme.Light;
                 WIndowUtIl.N.RequestedTheme = ElementTheme.Light;
+                DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, false);
             }
 
             else if (Appc.SelectedIndex == 2)
             {
                 WIndowUtIl.Fra.RequestedTheme = ElementTheme.Dark;
                 WIndowUtIl.N.RequestedTheme = ElementTheme.Dark;
+                DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
             }
 
             ConfIg.Instance.AppTh = Appc.SelectedIndex;

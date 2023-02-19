@@ -5,168 +5,82 @@
     xmlns:local="using:Genshin_UtIl.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:labs="using:CommunityToolkit.Labs.WinUI"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
         <TextBlock Text="게임 열기" FontWeight="Bold" Margin="0, 7, 0, 9"/>
+        <labs:SettingsCard
+            Header="게임"
+            Description="창 설정에서 설정된 항목들을 저장하고 게임을 엽니다.">
 
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 7"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
+            <Button 
+                Width="190"
+                VerticalAlignment="Center"
+                Content="게임 열기"
+                x:Name="OpenFIle"
+                Click="OpenFIleFunc"
+                Style="{StaticResource AccentButtonStyle}"/>
+        </labs:SettingsCard>
 
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
+        <labs:SettingsCard
+            Header="클라이언트"
+            Description="참조 - 클라이언트로 여는 게임은 경계 없는 창모드가 적용되지 않습니다.">
 
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="게임" FontSize="14"/>
-                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" IsTextSelectionEnabled="False">
-                        <Paragraph>
-                            창 설정에서 설정된 항목들을 저장하고 게임을 엽니다
-                        </Paragraph>
-                    </RichTextBlock>
-                </Grid>
+            <Button  
+                Width="190" 
+                VerticalAlignment="Center"
+                Content="클라이언트 열기"
+                x:Name="OpenClIentFIle"
+                Click="OpenClIentFIleFunc"
+                Style="{StaticResource AccentButtonStyle}"/>
+        </labs:SettingsCard>
 
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="게임 열기" x:Name="OpenFIle" Click="OpenFIleFunc"
-                        Style="{StaticResource AccentButtonStyle}"/>
-            </Grid>
-        </Border>
+        <labs:SettingsCard
+            Header="ReShade 필터로 게임 열기"
+            Description="ReShade 필터 프로그램를 이용하여 게임을 엽니다.">
 
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 7"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="클라이언트" FontSize="14"/>
-                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" CanDrag="False" IsTextSelectionEnabled="False">
-                        <Paragraph>
-                            참조 - 클라이언트로 여는 게임은 경계 없는 창모드가 적용되지 않습니다.
-                        </Paragraph>
-                    </RichTextBlock>
-                </Grid>
-
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="클라이언트 열기" x:Name="OpenClIentFIle" Click="OpenClIentFIleFunc"
-                        Style="{StaticResource AccentButtonStyle}"/>
-            </Grid>
-        </Border>
-
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 20"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 필터로 게임 열기" FontSize="14"/>
-                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" CanDrag="False" IsTextSelectionEnabled="False">
-                        <Paragraph>
-                            ReShade 필터 프로그램를 이용하여 게임을 엽니다
-                        </Paragraph>
-                    </RichTextBlock>
-                </Grid>
-
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="게임 열기" x:Name="OpenFIlterFIle" Click="OpenFIlterFIleFunc"
-                        Style="{StaticResource AccentButtonStyle}"/>
-            </Grid>
-        </Border>
-
+            <Button 
+                Width="190"
+                VerticalAlignment="Center" 
+                Content="게임 열기"
+                x:Name="OpenFIlterFIle"
+                Click="OpenFIlterFIleFunc"
+                IsEnabled="{Binding IsOpenReshadeFile, Mode=TwoWay}"
+                Style="{StaticResource AccentButtonStyle}"/>
+        </labs:SettingsCard>
 
         <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 20, 0, 9"/>
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 7"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
+        <labs:SettingsCard
+            Header="원신 폴더">
+            <labs:SettingsCard.Description>
+                <TextBlock
+                    x:Name="GenshinFolderTextBlock"
+                    Text="{x:Bind Path=GenshinFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+            </labs:SettingsCard.Description>
+            <Button
+                Width="190" 
+                VerticalAlignment="Center" 
+                Content="폴더 설정"
+                x:Name="FolderConfIg"
+                Click="FolderConfIgFunc"/>
+        </labs:SettingsCard>
 
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="원신 폴더" FontSize="14"/>
-                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" x:Name="FolderStrIng" CanDrag="False">
-                        <Paragraph>
-                            폴더 -
-                        </Paragraph>
-                    </RichTextBlock>
-                </Grid>
-
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="폴더 설정" x:Name="FolderConfIg" Click="FolderConfIgFunc"
-                        />
-            </Grid>
-        </Border>
-        
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 20"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 폴더" FontSize="14"/>
-                    <RichTextBlock Grid.Row="1" VerticalAlignment="Center" FontSize="12" x:Name="ReshadeFolderStrIng" CanDrag="False" IsTextSelectionEnabled="False">
-                        <Paragraph>
-                            폴더 -
-                        </Paragraph>
-                    </RichTextBlock>
-                </Grid>
-
-                <Button Grid.Column="2" Width="190" HorizontalAlignment="Right" VerticalAlignment="Center" Content="폴더 설정" x:Name="ReShadeFolderConfIg" Click="ReShadeFolderConfIgFunc"
-                       />
-            </Grid>
-        </Border>
+        <labs:SettingsCard
+            Header="ReShade 폴더">
+            <labs:SettingsCard.Description>
+                <TextBlock
+                    x:Name="ReshadeFolderTextBlock"
+                    Text="{x:Bind Path=ReshadeFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+            </labs:SettingsCard.Description>
+            <Button
+                Width="190"
+                VerticalAlignment="Center" 
+                Content="폴더 설정"
+                x:Name="ReShadeFolderConfIg"
+                Click="ReShadeFolderConfIgFunc" />
+        </labs:SettingsCard>
 
         <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 20, 0, 9"/>
 
@@ -237,7 +151,7 @@
                     <HyperlinkButton Grid.Row="1" Margin="-13, -13, 0, -14" VerticalAlignment="Center" FontWeight="Bold" Content="이 기능에 대한 자세한 정보" FontSize="12" x:Name="ReStartReShadeTu" Click="ReStartReShadeTuFunc"/>
                 </Grid>
 
-                <ToggleSwitch Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 0, -47, 0" Toggled="ReStartReShade" x:Name="ReStartReShadeTg"/>
+                <ToggleSwitch Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 0, -47, 0" Toggled="ReStartReShade" x:Name="ReStartReShadeTg" IsEnabled="{Binding IsRestartReshadeEnable, Mode=TwoWay}"/>
             </Grid>
         </Border>
 

@@ -5,6 +5,8 @@ using Microsoft.UI.Xaml.Documents;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
+
 using WinRT.Interop;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -15,15 +17,64 @@ namespace Genshin_UtIl.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class OpenFIleConfIg : Page
+    public partial class OpenFIleConfIg : Page, INotifyPropertyChanged
     {
+        public string _GenshinFolderString = "폴더 - ";
+        public string _ReshadeFolderString = "폴다 - ";
+
+        public bool _IsOpenReshadeFile = false;
+        public bool _IsRestartReshadeEnable = false;
+
+        public string GenshinFolderString
+        {
+            get => _GenshinFolderString;
+            set
+            {
+                _GenshinFolderString = value;
+                NotifyPropertyChanged();
+            }
+        }
+        public string ReshadeFolderString
+        {
+            get => _ReshadeFolderString;
+            set
+            {
+                _ReshadeFolderString = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public bool IsOpenReshadeFile
+        {
+            get => _IsOpenReshadeFile;
+            set
+            {
+                _IsOpenReshadeFile = value;
+                NotifyPropertyChanged("IsOpenReshadeFile");
+            }
+        }
+
+        public bool IsRestartReshadeEnable
+        {
+            get => _IsRestartReshadeEnable;
+            set
+            {
+                _IsRestartReshadeEnable = value;
+                NotifyPropertyChanged("IsRestartReshadeEnable");
+            }
+        }
+
         public OpenFIleConfIg()
         {
             this.InitializeComponent();
 
-            Paragraph para = (Paragraph) FolderStrIng.Blocks[0];
+            GenshinFolderTextBlock.DataContext = this;
+            ReshadeFolderTextBlock.DataContext = this;
 
-            ((Run) para.Inlines[0]).Text = "폴더 - " + ConfIg.Instance.GenshInFolder.GenshInFolder;
+            OpenFIlterFIle.DataContext = this;
+            ReStartReShadeTg.DataContext = this;
+
+            GenshinFolderString = "폴더 - " + ConfIg.Instance.GenshInFolder.GenshInFolder;
 
             if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
@@ -32,16 +83,10 @@ namespace Genshin_UtIl.Pages
                 UtIl_.Visibility = Visibility.Visible;
 
             if (ConfIg.Instance.GenshInFolder.ReshadeFolder == null)
-            {
-                para = (Paragraph)ReshadeFolderStrIng.Blocks[0];
-                ((Run) para.Inlines[0]).Text = "폴더 - 설정되지 않음";
-            }
+                ReshadeFolderString = "폴더 - 설정되지 않음";
 
             else
-            {
-                para = (Paragraph)ReshadeFolderStrIng.Blocks[0];
-                ((Run) para.Inlines[0]).Text = "폴더 - " + ConfIg.Instance.GenshInFolder.ReshadeFolder;
-            }
+                ReshadeFolderString = "폴더 - " + ConfIg.Instance.GenshInFolder.ReshadeFolder;
 
 
 
@@ -61,14 +106,14 @@ namespace Genshin_UtIl.Pages
 
             if (ConfIg.Instance.GenshInFolder.ReshadeFolder == null)
             {
-                OpenFIlterFIle.IsEnabled = false;
-                ReStartReShadeTg.IsEnabled = false;
+                IsOpenReshadeFile = false;
+                IsRestartReshadeEnable = false;
             }
 
             else if (ConfIg.Instance.ReShadeConfIgJ.ReShade == 0)
             {
-                OpenFIlterFIle.IsEnabled = false;
-                ReStartReShadeTg.IsEnabled = false;
+                IsOpenReshadeFile = false;
+                IsRestartReshadeEnable = false;
             }
 
         }
@@ -127,9 +172,7 @@ namespace Genshin_UtIl.Pages
                 {
                     if (FolderUtIl.CheckFIle(folder.Path, "GenshinImpact.exe") == 1)
                     {
-                        Paragraph para = (Paragraph) FolderStrIng.Blocks[0];
-
-                        ((Run) para.Inlines[0]).Text = "폴더 - " + folder.Path;
+                        GenshinFolderString = "폴더 - " + folder.Path;
                         ConfIg.Instance.GenshInFolder.GenshInFolder = folder.Path;
                     }
 
@@ -174,10 +217,11 @@ namespace Genshin_UtIl.Pages
                 {
                     if (FolderUtIl.CheckFIle(folder.Path, "ReShade64.dll") == 1)
                     {
-                        Paragraph para = (Paragraph) ReshadeFolderStrIng.Blocks[0];
-
-                        ((Run) para.Inlines[0]).Text = "폴더 - " + folder.Path;
+                        ReshadeFolderString = "폴더 - " + folder.Path;
                         ConfIg.Instance.GenshInFolder.ReshadeFolder = folder.Path;
+
+                        IsOpenReshadeFile = true;
+                        IsRestartReshadeEnable = true;
                     }
 
                     else
@@ -224,22 +268,13 @@ namespace Genshin_UtIl.Pages
             GC.Collect();
         }
 
-        BackgroundWorker processchecker { get; set; } = new();
-        int InItIalIzed { get; set; } = new();
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        int[] t { get; set; } = new int[3];
-
-        void InItIalIzechecker()
+        protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            if (InItIalIzed == 0)
-            {
-                processchecker.WorkerSupportsCancellation = true;
-                //processchecker.DoWork += ProcessChecker_Worker;
-            }
-
-            else
-                processchecker.RunWorkerAsync();
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler == null == false)
+                handler(this, new PropertyChangedEventArgs(propertyName));
         }
-        
     }
 }
