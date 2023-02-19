@@ -1,6 +1,7 @@
 ﻿using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
+using Genshin_UtIl.UtIls.Exceptions.Registry;
 
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;

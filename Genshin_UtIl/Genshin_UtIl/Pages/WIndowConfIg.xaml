@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:labs="using:CommunityToolkit.Labs.WinUI"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="WindowConfig_Loaded">
 
     <StackPanel  Margin="120, 14, 120, 20" MaxWidth="1260" x:Name="PageStack">
 
@@ -26,7 +27,7 @@
         <labs:SettingsCard
             Header="모니터"
             Description="원신을 실행할 모니터 선택"
-            Margin="0, 0, 0, 7">
+            Margin="0, 0, 0, 15">
             <labs:SettingsCard.HeaderIcon>
                 <FontIcon 
                     FontFamily="Segoe Fluent Icons" 
@@ -47,7 +48,7 @@
         <labs:SettingsExpander
             Header="게임 해상도"
             Description="실행된 원신 게임 창의 가로, 세로 설정"
-            Margin="0, 0, 0, 7">
+            Margin="0, 0, 0, 3">
             <labs:SettingsExpander.HeaderIcon>
                 <FontIcon 
                     FontFamily="Segoe Fluent Icons" 
@@ -77,7 +78,7 @@
 
         <labs:SettingsCard
             Header="창 모드"
-            Margin="0, 0, 0, 7">
+            Margin="0, 0, 0, 3">
             <labs:SettingsCard.HeaderIcon>
                 <FontIcon 
                     VerticalAlignment="Center"
@@ -103,7 +104,7 @@
 
         <labs:SettingsCard
             Header="창 미리보기"
-            Margin="0, 0, 0, 7">
+            Margin="0, 0, 0, 15">
             <Button 
                 Width="190" 
                 VerticalAlignment="Center" 

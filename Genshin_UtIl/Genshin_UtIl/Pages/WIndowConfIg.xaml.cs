@@ -1,5 +1,6 @@
 ﻿using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.Display.Structure;
+using Genshin_UtIl.UtIls.Exceptions.Registry;
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -109,21 +110,6 @@ namespace Genshin_UtIl.Pages
             if (RegIstryUtIl.DIsplay == 0 == false)
                 DIsPlaySelect.SelectedIndex = GetDIsplayN_NS(DIsplay_strIng_LIst_Sorted[RegIstryUtIl.DIsplay]);
 
-
-            if (RegIstryUtIl.InItIalIzed == 0)
-            {
-                try
-                {
-                    RegIstryUtIl.InItIalIzeRegIstry();
-                }
-
-                catch (ExcepClass EC)
-                {
-                    if (ConfIg.Instance.Dev == true)
-                        UtIl_Text.Text += EC.Exp.Source + " - " + EC.Exp.ToString() + "\r\n";
-                }
-            }
-
             WIndowWIdth = int.Parse(WindowHeightString);
             WIndowHeIght = int.Parse(WindowHeightString);
 
@@ -157,6 +143,27 @@ namespace Genshin_UtIl.Pages
                     UtIl_Text.Text += "DIsplay_strIng_LIst_Sorted - " + DIsplay_S + "\r\n";
                 }
             }
+        }
+
+        async void AgreeOpenGameToRegistry()
+        {
+            ContentDialog contentD = new()
+            {
+                XamlRoot = this.XamlRoot,
+                Title = "참조",
+                Content = "원신 게임 파일은 있으나 해상도와 모니터 설정 값을 불러올 수 없습니다.\r\n" +
+                "설정 값을 만들기 위해서는 게임을 한 번 이상 실행해야 합니다.\r\n" +
+                "게임을 실행하려면 게임 실행 버튼을 누르세요.",
+                PrimaryButtonText = "게임 실행",
+                CloseButtonText = "취소",
+                DefaultButton = ContentDialogButton.Primary
+            };
+
+            var contentDR = await contentD.ShowAsync();
+
+            if (contentDR == ContentDialogResult.Primary)
+                ProcessUtIl.OpenProcess(0, GenshinFolderFinder.GenshinPath + "\\GenshInImpact.exe");
+
         }
 
         void WIdthTetChanged(object sender, TextChangedEventArgs e)
@@ -383,6 +390,18 @@ namespace Genshin_UtIl.Pages
             card_.Child = panel;
 
             cardGrId.Children.Add(card_);
+        }
+
+        private void WindowConfig_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                RegIstryUtIl.InItIalIzeRegIstry();
+            }
+            catch (GenshinRegistryNullException)
+            {
+                AgreeOpenGameToRegistry();
+            }
         }
     }
 }

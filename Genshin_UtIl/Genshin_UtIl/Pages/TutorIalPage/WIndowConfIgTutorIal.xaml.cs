@@ -53,18 +53,6 @@ namespace Genshin_UtIl.Pages.TutorIalPage
 
             DIsPlaySelect.ItemsSource = DIsplay_strIng_LIst;
 
-            if (RegIstryUtIl.InItIalIzed == 0)
-            {
-                try
-                {
-                    RegIstryUtIl.InItIalIzeRegIstry();
-                }
-
-                catch (ExcepClass)
-                {
-                }
-            }
-
             WIdthTet.Text = RegIstryUtIl.ScreenWIdth.ToString();
             HeIghtTet.Text = RegIstryUtIl.ScreenHeIght.ToString();
             DIsPlaySelect.SelectedIndex = RegIstryUtIl.DIsplay;

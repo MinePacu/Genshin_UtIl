@@ -1,4 +1,6 @@
-﻿using Microsoft.Win32;
+﻿using Genshin_UtIl.UtIls.Exceptions.Registry;
+
+using Microsoft.Win32;
 using System;
 
 namespace Genshin_UtIl.UtIls
@@ -19,24 +21,22 @@ namespace Genshin_UtIl.UtIls
         /// <summary>
         /// 원신의 해상도와 게임 스크린 레지스트리를 담은 인스턴스를 초기화합니다.
         /// </summary>
-        /// <exception cref="ExcepClass"/>
+        /// <exception cref="GenshinRegistryNullException"/>
         public static void InItIalIzeRegIstry()
         {
-            try
-            {
-                GenshInRegIstry = Registry.CurrentUser.OpenSubKey(GenshInRegIstryStrIng, true);
+            GenshInRegIstry = Registry.CurrentUser.OpenSubKey(GenshInRegIstryStrIng, true);
 
+            if (GenshInRegIstry == null)
+                throw new GenshinRegistryNullException();
+
+            else
+            {
                 ScreenWIdth = int.Parse(GenshInRegIstry.GetValue("Screenmanager Resolution Width_h182942802").ToString());
                 ScreenHeIght = int.Parse(GenshInRegIstry.GetValue("Screenmanager Resolution Height_h2627697771").ToString());
                 DIsplay = int.Parse(GenshInRegIstry.GetValue("UnitySelectMonitor_h17969598").ToString());
                 FullScreen = int.Parse(GenshInRegIstry.GetValue("Screenmanager Is Fullscreen mode_h3981298716").ToString());
 
                 InItIalIzed = 1;
-            }
-
-            catch (Exception ep)
-            {
-                throw new ExcepClass(ep);
             }
         }
 
