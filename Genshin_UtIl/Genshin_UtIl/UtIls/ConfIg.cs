@@ -25,6 +25,8 @@ namespace Genshin_UtIl.UtIls
 
             public ReStartConfIg ReStartConf { get; set; } = new();
 
+            public ProgramConfig Programconfig { get; set; } = new();
+
             public int AppTh { get; set; } = 0;
             public bool Dev { get; set; } = false;
 
@@ -58,6 +60,12 @@ namespace Genshin_UtIl.UtIls
             public int ReStartFunc { get; set; } = 0;
 
             public string ReStartPage { get; set; } = "WIndow";
+        }
+
+        public class ProgramConfig
+        {
+            public int x { get; set; } = 0;
+            public int y { get; set; } = 0;
         }
 
         public static void Load()

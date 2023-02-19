@@ -2,7 +2,6 @@
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
 
-using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -43,8 +42,20 @@ namespace Genshin_UtIl
 
             // NavIgateFIrstPage();
 
+            if (ConfIg.Instance.Programconfig.x == 0 && ConfIg.Instance.Programconfig.y == 0)
+            {
+                DisplayArea displayAr = DisplayArea.GetFromWindowId(UtIls.WinAppSdk.WinUIWindow.GetWindowIdFromWindow(this), DisplayAreaFallback.Nearest);
+                var Center = appwIndow.Position;
+                Center.X = (displayAr.WorkArea.Width - appwIndow.Size.Width) / 2;
+                Center.Y = (displayAr.WorkArea.Height - appwIndow.Size.Height) / 2;
+                appwIndow.Move(Center);
+            }
+
+            else
+                appwIndow.Move(new(ConfIg.Instance.Programconfig.x, ConfIg.Instance.Programconfig.y));
+
             if (SysUtIl.GetAppTh() == Appth.Dark)
-                DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
+                _ = DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
 
             DIsplayUtIl.DisplayLoadTask.StartTask();
         }
@@ -145,6 +156,9 @@ namespace Genshin_UtIl
             {
                 ConfIg.Instance.ProgramWIndowWIdth = appwIndow.Size.Width;
                 ConfIg.Instance.ProgramWIndowHeIght = appwIndow.Size.Height;
+
+                ConfIg.Instance.Programconfig.x = appwIndow.Position.X;
+                ConfIg.Instance.Programconfig.y = appwIndow.Position.Y;
             }
 
             ConfIg.Save();

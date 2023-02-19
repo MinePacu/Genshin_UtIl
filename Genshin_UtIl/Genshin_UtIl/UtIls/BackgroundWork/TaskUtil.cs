@@ -2,8 +2,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-using static Genshin_UtIl.UtIls.BackgroundWork.TaskUtil;
-
 namespace Genshin_UtIl.UtIls.BackgroundWork
 {
     public class TaskUtil
