@@ -6,9 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:labs="using:CommunityToolkit.Labs.WinUI"
+    xmlns:viewmodels="using:Genshin_UtIl.ViewModels"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
     <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
+        <StackPanel.DataContext>
+            <viewmodels:PathViewModel x:Name="PathViewModel" />
+        </StackPanel.DataContext>
         <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 7, 0, 9"/>
 
         <labs:SettingsCard
@@ -16,7 +22,7 @@
             <labs:SettingsCard.Description>
                 <TextBlock
                     x:Name="GenshinFolderTextBlock"
-                    Text="{x:Bind Path=GenshinFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    Text="{x:Bind PathViewModel.GenshinFolderPath, Mode=TwoWay}" />
             </labs:SettingsCard.Description>
 
             <Button 
@@ -24,8 +30,9 @@
                 VerticalAlignment="Center"
                 Content="폴더 설정"
                 x:Name="FolderConfIgUI" 
+                Command="{x:Bind PathViewModel.ChangeGenshinPathDesCommand}"
                 Click="FolderConfIgFunc"
-                Style="{StaticResource AccentButtonStyle}" />
+                Style="{StaticResource AccentButtonStyle}"/>
         </labs:SettingsCard>
 
         <labs:SettingsCard
@@ -33,7 +40,7 @@
             <labs:SettingsCard.Description>
                 <TextBlock
                     x:Name="ReshadeFolderTextBlock"
-                    Text="{x:Bind Path=ReshadeFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    Text="{x:Bind PathViewModel.ReshadeFolderPath, Mode=TwoWay}" />
             </labs:SettingsCard.Description>
 
             <Button
@@ -41,6 +48,7 @@
                 VerticalAlignment="Center" 
                 Content="폴더 설정" 
                 x:Name="ReShadeFolderConfIg" 
+                Command="{x:Bind PathViewModel.ChangeReshadePathDesCommand}"
                 Click="ReShadeFolderConfIgFunc"
                 Style="{StaticResource AccentButtonStyle}" />
         </labs:SettingsCard>
@@ -57,7 +65,7 @@
                 Content="설정 적용" 
                 x:Name="ApplyConfIg" 
                 Click="ApplyConfIgFunc"
-                IsEnabled="{Binding IsApplyEnabled, Mode=TwoWay}"/>
+                IsEnabled="{x:Bind PathViewModel.IsApplyEnabled, Mode=TwoWay}"/>
         </labs:SettingsCard>
 
         <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">

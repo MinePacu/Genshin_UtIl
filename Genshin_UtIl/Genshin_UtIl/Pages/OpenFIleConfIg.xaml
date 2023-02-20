@@ -6,181 +6,118 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:labs="using:CommunityToolkit.Labs.WinUI"
+    xmlns:viewmodel="using:Genshin_UtIl.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
-        <TextBlock Text="게임 열기" FontWeight="Bold" Margin="0, 7, 0, 9"/>
-        <labs:SettingsCard
-            Header="게임"
-            Description="창 설정에서 설정된 항목들을 저장하고 게임을 엽니다.">
-            <labs:SettingsCard.HeaderIcon>
-                <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
-                    Glyph="&#xe7fc;"/>
-            </labs:SettingsCard.HeaderIcon>
-            <Button 
-                Width="190"
-                VerticalAlignment="Center"
-                Content="게임 열기"
-                x:Name="OpenFIle"
-                Click="OpenFIleFunc"
-                Style="{StaticResource AccentButtonStyle}"/>
-        </labs:SettingsCard>
-
-        <labs:SettingsCard
-            Header="클라이언트"
-            Description="참조 - 클라이언트로 여는 게임은 경계 없는 창모드가 적용되지 않습니다.">
-            <labs:SettingsCard.HeaderIcon>
-                <FontIcon 
+    <StackPanel Margin="120, 14, 120, 20" MaxHeight="1260">
+        <StackPanel MaxWidth="1260">
+            <StackPanel.DataContext>
+                <viewmodel:PathViewModel x:Name="PathViewModel" />
+            </StackPanel.DataContext>
+            
+            <TextBlock Text="게임 열기" FontWeight="Bold" Margin="0, 7, 0, 9"/>
+            <labs:SettingsCard
+                Header="게임"
+                Description="창 설정에서 설정된 항목들을 저장하고 게임을 엽니다.">
+                <labs:SettingsCard.HeaderIcon>
+                    <FontIcon 
+                        FontFamily="Segoe Fluent Icons" 
+                        Glyph="&#xe7fc;"/>
+                </labs:SettingsCard.HeaderIcon>
+                <Button 
+                    Width="190"
+                    VerticalAlignment="Center"
+                    Content="게임 열기"
+                    x:Name="OpenFIle"
+                    Click="OpenFIleFunc"
+                    Style="{StaticResource AccentButtonStyle}"/>
+            </labs:SettingsCard>
+    
+            <labs:SettingsCard
+                Header="클라이언트"
+                Description="참조 - 클라이언트로 여는 게임은 경계 없는 창모드가 적용되지 않습니다.">
+                <labs:SettingsCard.HeaderIcon>
+                    <FontIcon 
                     FontFamily="Segoe Fluent Icons" 
                     Glyph="&#xe967;"/>
-            </labs:SettingsCard.HeaderIcon>
-            <Button  
-                Width="190" 
-                VerticalAlignment="Center"
-                Content="클라이언트 열기"
-                x:Name="OpenClIentFIle"
-                Click="OpenClIentFIleFunc"
-                Style="{StaticResource AccentButtonStyle}"/>
-        </labs:SettingsCard>
+                </labs:SettingsCard.HeaderIcon>
+                <Button  
+                    Width="190" 
+                    VerticalAlignment="Center"
+                    Content="클라이언트 열기"
+                    x:Name="OpenClIentFIle"
+                    Click="OpenClIentFIleFunc"
+                    Style="{StaticResource AccentButtonStyle}"/>
+            </labs:SettingsCard>
 
-        <labs:SettingsCard
-            Header="ReShade 필터로 게임 열기"
-            Description="ReShade 필터 프로그램를 이용하여 게임을 엽니다.">
-            <labs:SettingsCard.HeaderIcon>
-                <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
-                    Glyph="&#xf8a5;"/>
-            </labs:SettingsCard.HeaderIcon>
-            <Button 
-                Width="190"
-                VerticalAlignment="Center" 
-                Content="게임 열기"
-                x:Name="OpenFIlterFIle"
-                Click="OpenFIlterFIleFunc"
-                IsEnabled="{Binding IsOpenReshadeFile, Mode=TwoWay}"
-                Style="{StaticResource AccentButtonStyle}"/>
-        </labs:SettingsCard>
+            <labs:SettingsCard
+                Header="ReShade 필터로 게임 열기"
+                Description="ReShade 필터 프로그램를 이용하여 게임을 엽니다.">
+                <labs:SettingsCard.HeaderIcon>
+                    <FontIcon 
+                        FontFamily="Segoe Fluent Icons" 
+                        Glyph="&#xf8a5;"/>
+                </labs:SettingsCard.HeaderIcon>
+                <Button 
+                    Width="190"
+                    VerticalAlignment="Center" 
+                    Content="게임 열기"
+                    x:Name="OpenFIlterFIle"
+                    Click="OpenFIlterFIleFunc"
+                    IsEnabled="{Binding IsOpenReshadeFile, Mode=TwoWay}"
+                    Style="{StaticResource AccentButtonStyle}"/>
+            </labs:SettingsCard>
 
-        <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 20, 0, 9"/>
-        <labs:SettingsCard
-            Header="원신 폴더">
-            <labs:SettingsCard.Description>
-                <TextBlock
-                    x:Name="GenshinFolderTextBlock"
-                    Text="{x:Bind Path=GenshinFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
-            </labs:SettingsCard.Description>
-            <labs:SettingsCard.HeaderIcon>
-                <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
-                    Glyph="&#xe8b7;"/>
-            </labs:SettingsCard.HeaderIcon>
-            <Button
-                Width="190" 
-                VerticalAlignment="Center" 
-                Content="폴더 설정"
-                x:Name="FolderConfIg"
-                Click="FolderConfIgFunc"/>
-        </labs:SettingsCard>
+            <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 20, 0, 9"/>
+            <labs:SettingsCard
+                Header="원신 폴더">
+                <labs:SettingsCard.Description>
+                    <TextBlock
+                        x:Name="GenshinFolderTextBlock"
+                        Text="{x:Bind PathViewModel.GenshinFolderPath, Mode=TwoWay}"/>
+                </labs:SettingsCard.Description>
+                <labs:SettingsCard.HeaderIcon>
+                    <FontIcon 
+                        FontFamily="Segoe Fluent Icons" 
+                        Glyph="&#xe8b7;"/>
+                </labs:SettingsCard.HeaderIcon>
+                <Button
+                    Width="190" 
+                    VerticalAlignment="Center" 
+                    Content="폴더 설정"
+                    x:Name="FolderConfIg"
+                    Command="{x:Bind PathViewModel.ChangeGenshinPathDesCommand}"
+                    Click="FolderConfIgFunc"/>
+            </labs:SettingsCard>
 
-        <labs:SettingsCard
+            <labs:SettingsCard
             Header="ReShade 폴더">
-            <labs:SettingsCard.Description>
-                <TextBlock
-                    x:Name="ReshadeFolderTextBlock"
-                    Text="{x:Bind Path=ReshadeFolderString, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
-            </labs:SettingsCard.Description>
-            <labs:SettingsCard.HeaderIcon>
-                <FontIcon 
+                <labs:SettingsCard.Description>
+                    <TextBlock
+                        x:Name="ReshadeFolderTextBlock"
+                        Text="{x:Bind PathViewModel.ReshadeFolderPath, Mode=TwoWay}"/>
+                </labs:SettingsCard.Description>
+                <labs:SettingsCard.HeaderIcon>
+                    <FontIcon 
                     FontFamily="Segoe Fluent Icons" 
                     Glyph="&#xe8b7;"/>
-            </labs:SettingsCard.HeaderIcon>
-            <Button
-                Width="190"
-                VerticalAlignment="Center" 
-                Content="폴더 설정"
-                x:Name="ReShadeFolderConfIg"
-                Click="ReShadeFolderConfIgFunc" />
-        </labs:SettingsCard>
-
-        <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 20, 0, 9"/>
-
-        <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="0, 0, 0, 9" >
-
-            <Expander.Header>
-                <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="30"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition Width="140"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
-
-                    <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
-                        <SymbolIcon Symbol="Setting" Width="30"/>
-                    </Grid>
-
-                    <Grid Grid.Column="1" Margin="13, 0, 0, 0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="10"></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition Height="10"></RowDefinition>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="1" Text="추가 인수" FontSize="14"/>
-                        <RichTextBlock Grid.Row="2" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" CanDrag="False" IsTextSelectionEnabled="False">
-                            <Paragraph>
-                                게임을 실행하면서 추가할 인수 설정
-                            </Paragraph>
-                        </RichTextBlock>
-                    </Grid>
-                </Grid>
-            </Expander.Header>
-
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="49"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="ExtraFCon" Height="130"
-                         PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
-            </Grid>
-
-        </Expander>
-        
-        <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                Margin="0, 0, 0, 9"
-                                CornerRadius="7"
-                                BorderThickness="1"
-                                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-            <Grid Margin="14, 14, 14, 14">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="46"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 자동 다시 시작" FontSize="14"/>
-                    <HyperlinkButton Grid.Row="1" Margin="-13, -13, 0, -14" VerticalAlignment="Center" FontWeight="Bold" Content="이 기능에 대한 자세한 정보" FontSize="12" x:Name="ReStartReShadeTu" Click="ReStartReShadeTuFunc"/>
-                </Grid>
-
-                <ToggleSwitch Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 0, -47, 0" Toggled="ReStartReShade" x:Name="ReStartReShadeTg" IsEnabled="{Binding IsRestartReshadeEnable, Mode=TwoWay}"/>
-            </Grid>
-        </Border>
-
-        <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
-            <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>
-            <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsExpanded="True" Margin="0, 0, 0, 14" >
-
+                </labs:SettingsCard.HeaderIcon>
+                <Button
+                    Width="190"
+                    VerticalAlignment="Center" 
+                    Content="폴더 설정"
+                    x:Name="ReShadeFolderConfIg"
+                    Command="{x:Bind PathViewModel.ChangeReshadePathDesCommand}"
+                    Click="ReShadeFolderConfIgFunc" />
+            </labs:SettingsCard>
+        </StackPanel>
+        <StackPanel MaxWidth="1260">
+            <StackPanel.DataContext>
+                <viewmodel:ReshadeViewModel x:Name="Reshadeviewmodel" />
+            </StackPanel.DataContext>
+            <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 20, 0, 9"/>
+            <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="0, 0, 0, 9" >
                 <Expander.Header>
                     <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
                         <Grid.ColumnDefinitions>
@@ -188,7 +125,6 @@
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition Width="140"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-
 
                         <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
                             <SymbolIcon Symbol="Setting" Width="30"/>
@@ -202,9 +138,12 @@
                                 <RowDefinition Height="10"></RowDefinition>
                             </Grid.RowDefinitions>
 
-                            <TextBlock Grid.Row="1" Text="개발자용 유틸" FontSize="14"/>
-                            <TextBlock Grid.Row="2" Text="개발자가 개발하면서 사용할 수 있는 유틸" FontSize="12" 
-                               Foreground="{ThemeResource TextFillColorSecondary}"/>
+                            <TextBlock Grid.Row="1" Text="추가 인수" FontSize="14"/>
+                            <RichTextBlock Grid.Row="2" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" CanDrag="False" IsTextSelectionEnabled="False">
+                                <Paragraph>
+                                    게임을 실행하면서 추가할 인수 설정
+                                </Paragraph>
+                            </RichTextBlock>
                         </Grid>
                     </Grid>
                 </Expander.Header>
@@ -215,10 +154,80 @@
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="UtIl_Text"/>
+                    <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="ExtraFCon" Height="130"
+                             PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
                 </Grid>
-
             </Expander>
+            
+            <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                                    Margin="0, 0, 0, 9"
+                                    CornerRadius="7"
+                                    BorderThickness="1"
+                                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                <Grid Margin="14, 14, 14, 14">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="46"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 자동 다시 시작" FontSize="14"/>
+                        <HyperlinkButton Grid.Row="1" Margin="-13, -13, 0, -14" VerticalAlignment="Center" FontWeight="Bold" Content="이 기능에 대한 자세한 정보" FontSize="12" x:Name="ReStartReShadeTu" Click="ReStartReShadeTuFunc"/>
+                    </Grid>
+
+                    <ToggleSwitch Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 0, -47, 0" Toggled="ReStartReShade" x:Name="ReStartReShadeTg" IsEnabled="{x:Bind Reshadeviewmodel.IsRestartReshadeEnabled, Mode=TwoWay}"/>
+                </Grid>
+            </Border>
+
+            <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
+                <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>
+                <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsExpanded="True" Margin="0, 0, 0, 14" >
+
+                    <Expander.Header>
+                        <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition Width="140"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+
+                            <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
+                                <SymbolIcon Symbol="Setting" Width="30"/>
+                            </Grid>
+
+                            <Grid Grid.Column="1" Margin="13, 0, 0, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="10"></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition Height="10"></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Grid.Row="1" Text="개발자용 유틸" FontSize="14"/>
+                                <TextBlock Grid.Row="2" Text="개발자가 개발하면서 사용할 수 있는 유틸" FontSize="12" 
+                                   Foreground="{ThemeResource TextFillColorSecondary}"/>
+                            </Grid>
+                        </Grid>
+                    </Expander.Header>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="49"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="UtIl_Text"/>
+                    </Grid>
+
+                </Expander>
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </Page>

@@ -1,11 +1,13 @@
 ﻿using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
+using Genshin_UtIl.XamlRoot;
 
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -20,7 +22,7 @@ namespace Genshin_UtIl
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public partial class FolderConfIg : Window, INotifyPropertyChanged
+    public partial class FolderConfIg : Window, IXamlRoot
     {
         public string _GenshinFolderString = "폴더 - ";
         public string _ReshadeFolderString = "폴다 - ";
@@ -60,9 +62,9 @@ namespace Genshin_UtIl
         {
             this.InitializeComponent();
 
-            GenshinFolderTextBlock.DataContext = this;
-            ReshadeFolderTextBlock.DataContext = this;
-            ApplyConfIg.DataContext = this;
+            //GenshinFolderTextBlock.DataContext = this;
+            //ReshadeFolderTextBlock.DataContext = this;
+            //ApplyConfIg.DataContext = this;
 
             if (GenshinFolderString == "폴더 - ")
                 IsApplyEnabled = false;
@@ -84,97 +86,14 @@ namespace Genshin_UtIl
                 _ = DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
         }
 
-        async void FolderConfIgFunc(object sender, RoutedEventArgs e)
+        void FolderConfIgFunc(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                var hwnd = WIndowUtIl.Hwnd;
-
-                var FIlePIcker = new Windows.Storage.Pickers.FolderPicker();
-                FIlePIcker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
-
-                InitializeWithWindow.Initialize(FIlePIcker, hwnd);
-
-                Windows.Storage.StorageFolder folder = await FIlePIcker.PickSingleFolderAsync();
-
-                if (folder == null == false)
-                {
-                    if (FolderUtIl.CheckFIle(folder.Path, "GenshinImpact.exe") == 1)
-                    {
-                        GenshinFolderString = "폴더 - " + folder.Path;
-
-                        if (GenshinFolderString == "폴더 - " == false)
-                            IsApplyEnabled = true;
-                    }
-
-                    else
-                    {
-                        ContentDialog nofIleDIalog = new()
-                        {
-                            XamlRoot = this.Content.XamlRoot,
-                            Title = "게임 파일이 없음",
-                            Content = "게임 파일이 있는 폴더를 다시 지정하세요.",
-                            CloseButtonText = "확인",
-                            DefaultButton = ContentDialogButton.Close
-                        };
-
-                        ContentDialogResult DIalogresult = await nofIleDIalog.ShowAsync();
-                    }
-                    return;
-                }
-
-                else if (folder == null)
-                    return;
-            }
-
-            catch (Exception ep)
-            {
-                UtIl_Text.Text += ep.ToString() + "\r\n";
-            }
+            IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
         }
 
-        async void ReShadeFolderConfIgFunc(object sender, RoutedEventArgs e)
+        void ReShadeFolderConfIgFunc(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                var hwnd = WIndowUtIl.Hwnd;
-
-                var FIlePIcker = new Windows.Storage.Pickers.FolderPicker();
-                FIlePIcker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
-
-                InitializeWithWindow.Initialize(FIlePIcker, hwnd);
-
-                Windows.Storage.StorageFolder folder = await FIlePIcker.PickSingleFolderAsync();
-
-                if (folder == null == false)
-                {
-                    if (FolderUtIl.CheckFIle(folder.Path, "ReShade64.dll") == 1)
-                        ReshadeFolderString = "폴더 - " + folder.Path;
-
-                    else
-                    {
-                        ContentDialog nofIleDIalog = new()
-                        {
-                            XamlRoot = this.Content.XamlRoot,
-                            Title = "Reshade.dll 파일이 없음",
-                            Content = "Reshade.dll 파일이 있는 폴더를 다시 지정하세요.",
-                            CloseButtonText = "확인",
-                            DefaultButton = ContentDialogButton.Close
-                        };
-
-                        ContentDialogResult DIalogresult = await nofIleDIalog.ShowAsync();
-                    }
-                    return;
-                }
-
-                else if (folder == null)
-                    return;
-            }
-
-            catch (Exception ep)
-            {
-                UtIl_Text.Text += ep.ToString() + "\r\n";
-            }
+            IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
         }
 
         void ApplyConfIgFunc(object sender, RoutedEventArgs e)
