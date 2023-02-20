@@ -77,7 +77,7 @@ namespace Genshin_UtIl
             }
 
             if (ConfIg.Instance.FIrstOpenProgram == 1)
-                m_window = new FolderConfIg();
+                m_window = new InitializeProgram();
 
             else
                 m_window = new WIndowPage();

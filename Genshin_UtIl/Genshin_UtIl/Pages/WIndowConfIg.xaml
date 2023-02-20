@@ -6,11 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:labs="using:CommunityToolkit.Labs.WinUI"
+    xmlns:viewmodel="using:Genshin_UtIl.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="WindowConfig_Loaded">
 
     <StackPanel  Margin="120, 14, 120, 20" MaxWidth="1260" x:Name="PageStack">
+        <StackPanel.DataContext>
+            <viewmodel:WindowViewModel x:Name="WindowViewmodel" />
+        </StackPanel.DataContext>
 
         <Grid ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0, 14, 0, 16" HorizontalAlignment="Center" x:Name="DIsplayLIstUI">
             <Grid.ColumnDefinitions>
@@ -56,22 +60,20 @@
             </labs:SettingsExpander.HeaderIcon>
 
             <TextBlock
-                Text="{x:Bind WindowResolutionString, Mode=TwoWay}" />
+                Text="{x:Bind WindowViewmodel.Resolution, Mode=TwoWay}" />
             
             <labs:SettingsExpander.Items>
                 <labs:SettingsCard
                     Header="가로">
                     <TextBox 
-                        Text="{x:Bind WindowWidthString, Mode=TwoWay}"
-                        Width="150"
-                        TextChanged="WIdthTetChanged"/>
+                        Text="{x:Bind WindowViewmodel.Width, Mode=TwoWay}"
+                        Width="150"/>
                 </labs:SettingsCard>
                 <labs:SettingsCard
                     Header="세로">
                     <TextBox 
-                        Text="{x:Bind WindowHeightString, Mode=TwoWay}"
-                        Width="150"
-                        TextChanged="HeIghtTetChanged"/>
+                        Text="{x:Bind WindowViewmodel.Height, Mode=TwoWay}"
+                        Width="150"/>
                 </labs:SettingsCard>
             </labs:SettingsExpander.Items>
         </labs:SettingsExpander>
@@ -91,8 +93,7 @@
                 VerticalAlignment="Center"
                 Margin="0, 0, 6, 0" 
                 x:Name="WIndowmode" 
-                SelectionChanged="WIndowmodeSelectIonChanged"
-                SelectedIndex="{x:Bind Windowmode, Mode=TwoWay}">
+                SelectedIndex="{x:Bind WindowViewmodel.WindowMode, Mode=TwoWay}">
                 <ComboBoxItem 
                     Content="경계 없는 창"/>
                 <ComboBoxItem 
@@ -109,8 +110,8 @@
                 Width="190" 
                 VerticalAlignment="Center" 
                 Content="창 미리보기"
-                x:Name="PreWIndow" 
-                Click="WIndowPrevIew"/>
+                x:Name="PreWIndow"
+                Command="{x:Bind WindowViewmodel.OpenWindowCommand}"/>
         </labs:SettingsCard>
 
         <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 20, 0, 9"/>
@@ -120,7 +121,7 @@
             Description="게임 해상도를 모니터 해상도보다 크게 설정하지 못하도록 제한합니다.">
             <ToggleSwitch 
                 VerticalAlignment="Center"
-                Toggled="LImItWIndowSIze" 
+                IsOn="{x:Bind WindowViewmodel.IsLimitWindowWidthandHeight, Mode=TwoWay}"
                 x:Name="LImItWIndow"/>
         </labs:SettingsCard>
 

@@ -1,11 +1,14 @@
 ﻿using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.Display.Structure;
 using Genshin_UtIl.UtIls.Exceptions.Registry;
+using Genshin_UtIl.XamlRoot;
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using System;
+using System.Diagnostics;
+
 using static Genshin_UtIl.UtIls.DIsplayUtIl;
 using static Genshin_UtIl.UtIls.WIndowUtIl;
 
@@ -17,45 +20,9 @@ namespace Genshin_UtIl.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class WIndowConfIg : Page
+    public sealed partial class WIndowConfIg : Page, IRegistryXamlRoot
     {
         static int DIsplaySorted = 0;
-
-        public string WindowWidthString 
-        {
-            get => RegIstryUtIl.ScreenWIdth.ToString();
-            set { }
-        }
-
-        public string WindowHeightString 
-        {
-            get => RegIstryUtIl.ScreenHeIght.ToString();
-            set { }
-        }
-
-        public string WindowResolutionString
-        {
-            get => WindowWidthString + " x " + WindowHeightString;
-            set { }
-        }
-
-        public bool IsLimitGameResolution
-        {
-            get => ConfIg.Instance.WInConfIg.LImItWIndowSIze;
-            set
-            {
-                ConfIg.Instance.WInConfIg.LImItWIndowSIze = value;
-            }
-        }
-
-        public int Windowmode
-        {
-            get => ConfIg.Instance.WInConfIg.WIndowmode;
-            set
-            {
-                ConfIg.Instance.WInConfIg.WIndowmode = value;
-            }
-        }
 
         public WIndowConfIg()
         {
@@ -110,15 +77,6 @@ namespace Genshin_UtIl.Pages
             if (RegIstryUtIl.DIsplay == 0 == false)
                 DIsPlaySelect.SelectedIndex = GetDIsplayN_NS(DIsplay_strIng_LIst_Sorted[RegIstryUtIl.DIsplay]);
 
-            WIndowWIdth = int.Parse(WindowHeightString);
-            WIndowHeIght = int.Parse(WindowHeightString);
-
-            if (RegIstryUtIl.FullScreen == 1)
-                Windowmode = 1;
-
-            else
-                Windowmode = ConfIg.Instance.WInConfIg.WIndowmode;
-
             if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
 
@@ -145,136 +103,9 @@ namespace Genshin_UtIl.Pages
             }
         }
 
-        async void AgreeOpenGameToRegistry()
-        {
-            ContentDialog contentD = new()
-            {
-                XamlRoot = this.XamlRoot,
-                Title = "참조",
-                Content = "원신 게임 파일은 있으나 해상도와 모니터 설정 값을 불러올 수 없습니다.\r\n" +
-                "설정 값을 만들기 위해서는 게임을 한 번 이상 실행해야 합니다.\r\n" +
-                "게임을 실행하려면 게임 실행 버튼을 누르세요.",
-                PrimaryButtonText = "게임 실행",
-                CloseButtonText = "취소",
-                DefaultButton = ContentDialogButton.Primary
-            };
-
-            var contentDR = await contentD.ShowAsync();
-
-            if (contentDR == ContentDialogResult.Primary)
-                ProcessUtIl.OpenProcess(0, GenshinFolderFinder.GenshinPath + "\\GenshInImpact.exe");
-
-        }
-
-        void WIdthTetChanged(object sender, TextChangedEventArgs e)
-        {
-            var WIdthTet = ((TextBox) sender).Text;
-
-            if (int.TryParse(WIdthTet, out int WInWIdth))
-            {
-                if (IsLimitGameResolution == true)
-                {
-                    if (WInWIdth < MAXWIndowWIdth)
-                        WIndowWIdth = WInWIdth;
-
-                    else
-                    {
-                        WIndowWIdth = RegIstryUtIl.ScreenWIdth;
-                        WindowResolutionString = WIndowWIdth + " x " + WIndowHeIght;
-
-                        ((TextBox) sender).Text = WIndowWIdth.ToString();
-
-                        return;
-                    }
-
-                    RefreshResolutIonTet();
-                }
-
-                else
-                    WIndowWIdth = WInWIdth;
-            }
-        }
-
-        void HeIghtTetChanged(object sender, TextChangedEventArgs e)
-        {
-            var HeIghtTet = ((TextBox) sender).Text;
-
-            if (int.TryParse(HeIghtTet, out int WInHeIght))
-            {
-                if (IsLimitGameResolution == true)
-                {
-                    if (WInHeIght < MAXWIndowHeIght)
-                        WIndowHeIght = WInHeIght;
-
-                    else
-                    {
-                        WIndowHeIght = RegIstryUtIl.ScreenHeIght;
-                        WindowResolutionString = WIndowWIdth + " x " + WIndowHeIght;
-
-                        ((TextBox) sender).Text = WIndowHeIght.ToString();
-
-                        return;
-                    }
-
-                    RefreshResolutIonTet();
-                }
-
-                else
-                    WIndowHeIght = WInHeIght;
-            }
-        }
-        
-        void WIndowmodeSelectIonChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var WInmode = (ComboBox) sender;
-
-            if (WInmode.SelectedIndex == 0)
-            {
-                PreWIndow.IsEnabled = false;
-                LImItWIndow.IsEnabled = false;
-                LImItWIndow.IsOn = false;
-
-                ConfIg.Instance.WInConfIg.LImItWIndowSIze = false;
-            }
-
-            else
-            {
-                PreWIndow.IsEnabled = true;
-                LImItWIndow.IsEnabled = true;
-            }
-
-            ConfIg.Instance.WInConfIg.WIndowmode = WInmode.SelectedIndex;
-        }
-
         void DIsplaySelectIonChanged(object sender, SelectionChangedEventArgs e)
         {
             ChangeMINMAXWIndowSIze(((ComboBox) sender).SelectedIndex);
-        }
-
-        void WIndowPrevIew(object sender, RoutedEventArgs e)
-        {
-            if (WIndowmode.SelectedIndex == 2)
-            {
-                var SampleWIn = new SampleWIndow(WIndowWIdth, WIndowHeIght, 1);
-                SampleWIn.Activate();
-            }
-
-            else
-            {
-                var SampleWIn = new SampleWIndow(WIndowWIdth, WIndowHeIght, 0);
-                SampleWIn.Activate();
-            }
-        }
-
-        void LImItWIndowSIze(object sender, RoutedEventArgs e)
-        {
-            var Toggle = (ToggleSwitch) sender;
-
-            if (Toggle.IsOn)
-                IsLimitGameResolution = true;
-
-            else
-                IsLimitGameResolution = false;
         }
 
         void ApplyConfIgFunc(object sender, RoutedEventArgs e)
@@ -304,11 +135,6 @@ namespace Genshin_UtIl.Pages
                 if (ConfIg.Instance.Dev == true)
                     UtIl_Text.Text += EC.Exp.Source + " - " + EC.Exp.ToString() + "\r\n";
             }
-        }
-
-        void RefreshResolutIonTet()
-        {
-            WindowResolutionString = WindowWidthString + " x " + WindowHeightString;
         }
 
         void AddDIsplayCard(string DIsplay_TItle, string DIsplay_Sub_StrIng, int DIsplayWIdth, int DIsplayHeIght)
@@ -394,14 +220,7 @@ namespace Genshin_UtIl.Pages
 
         private void WindowConfig_Loaded(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                RegIstryUtIl.InItIalIzeRegIstry();
-            }
-            catch (GenshinRegistryNullException)
-            {
-                AgreeOpenGameToRegistry();
-            }
+            IRegistryXamlRoot.WindowConfIgXamlRoot = XamlRoot;
         }
     }
 }

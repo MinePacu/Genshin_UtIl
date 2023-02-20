@@ -1,4 +1,5 @@
-﻿using Genshin_UtIl.UtIls.Exceptions.Registry;
+﻿using Genshin_UtIl.UtIls.Display.Structure;
+using Genshin_UtIl.UtIls.Exceptions.Registry;
 
 using Microsoft.Win32;
 using System;
@@ -33,7 +34,9 @@ namespace Genshin_UtIl.UtIls
             {
                 ScreenWIdth = int.Parse(GenshInRegIstry.GetValue("Screenmanager Resolution Width_h182942802").ToString());
                 ScreenHeIght = int.Parse(GenshInRegIstry.GetValue("Screenmanager Resolution Height_h2627697771").ToString());
-                DIsplay = int.Parse(GenshInRegIstry.GetValue("UnitySelectMonitor_h17969598").ToString());
+
+                if (DIsplayUtIl.DIsplayLIst.Count > 1)
+                    DIsplay = int.Parse(GenshInRegIstry.GetValue("UnitySelectMonitor_h17969598").ToString());                           // 처음 원신을 열었을 때 싱글 모니터인 경우 이 값은 생성되지 않음
                 FullScreen = int.Parse(GenshInRegIstry.GetValue("Screenmanager Is Fullscreen mode_h3981298716").ToString());
 
                 InItIalIzed = 1;
@@ -52,8 +55,58 @@ namespace Genshin_UtIl.UtIls
                 GenshInRegIstry.SetValue("Screenmanager Resolution Height_h2627697771", _ScreenHeIght);
                 GenshInRegIstry.SetValue("UnitySelectMonitor_h17969598", _DIsplay);
                 GenshInRegIstry.SetValue("Screenmanager Is Fullscreen mode_h3981298716", _FullScreen);
+            }
 
-                InItIalIzed = 0;
+            catch (Exception ep)
+            {
+                throw new ExcepClass(ep);
+            }
+        }
+
+        public static void ApplyWidth(int _ScreenWidth)
+        {
+            try
+            {
+                GenshInRegIstry.SetValue("Screenmanager Resolution Width_h182942802", _ScreenWidth);
+            }
+
+            catch (Exception ep)
+            {
+                throw new ExcepClass(ep);
+            }
+        }
+
+        public static void ApplyHeight(int _ScreenHeight)
+        {
+            try
+            {
+                GenshInRegIstry.SetValue("Screenmanager Resolution Height_h2627697771", _ScreenHeight);
+            }
+
+            catch (Exception ep)
+            {
+                throw new ExcepClass(ep);
+            }
+        }
+
+        public static void ApplyDisplay(int _ScreenDisplay)
+        {
+            try
+            {
+                GenshInRegIstry.SetValue("UnitySelectMonitor_h17969598", _ScreenDisplay);
+            }
+
+            catch (Exception ep)
+            {
+                throw new ExcepClass(ep);
+            }
+        }
+
+        public static void ApplyFullScreen(int _FullScreen)
+        {
+            try
+            {
+                GenshInRegIstry.SetValue("Screenmanager Is Fullscreen mode_h3981298716", _FullScreen);
             }
 
             catch (Exception ep)
