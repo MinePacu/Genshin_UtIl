@@ -8,6 +8,7 @@ using Microsoft.UI.Xaml.Controls;
 using WinRT.Interop;
 using CommunityToolkit.Mvvm.Input;
 using Genshin_UtIl.interfaces.XamlRoot;
+using Genshin_UtIl.interfaces.Window;
 
 namespace Genshin_UtIl.ViewModels
 {
@@ -40,11 +41,13 @@ namespace Genshin_UtIl.ViewModels
 
         public ICommand ChangeGenshinPathDesCommand { get; }
         public ICommand ChangeReshadePathDesCommand { get; }
+        public ICommand ApplyConfIgCommand { get; }
 
         public PathViewModel()
         {
             ChangeGenshinPathDesCommand = new RelayCommand(FolderConfIgFunc);
             ChangeReshadePathDesCommand = new RelayCommand(ReShadeFolderConfIgFunc);
+            ApplyConfIgCommand = new RelayCommand(ApplyConfig);
 
             if (ConfIg.Instance.GenshInFolder.GenshInFolder == null == false)
                 GenshinFolderPath = "폴더 - " + ConfIg.Instance.GenshInFolder.GenshInFolder;
@@ -154,5 +157,12 @@ namespace Genshin_UtIl.ViewModels
             }
         }
 
+        async void ApplyConfig()
+        {
+            ConfIg.Instance.GenshInFolder.GenshInFolder = GenshinFolderPath;
+            ConfIg.Instance.GenshInFolder.ReshadeFolder = ReshadeFolderPath;
+
+            IFolderWindow.FolderWindow.Close();
+        }
     }
 }

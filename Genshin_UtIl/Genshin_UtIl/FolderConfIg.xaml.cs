@@ -1,4 +1,5 @@
-﻿using Genshin_UtIl.interfaces.XamlRoot;
+﻿using Genshin_UtIl.interfaces.Window;
+using Genshin_UtIl.interfaces.XamlRoot;
 using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
@@ -23,7 +24,7 @@ namespace Genshin_UtIl
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public partial class FolderConfIg : Window, IXamlRoot
+    public partial class FolderConfIg : Window, IXamlRoot, IFolderWindow
     {
         public FolderConfIg()
         {
@@ -38,6 +39,8 @@ namespace Genshin_UtIl
 
             if (SysUtIl.GetAppTh() == Appth.Dark)
                 _ = DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
+
+            IFolderWindow.FolderWindow = this;
         }
 
         void FolderConfIgFunc(object sender, RoutedEventArgs e)

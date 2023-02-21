@@ -64,7 +64,7 @@
                 VerticalAlignment="Center" 
                 Content="설정 적용" 
                 x:Name="ApplyConfIg" 
-                Click="ApplyConfIgFunc"
+                Command="{x:Bind PathViewModel.ApplyConfIgCommand}"
                 IsEnabled="{x:Bind PathViewModel.IsApplyEnabled, Mode=TwoWay}"/>
         </labs:SettingsCard>
 
