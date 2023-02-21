@@ -44,13 +44,13 @@ namespace Genshin_UtIl
                 defaultPresenter.IsMinimizable = false;
                 defaultPresenter.IsMaximizable = false;
             }
-        }
 
-        void CloseWIndow(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+            DisplayArea displayAr = DisplayArea.GetFromWindowId(UtIls.WinAppSdk.WinUIWindow.GetWindowIdFromWindow(this), DisplayAreaFallback.Nearest);
+            var Center = appWIndow.Position;
+            Center.X = (displayAr.WorkArea.Width - appWIndow.Size.Width) / 2;
+            Center.Y = (displayAr.WorkArea.Height - appWIndow.Size.Height) / 2;
+            appWIndow.Move(Center);
         }
-
         AppWindow GetAppWIndowForCurrentWIndow()
         {
             IntPtr hWnd = WindowNative.GetWindowHandle(this);
