@@ -6,11 +6,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:labs="using:CommunityToolkit.Labs.WinUI"
+    xmlns:viewmodel="using:Genshin_UtIl.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
-
+        <StackPanel.DataContext>
+            <viewmodel:ConfigViewModel x:Name="ConfigViewmodel" />
+        </StackPanel.DataContext>
         <TextBlock Text="모양" FontWeight="Bold" Margin="0, 0, 0, 7"/>
 
         <labs:SettingsCard
@@ -19,9 +22,9 @@
             <ComboBox 
                 VerticalAlignment="Center"
                 Width="190" 
+                SelectedIndex="{x:Bind ConfigViewmodel.AppColor, Mode=TwoWay}"
                 SelectionChanged="AppThChanged" 
-                x:Name="AppTh_"
-                SelectedIndex="{x:Bind AppColor, Mode=TwoWay}">
+                x:Name="AppTh_">
                 <ComboBoxItem 
                     Content="시스템 설정"/>
                 <ComboBoxItem 
@@ -39,9 +42,8 @@
             <ComboBox 
                 VerticalAlignment="Center"
                 Width="190"
-                SelectionChanged="PageConChanged" 
                 x:Name="PageCon_"
-                SelectedIndex="{x:Bind FirstPage, Mode=TwoWay}">
+                SelectedIndex="{x:Bind ConfigViewmodel.FirstPage, Mode=TwoWay}">
                 <ComboBoxItem 
                     Content="게임 창"/>
                 <ComboBoxItem 
@@ -59,8 +61,7 @@
             <ToggleSwitch 
                 VerticalAlignment="Center"
                 x:Name="UtIlToggle"
-                Toggled="UtIlChanged" 
-                IsOn="{x:Bind IsUseDeveloperUtil, Mode=TwoWay}"/>
+                IsOn="{x:Bind ConfigViewmodel.IsUseDeveloperUtil, Mode=TwoWay}"/>
         </labs:SettingsCard>
     </StackPanel>
 </Page>
