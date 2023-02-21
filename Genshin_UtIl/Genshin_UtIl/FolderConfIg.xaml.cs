@@ -2,6 +2,7 @@
 using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
+using Genshin_UtIl.UtIls.WinAppSdk;
 
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
@@ -24,58 +25,11 @@ namespace Genshin_UtIl
     /// </summary>
     public partial class FolderConfIg : Window, IXamlRoot
     {
-        public string _GenshinFolderString = "폴더 - ";
-        public string _ReshadeFolderString = "폴다 - ";
-
-        public bool _IsApplyEnabled = false;
-
-        public string GenshinFolderString 
-        {
-            get => _GenshinFolderString;
-            set
-            {
-                _GenshinFolderString = value;
-                NotifyPropertyChanged();
-            }
-        }
-        public string ReshadeFolderString 
-        {
-            get => _ReshadeFolderString;
-            set
-            {
-                _ReshadeFolderString = value;
-                NotifyPropertyChanged();
-            }
-        }
-
-        public bool IsApplyEnabled
-        {
-            get => _IsApplyEnabled;
-            set
-            {
-                _IsApplyEnabled = value;
-                NotifyPropertyChanged("IsApplyEnabled");
-            }
-        }
-
         public FolderConfIg()
         {
             this.InitializeComponent();
 
-            //GenshinFolderTextBlock.DataContext = this;
-            //ReshadeFolderTextBlock.DataContext = this;
-            //ApplyConfIg.DataContext = this;
-
-            if (GenshinFolderString == "폴더 - ")
-                IsApplyEnabled = false;
-
-            if (ConfIg.Instance.Dev == false)
-                UtIl_.Visibility = Visibility.Collapsed;
-
-            else
-                UtIl_.Visibility = Visibility.Visible;
-
-            AppWindow appWIndow = GetAppWIndowForCurrentWIndow();
+            AppWindow appWIndow = WinUIWindow.GetAppWIndowForCurrentWIndow(this);
 
             appWIndow.Title = "초기 설정";
             appWIndow.Resize(new(ConfIg.Instance.ProgramWIndowWIdth, ConfIg.Instance.ProgramWIndowHeIght));
@@ -94,36 +48,6 @@ namespace Genshin_UtIl
         void ReShadeFolderConfIgFunc(object sender, RoutedEventArgs e)
         {
             IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
-        }
-
-        void ApplyConfIgFunc(object sender, RoutedEventArgs e)
-        {
-            var WInPage = new WIndowPage();
-            WInPage.Activate();
-
-            FolderUtIl.GenshInFolder = GenshinFolderString.Replace("폴더 - ", "");
-
-            ConfIg.Instance.GenshInFolder.GenshInFolder = GenshinFolderString.Replace("폴더 - ", "");
-            ConfIg.Instance.FIrstOpenProgram = 0;
-
-            this.Close();
-        }
-
-        AppWindow GetAppWIndowForCurrentWIndow()
-        {
-            IntPtr hWnd = WindowNative.GetWindowHandle(this);
-            WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
-
-            return AppWindow.GetFromWindowId(wndId);
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler == null == false)
-                handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

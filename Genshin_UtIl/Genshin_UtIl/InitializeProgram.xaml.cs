@@ -1,11 +1,7 @@
 // Copyright (c) Microsoft Corporation and Contributors.
 // Licensed under the MIT License.
 
-using System.Diagnostics;
-using System.Threading.Tasks;
-
 using Genshin_UtIl.interfaces.Window;
-using Genshin_UtIl.UtIls;
 
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
