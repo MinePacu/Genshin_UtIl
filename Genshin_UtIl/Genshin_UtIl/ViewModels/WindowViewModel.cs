@@ -8,10 +8,9 @@ using System.Windows.Input;
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-
+using Genshin_UtIl.interfaces.XamlRoot;
 using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.Exceptions.Registry;
-using Genshin_UtIl.XamlRoot;
 
 using Microsoft.UI.Xaml.Controls;
 
@@ -104,7 +103,7 @@ namespace Genshin_UtIl.ViewModels
                 RegIstryUtIl.InItIalIzeRegIstry();
             }
 
-            catch (GenshinRegistryNullException ex)
+            catch (GenshinRegistryNullException )
             {
                 AgreeOpenGameToRegistry();
             }

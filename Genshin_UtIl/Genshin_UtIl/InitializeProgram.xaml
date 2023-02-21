@@ -7,15 +7,25 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Genshin_UtIl"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="using:Genshin_UtIl.ViewModels"
     mc:Ignorable="d">
 
     <Grid>
+        <interactivity:Interaction.Behaviors>
+            <core:EventTriggerBehavior EventName="Loaded">
+                <core:InvokeCommandAction Command="{x:Bind InitializeWindowViewmodel.FIndGenshinFolderTaskCommand}" CommandParameter="AsyncRelayCommand" />
+            </core:EventTriggerBehavior>
+        </interactivity:Interaction.Behaviors>
+        <Grid.DataContext>
+            <viewmodel:InitializeWindowViewModel x:Name="InitializeWindowViewmodel" />
+        </Grid.DataContext>
         <Grid.ColumnDefinitions>
             <ColumnDefinition 
                 Width="100"/>
-            <ColumnDefinition
-                Width="300"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <ProgressRing 
@@ -25,8 +35,8 @@
 
         <TextBlock 
             Grid.Column="1"
-            Text="{x:Bind InitializeText, Mode=TwoWay}"
-            HorizontalAlignment="Center"
+            Text="{x:Bind InitializeWindowViewmodel.InitializeText, Mode=TwoWay}"
+            HorizontalAlignment="Stretch"
             VerticalAlignment="Center"/>
     </Grid>
 </Window>

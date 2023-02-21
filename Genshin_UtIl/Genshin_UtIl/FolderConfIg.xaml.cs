@@ -1,7 +1,7 @@
-﻿using Genshin_UtIl.UtIls;
+﻿using Genshin_UtIl.interfaces.XamlRoot;
+using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
-using Genshin_UtIl.XamlRoot;
 
 using Microsoft.UI;
 using Microsoft.UI.Windowing;

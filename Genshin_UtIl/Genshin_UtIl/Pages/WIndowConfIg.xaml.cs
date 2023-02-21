@@ -1,7 +1,7 @@
-﻿using Genshin_UtIl.UtIls;
+﻿using Genshin_UtIl.interfaces.XamlRoot;
+using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.Display.Structure;
 using Genshin_UtIl.UtIls.Exceptions.Registry;
-using Genshin_UtIl.XamlRoot;
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;

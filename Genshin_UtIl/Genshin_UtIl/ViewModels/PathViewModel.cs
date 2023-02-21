@@ -7,7 +7,7 @@ using Genshin_UtIl.UtIls;
 using Microsoft.UI.Xaml.Controls;
 using WinRT.Interop;
 using CommunityToolkit.Mvvm.Input;
-using Genshin_UtIl.XamlRoot;
+using Genshin_UtIl.interfaces.XamlRoot;
 
 namespace Genshin_UtIl.ViewModels
 {
@@ -103,7 +103,7 @@ namespace Genshin_UtIl.ViewModels
                     return;
             }
 
-            catch (Exception ep)
+            catch (Exception) 
             {
             }
         }
@@ -149,7 +149,7 @@ namespace Genshin_UtIl.ViewModels
                     return;
             }
 
-            catch (Exception ep)
+            catch (Exception)
             {
             }
         }

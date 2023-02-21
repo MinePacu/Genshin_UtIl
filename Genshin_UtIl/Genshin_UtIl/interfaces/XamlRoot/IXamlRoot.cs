@@ -1,5 +1,4 @@
-﻿
-namespace Genshin_UtIl.XamlRoot
+﻿namespace Genshin_UtIl.interfaces.XamlRoot
 {
     public interface IXamlRoot
     {
