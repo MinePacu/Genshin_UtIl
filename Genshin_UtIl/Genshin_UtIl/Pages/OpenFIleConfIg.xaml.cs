@@ -32,6 +32,7 @@ namespace Genshin_UtIl.Pages
             //OpenFIlterFIle.DataContext = this;
             //ReStartReShadeTg.DataContext = this;
 
+            BluetoothPanel.DataContext = new ViewModels.OpenProgramViewModel();
 
             if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;

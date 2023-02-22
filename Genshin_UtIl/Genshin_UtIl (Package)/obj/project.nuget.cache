@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ho9AkEoUMEtI9glfDPT87ORIX5K25rdo1OPyhYJZfhVXRc5zY33Sju0467dz4NB7ntuYKQP+IjXrbpDGmP8QpQ==",
+  "dgSpecHash": "c7HQzyuy3VxuIy0Zp78Ks8rMXB48cssylnM+AUimB9jNsMBSjbGgOl9fhWzDYf0fiGCzXgG6xbhhCPD+kBrTIw==",
   "success": true,
   "projectFilePath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
   "expectedPackageFiles": [
@@ -22,12 +22,15 @@
     "C:\\Users\\subin\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.collections.immutable\\1.3.1\\system.collections.immutable.1.3.1.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\subin\\.nuget\\packages\\system.diagnostics.eventlog\\7.0.0\\system.diagnostics.eventlog.7.0.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.private.uri\\4.3.0\\system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "C:\\Users\\subin\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\subin\\.nuget\\packages\\system.serviceprocess.servicecontroller\\7.0.0\\system.serviceprocess.servicecontroller.7.0.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\uno.communitytoolkit.common\\7.1.100-dev.15.g12261e2626\\uno.communitytoolkit.common.7.1.100-dev.15.g12261e2626.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\uno.communitytoolkit.winui\\7.1.100-dev.15.g12261e2626\\uno.communitytoolkit.winui.7.1.100-dev.15.g12261e2626.nupkg.sha512",

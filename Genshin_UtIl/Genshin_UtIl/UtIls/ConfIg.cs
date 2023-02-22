@@ -27,6 +27,8 @@ namespace Genshin_UtIl.UtIls
 
             public ProgramConfig Programconfig { get; set; } = new();
 
+            public BluetoothConfig BluetoothConfig { get; set; } = new();
+
             public int AppTh { get; set; } = 0;
             public bool Dev { get; set; } = false;
 
@@ -68,6 +70,11 @@ namespace Genshin_UtIl.UtIls
             public int y { get; set; } = 0;
         }
 
+        public class BluetoothConfig
+        {
+            public bool IsturnOnBluetooth { get; set; } = false;
+            public bool IsturnOffBluetooth { get; set; } = false;
+        }
         public static void Load()
         {
             try

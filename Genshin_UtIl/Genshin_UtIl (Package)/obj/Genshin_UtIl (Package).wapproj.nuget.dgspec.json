@@ -158,6 +158,10 @@
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
               "version": "[1.2.230118.102, )"
+            },
+            "System.ServiceProcess.ServiceController": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

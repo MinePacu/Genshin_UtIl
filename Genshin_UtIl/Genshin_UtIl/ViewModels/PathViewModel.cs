@@ -43,11 +43,19 @@ namespace Genshin_UtIl.ViewModels
         public ICommand ChangeReshadePathDesCommand { get; }
         public ICommand ApplyConfIgCommand { get; }
 
+        public ICommand OpenGenshinCommand { get; }
+        public ICommand OpenClientCommand { get; }
+        public ICommand OpenReshadeWithGenshinCommand { get; }
+
         public PathViewModel()
         {
             ChangeGenshinPathDesCommand = new RelayCommand(FolderConfIgFunc);
             ChangeReshadePathDesCommand = new RelayCommand(ReShadeFolderConfIgFunc);
             ApplyConfIgCommand = new RelayCommand(ApplyConfig);
+
+            OpenGenshinCommand = new RelayCommand(OpenGenshin);
+            OpenClientCommand = new RelayCommand(OpenClient);
+            OpenReshadeWithGenshinCommand = new RelayCommand(OpenReshadeWithGenshin);
 
             if (ConfIg.Instance.GenshInFolder.GenshInFolder == null == false)
                 GenshinFolderPath = "폴더 - " + ConfIg.Instance.GenshInFolder.GenshInFolder;
@@ -163,6 +171,21 @@ namespace Genshin_UtIl.ViewModels
             ConfIg.Instance.GenshInFolder.ReshadeFolder = ReshadeFolderPath;
 
             IFolderWindow.FolderWindow.Close();
+        }
+
+        void OpenGenshin()
+        {
+            ProcessUtIl.OpenProcess(0, ConfIg.Instance.GenshInFolder.GenshInFolder + "\\GenshinImpact.exe");
+        }
+
+        void OpenClient()
+        {
+            ProcessUtIl.OpenProcess(1, ConfIg.Instance.GenshInFolder.GenshInFolder.Replace("Genshin Impact game", "") + "launcher.exe");
+        }
+
+        void OpenReshadeWithGenshin()
+        {
+            ProcessUtIl.OpenProcess(2, ConfIg.Instance.GenshInFolder.ReshadeFolder + "InJect.exe");
         }
     }
 }

@@ -10,7 +10,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel Margin="120, 14, 120, 20" MaxHeight="1260">
+    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1000">
         <StackPanel MaxWidth="1260">
             <StackPanel.DataContext>
                 <viewmodel:PathViewModel x:Name="PathViewModel" />
@@ -19,7 +19,8 @@
             <TextBlock Text="게임 열기" FontWeight="Bold" Margin="0, 7, 0, 9"/>
             <labs:SettingsCard
                 Header="게임"
-                Description="창 설정에서 설정된 항목들을 저장하고 게임을 엽니다.">
+                Description="창 설정에서 설정된 항목들을 저장하고 게임을 엽니다."
+                Margin="0, 0, 0, 3">
                 <labs:SettingsCard.HeaderIcon>
                     <FontIcon 
                         FontFamily="Segoe Fluent Icons" 
@@ -30,13 +31,14 @@
                     VerticalAlignment="Center"
                     Content="게임 열기"
                     x:Name="OpenFIle"
-                    Click="OpenFIleFunc"
+                    Command="{x:Bind PathViewModel.OpenGenshinCommand}"
                     Style="{StaticResource AccentButtonStyle}"/>
             </labs:SettingsCard>
     
             <labs:SettingsCard
                 Header="클라이언트"
-                Description="참조 - 클라이언트로 여는 게임은 경계 없는 창모드가 적용되지 않습니다.">
+                Description="원신 클라이언트를 엽니다.&#10;참조 - 클라이언트로 여는 게임은 경계 없는 창모드와 블루투스 자동 제어가 작동되지 않습니다."
+                Margin="0, 0, 0, 3">
                 <labs:SettingsCard.HeaderIcon>
                     <FontIcon 
                     FontFamily="Segoe Fluent Icons" 
@@ -47,13 +49,14 @@
                     VerticalAlignment="Center"
                     Content="클라이언트 열기"
                     x:Name="OpenClIentFIle"
-                    Click="OpenClIentFIleFunc"
+                    Command="{x:Bind PathViewModel.OpenClientCommand}"
                     Style="{StaticResource AccentButtonStyle}"/>
             </labs:SettingsCard>
 
             <labs:SettingsCard
                 Header="ReShade 필터로 게임 열기"
-                Description="ReShade 필터 프로그램를 이용하여 게임을 엽니다.">
+                Description="ReShade 필터 프로그램를 이용하여 게임을 엽니다."
+                Margin="0, 0, 0, 0">
                 <labs:SettingsCard.HeaderIcon>
                     <FontIcon 
                         FontFamily="Segoe Fluent Icons" 
@@ -64,14 +67,15 @@
                     VerticalAlignment="Center" 
                     Content="게임 열기"
                     x:Name="OpenFIlterFIle"
-                    Click="OpenFIlterFIleFunc"
-                    IsEnabled="{Binding IsOpenReshadeFile, Mode=TwoWay}"
+                    Command="{x:Bind PathViewModel.OpenReshadeWithGenshinCommand}"
+                    IsEnabled="{x:Bind PathViewModel.IsApplyEnabled, Mode=TwoWay}"
                     Style="{StaticResource AccentButtonStyle}"/>
             </labs:SettingsCard>
 
-            <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 20, 0, 9"/>
+            <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 30, 0, 9"/>
             <labs:SettingsCard
-                Header="원신 폴더">
+                Header="원신 폴더"
+                Margin="0, 0, 0, 3">
                 <labs:SettingsCard.Description>
                     <TextBlock
                         x:Name="GenshinFolderTextBlock"
@@ -92,7 +96,7 @@
             </labs:SettingsCard>
 
             <labs:SettingsCard
-            Header="ReShade 폴더">
+                Header="ReShade 폴더">
                 <labs:SettingsCard.Description>
                     <TextBlock
                         x:Name="ReshadeFolderTextBlock"
@@ -112,53 +116,73 @@
                     Click="ReShadeFolderConfIgFunc" />
             </labs:SettingsCard>
         </StackPanel>
+        
+        <StackPanel 
+            x:Name="BluetoothPanel"
+            MaxWidth="1260"
+            Margin="0, 30, 0, 0">
+            <StackPanel.DataContext>
+                <viewmodel:OpenProgramViewModel x:Name="OpenProgramViewmodel"/>
+            </StackPanel.DataContext>
+            <TextBlock Text="블루투스" FontWeight="Bold" Margin="0, 0, 0, 9"/>
+            <labs:SettingsExpander
+                Header="블루투스 자동 제어"
+                Description="원신을 켜기 전이나 끈 후에 무선 게임패드 연결을 위해 자동으로 블루투스를 켜거나 끌지를 설정합니다."
+                Margin="0, 0, 0, 5">
+                <labs:SettingsExpander.HeaderIcon>
+                    <FontIcon 
+                        FontFamily="Segoe Fluent Icons" 
+                        Glyph="&#xe702;"/>
+                </labs:SettingsExpander.HeaderIcon>
+                <labs:SettingsExpander.Items>
+                    <labs:SettingsCard>
+                        <labs:SettingsCard.Header>
+                            <CheckBox
+                                Content="원신을 켜기 전에 블루투스 켜기"
+                                IsEnabled="{x:Bind OpenProgramViewmodel.IsHavingBluetoothRadioDevice, Mode=TwoWay}"
+                                IsChecked="{x:Bind OpenProgramViewmodel.IsTurnOnbluetoothEnable, Mode=TwoWay}" />
+                        </labs:SettingsCard.Header>
+                    </labs:SettingsCard>
+                    <labs:SettingsCard>
+                        <labs:SettingsCard.Header>
+                            <CheckBox
+                                Content="원신을 끈 후에 블루투스 끄기"
+                                IsEnabled="{x:Bind OpenProgramViewmodel.IsHavingBluetoothRadioDevice, Mode=TwoWay}"
+                                IsChecked="{x:Bind OpenProgramViewmodel.IsTurnOffbluetoothEnable, Mode=TwoWay}" />
+                        </labs:SettingsCard.Header>
+                    </labs:SettingsCard>
+                </labs:SettingsExpander.Items>
+            </labs:SettingsExpander>
+        </StackPanel>
+        
         <StackPanel MaxWidth="1260">
             <StackPanel.DataContext>
                 <viewmodel:ReshadeViewModel x:Name="Reshadeviewmodel" />
             </StackPanel.DataContext>
-            <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 20, 0, 9"/>
-            <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="0, 0, 0, 9" >
-                <Expander.Header>
-                    <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="30"></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition Width="140"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+            <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 30, 0, 9"/>
+            <labs:SettingsExpander
+                Header="추가 인수"
+                Description="원신을 실행하면서 추가할 인수를 설정합니다.">
+                <labs:SettingsExpander.HeaderIcon>
+                    <FontIcon 
+                        FontFamily="Segoe Fluent Icons" 
+                        Glyph="&#xe713;"/>
+                </labs:SettingsExpander.HeaderIcon>
+                <labs:SettingsExpander.Items>
+                    <labs:SettingsCard
+                        ContentAlignment="Vertical"
+                        HorizontalContentAlignment="Stretch">
+                        <TextBox 
+                            AcceptsReturn="True"
+                            TextWrapping="Wrap"
+                            IsReadOnly="True" 
+                            x:Name="ExtraFCon" 
+                            Height="130" 
+                            PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
+                    </labs:SettingsCard>
+                </labs:SettingsExpander.Items>
+            </labs:SettingsExpander>
 
-                        <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
-                            <SymbolIcon Symbol="Setting" Width="30"/>
-                        </Grid>
-
-                        <Grid Grid.Column="1" Margin="13, 0, 0, 0">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="10"></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition Height="10"></RowDefinition>
-                            </Grid.RowDefinitions>
-
-                            <TextBlock Grid.Row="1" Text="추가 인수" FontSize="14"/>
-                            <RichTextBlock Grid.Row="2" VerticalAlignment="Center" FontSize="12" Foreground="{ThemeResource TextFillColorSecondary}" CanDrag="False" IsTextSelectionEnabled="False">
-                                <Paragraph>
-                                    게임을 실행하면서 추가할 인수 설정
-                                </Paragraph>
-                            </RichTextBlock>
-                        </Grid>
-                    </Grid>
-                </Expander.Header>
-
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="49"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
-                    <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="ExtraFCon" Height="130"
-                             PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
-                </Grid>
-            </Expander>
-            
             <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
                                     Margin="0, 0, 0, 9"
                                     CornerRadius="7"
