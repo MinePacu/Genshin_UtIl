@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Genshin_UtIl": {
+      "commandName": "Project",
+      "hotReloadEnabled": true,
+      "nativeDebugging": false
+    }
+  }
+}

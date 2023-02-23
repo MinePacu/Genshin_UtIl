@@ -28,7 +28,7 @@ namespace Genshin_UtIl.UtIls
                     using RegistryKey subkey = key.OpenSubKey(subkey_name);
                     try
                     {
-                        if (subkey.ValueCount > 1 && subkey.GetValue("DisplayName").ToString().Contains("Genshin Impact"))
+                        if (subkey.ValueCount > 1 && subkey.GetValue("DisplayName") is null == false && subkey.GetValue("DisplayName").ToString().Contains("Genshin Impact"))
                         {
                             GenshinPath = subkey.GetValue("InstallLocation").ToString() + "\\Genshin Impact game";
                             return true;

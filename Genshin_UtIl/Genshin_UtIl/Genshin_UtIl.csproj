@@ -11,7 +11,7 @@
     <WindowsPackageType>None</WindowsPackageType>
     <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
     <UseWindowsForms>False</UseWindowsForms>
-	<SelfContained>true</SelfContained>
+	<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
 	<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
 	<BaseOutputPath>H:\Visual_Studio__\Genshin_UtIl_Debug</BaseOutputPath>
   </PropertyGroup>
