@@ -10,7 +10,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
+    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1000">
         <StackPanel.DataContext>
             <viewmodel:ConfigViewModel x:Name="ConfigViewmodel" />
         </StackPanel.DataContext>

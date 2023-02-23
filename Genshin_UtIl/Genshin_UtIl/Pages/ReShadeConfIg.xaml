@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
+    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1000">
 
         <labs:SettingsCard
             Header="ReShade 켜기">

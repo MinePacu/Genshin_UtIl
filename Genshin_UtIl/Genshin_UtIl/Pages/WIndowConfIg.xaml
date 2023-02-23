@@ -11,7 +11,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="WindowConfig_Loaded">
 
-    <StackPanel  Margin="120, 14, 120, 20" MaxWidth="1260" x:Name="PageStack">
+    <StackPanel  Margin="120, 14, 120, 20" MaxWidth="1000" x:Name="PageStack">
         <StackPanel.DataContext>
             <viewmodel:WindowViewModel x:Name="WindowViewmodel" />
         </StackPanel.DataContext>
