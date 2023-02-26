@@ -38,6 +38,14 @@ namespace Genshin_UtIl.ViewModels
             }
         }
 
+        private bool _IsEnableOptionDisableInfoBar = true;
+
+        public bool IsEnableOptionDisableInfoBar
+        {
+            get => _IsEnableOptionDisableInfoBar;
+            set => SetProperty(ref _IsEnableOptionDisableInfoBar, value);
+        }
+
         private string width;
 
         public string Width
@@ -115,6 +123,11 @@ namespace Genshin_UtIl.ViewModels
             {
                 AgreeOpenGameToRegistry();
             }
+
+            if (DIsplayUtIl.DIsplayLIst.Count < 2)
+                IsEnableOptionDisableInfoBar = true;
+            else
+                IsEnableOptionDisableInfoBar = false;
 
             Width = RegIstryUtIl.ScreenWIdth.ToString();
             Height = RegIstryUtIl.ScreenHeIght.ToString();

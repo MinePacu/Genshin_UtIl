@@ -32,6 +32,8 @@ namespace Genshin_UtIl.UtIls
             public int AppTh { get; set; } = 0;
             public bool Dev { get; set; } = false;
 
+            public string Args { get; set; } = null;
+
         }
 
         public static ConfIgEle Instance { get; set; } = new();

@@ -1,4 +1,5 @@
-﻿using Genshin_UtIl.interfaces.XamlRoot;
+﻿using Genshin_UtIl.interfaces.IView;
+using Genshin_UtIl.interfaces.XamlRoot;
 using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.Display.Structure;
 using Genshin_UtIl.UtIls.Exceptions.Registry;
@@ -20,13 +21,25 @@ namespace Genshin_UtIl.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class WIndowConfIg : Page, IRegistryXamlRoot
+    public sealed partial class WIndowConfIg : Page, IRegistryXamlRoot, IGrid
     {
         static int DIsplaySorted = 0;
 
         public WIndowConfIg()
         {
             this.InitializeComponent();
+
+            if (DIsplayUtIl.Sorted == false)
+            {
+                SortDIsplayLIst();
+                Sorted = true;
+            }
+
+            if (RegIstryUtIl.DIsplay >= DIsplayLIst.Count)
+            {
+                RegIstryUtIl.ApplyDisplay(0);
+                RegIstryUtIl.DIsplay = 0;
+            }
 
             UtIl_Text.Text += "DIsplayLIstUI - " + DIsplayLIstUI.Children.Count + "\r\n";
 
@@ -39,40 +52,37 @@ namespace Genshin_UtIl.Pages
                 int tmp = 0;
                 while (tmp < DIsplay_strIng_LIst.Count)
                 {
-                    if (DIsplayLIst[tmp].IsPrImaryDIsplay == true)
+                    if (DisplayLIst_Sorted_lo[tmp].IsPrImaryDIsplay == true)
                     {
-                        AddDIsplayCard(DIsplay_strIng_LIst[tmp], "해상도 - " + DIsplayLIst[tmp].DIsplay_Resol.WIdth.ToString() + " x " + DIsplayLIst[tmp].DIsplay_Resol.HeIght.ToString()
-                            + "\r\n" + "주 디스플레이 - 예" + "\r\n" + "주사율 - " + DIsplayLIst[tmp].DIsplay_Frequency + "Hz",
-                            (int)DIsplayLIst[tmp].DIsplay_Resol.WIdth, (int)DIsplayLIst[tmp].DIsplay_Resol.HeIght);
+                        AddDIsplayCard(DIsplay_strIng_List_Sorted_lo[tmp], "해상도 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth.ToString() + " x " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght.ToString()
+                            + "\r\n" + "주 디스플레이 - 예" + "\r\n" + "주사율 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Frequency + "Hz",
+                            (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght);
 
-                        if (RegIstryUtIl.DIsplay == 0)
-                            WindowViewmodel.Display = tmp;
                     }
 
                     else
-                        AddDIsplayCard(DIsplay_strIng_LIst[tmp], "해상도 - " + DIsplayLIst[tmp].DIsplay_Resol.WIdth.ToString() + " x " + DIsplayLIst[tmp].DIsplay_Resol.HeIght.ToString()
-                            + "\r\n" + "주 디스플레이 - 아니요" + "\r\n" + "주사율 - " + DIsplayLIst[tmp].DIsplay_Frequency + "Hz",
-                            (int) DIsplayLIst[tmp].DIsplay_Resol.WIdth, (int)DIsplayLIst[tmp].DIsplay_Resol.HeIght);
+                        AddDIsplayCard(DIsplay_strIng_List_Sorted_lo[tmp], "해상도 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth.ToString() + " x " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght.ToString()
+                            + "\r\n" + "주 디스플레이 - 아니요" + "\r\n" + "주사율 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Frequency + "Hz",
+                            (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght);
                     tmp++;
                 }
+                if (RegIstryUtIl.DIsplay == 0)
+                    WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(0);
+                else
+                    WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
             }
 
             else
             {
-                AddDIsplayCard(DIsplay_strIng_LIst[0], "해상도 - " + DIsplayLIst[0].DIsplay_Resol.WIdth.ToString() + " x " + DIsplayLIst[0].DIsplay_Resol.HeIght.ToString()
-                    + "\r\n" + "주 디스플레이 - 예" + "\r\n" + "주사율 - " + DIsplayLIst[0].DIsplay_Frequency + "Hz",
-                    (int) DIsplayLIst[0].DIsplay_Resol.WIdth, (int)DIsplayLIst[0].DIsplay_Resol.HeIght);
+                AddDIsplayCard(DIsplay_strIng_List_Sorted_lo[0], "해상도 - " + DisplayLIst_Sorted_lo[0].DIsplay_Resol.WIdth.ToString() + " x " + DisplayLIst_Sorted_lo[0].DIsplay_Resol.HeIght.ToString()
+                    + "\r\n" + "주 디스플레이 - 예" + "\r\n" + "주사율 - " + DisplayLIst_Sorted_lo[0].DIsplay_Frequency + "Hz",
+                    (int)DisplayLIst_Sorted_lo[0].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[0].DIsplay_Resol.HeIght);
 
                 DIsPlaySelect.ItemsSource = DIsplay_strIng_LIst;
                 WindowViewmodel.Display = 0;
                 DIsPlaySelect.IsEnabled = false;
             }
 
-            if (DIsplayUtIl.Sorted == false)
-            {
-                SortDIsplayLIst();
-                Sorted = true;
-            }
 
             if (RegIstryUtIl.DIsplay == 0 == false)
                 WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
@@ -143,7 +153,7 @@ namespace Genshin_UtIl.Pages
 
         void AddDIsplayCard(string DIsplay_TItle, string DIsplay_Sub_StrIng, int DIsplayWIdth, int DIsplayHeIght)
         {
-            var cardGrId = (Grid) PageStack.Children[0];
+            var cardGrId = DIsplayLIstUI;
 
             ColumnDefinition col = new();
             if ((DIsplayWIdth / (float) DIsplayHeIght) == (16 / (float) 9))
@@ -167,7 +177,7 @@ namespace Genshin_UtIl.Pages
 
             Border card_ = new()
             {
-                Background = (SolidColorBrush) Application.Current.Resources["LayerFillColorDefaultBrush"],
+                Background = (SolidColorBrush) cardGrId.Resources["CardBrush"],
                 Margin = new(0, 0, 4, 9),
                 CornerRadius = new(7),
                 BorderThickness = new(1),
@@ -187,7 +197,7 @@ namespace Genshin_UtIl.Pages
 
             FontIcon Icon = new()
             {
-                FontFamily = new("Segoe Fluent Icons"),
+                FontFamily = new("Segoe MDL2 Assets"),
                 Glyph = "\xe7f4",
                 FontSize = 20,
                 HorizontalAlignment = HorizontalAlignment.Center,
@@ -225,6 +235,71 @@ namespace Genshin_UtIl.Pages
         private void WindowConfig_Loaded(object sender, RoutedEventArgs e)
         {
             IRegistryXamlRoot.WindowConfIgXamlRoot = XamlRoot;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DIsplayUtIl.Sorted = false;
+            DIsplayUtIl.InItIalIzed = false;
+
+            DIsplayLIstUI.Children.Clear();
+            DIsplayLIstUI.ColumnDefinitions.Clear();
+
+            DIsplayUtIl.InitializeDisplayList();
+
+            GC.Collect();
+
+            if (DIsplayUtIl.Sorted == false)
+            {
+                SortDIsplayLIst();
+                Sorted = true;
+            }
+
+            if (RegIstryUtIl.DIsplay >= DIsplayLIst.Count)
+            {
+                RegIstryUtIl.ApplyDisplay(0);
+                RegIstryUtIl.DIsplay = 0;
+            }
+
+            UtIl_Text.Text += "DIsplayLIstUI - " + DIsplayLIstUI.Children.Count + "\r\n";
+
+            if (DIsplay_strIng_LIst.Count > 1)
+            {
+                DIsPlaySelect.ItemsSource = DIsplay_strIng_LIst;
+
+                int tmp = 0;
+                while (tmp < DIsplay_strIng_LIst.Count)
+                {
+                    if (DisplayLIst_Sorted_lo[tmp].IsPrImaryDIsplay == true)
+                    {
+                        AddDIsplayCard(DIsplay_strIng_List_Sorted_lo[tmp], "해상도 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth.ToString() + " x " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght.ToString()
+                            + "\r\n" + "주 디스플레이 - 예" + "\r\n" + "주사율 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Frequency + "Hz",
+                            (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght);
+
+                    }
+
+                    else
+                        AddDIsplayCard(DIsplay_strIng_List_Sorted_lo[tmp], "해상도 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth.ToString() + " x " + DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght.ToString()
+                            + "\r\n" + "주 디스플레이 - 아니요" + "\r\n" + "주사율 - " + DisplayLIst_Sorted_lo[tmp].DIsplay_Frequency + "Hz",
+                            (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght);
+                    tmp++;
+                }
+                if (RegIstryUtIl.DIsplay == 0)
+                    WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(0);
+                else
+                    WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
+            }
+
+            else
+            {
+                AddDIsplayCard(DIsplay_strIng_List_Sorted_lo[0], "해상도 - " + DisplayLIst_Sorted_lo[0].DIsplay_Resol.WIdth.ToString() + " x " + DisplayLIst_Sorted_lo[0].DIsplay_Resol.HeIght.ToString()
+                    + "\r\n" + "주 디스플레이 - 예" + "\r\n" + "주사율 - " + DisplayLIst_Sorted_lo[0].DIsplay_Frequency + "Hz",
+                    (int)DisplayLIst_Sorted_lo[0].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[0].DIsplay_Resol.HeIght);
+
+                DIsPlaySelect.ItemsSource = DIsplay_strIng_LIst;
+                WindowViewmodel.Display = 0;
+                DIsPlaySelect.IsEnabled = false;
+            }
         }
     }
 }

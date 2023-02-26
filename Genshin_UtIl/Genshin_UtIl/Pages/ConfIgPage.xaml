@@ -47,8 +47,6 @@
                 <ComboBoxItem 
                     Content="게임 창"/>
                 <ComboBoxItem 
-                    Content="ReShade 설정"/>
-                <ComboBoxItem 
                     Content="게임 실행"/>
             </ComboBox>
         </labs:SettingsCard>

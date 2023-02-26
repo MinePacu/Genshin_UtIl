@@ -23,7 +23,7 @@
             </labs:SettingsCard.Description>
             <labs:SettingsCard.HeaderIcon>
                 <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
+                    FontFamily="Segoe MDL2 Assets" 
                     Glyph="&#xf8a5;"/>
             </labs:SettingsCard.HeaderIcon>
             <ToggleSwitch

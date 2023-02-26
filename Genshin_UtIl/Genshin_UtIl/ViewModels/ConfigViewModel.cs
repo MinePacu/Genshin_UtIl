@@ -57,10 +57,10 @@ namespace Genshin_UtIl.ViewModels
             if (ConfIg.Instance.FIrstPage == "WIndow")
                 FirstPage = 0;
 
-            else if (ConfIg.Instance.FIrstPage == "ReShadeCon")
+            else if (ConfIg.Instance.FIrstPage == "OpenGameCon")
                 FirstPage = 1;
 
-            else if (ConfIg.Instance.FIrstPage == "OpenGameCon")
+            else if (ConfIg.Instance.FIrstPage == "ReShadeCon")
                 FirstPage = 2;
         }
     }

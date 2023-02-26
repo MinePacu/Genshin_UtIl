@@ -23,7 +23,7 @@
                 Margin="0, 0, 0, 3">
                 <labs:SettingsCard.HeaderIcon>
                     <FontIcon 
-                        FontFamily="Segoe Fluent Icons" 
+                        FontFamily="Segoe MDL2 Assets" 
                         Glyph="&#xe7fc;"/>
                 </labs:SettingsCard.HeaderIcon>
                 <Button 
@@ -41,7 +41,7 @@
                 Margin="0, 0, 0, 3">
                 <labs:SettingsCard.HeaderIcon>
                     <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
+                    FontFamily="Segoe MDL2 Assets" 
                     Glyph="&#xe967;"/>
                 </labs:SettingsCard.HeaderIcon>
                 <Button  
@@ -64,7 +64,7 @@
                 </labs:SettingsCard.Description>
                 <labs:SettingsCard.HeaderIcon>
                     <FontIcon 
-                        FontFamily="Segoe Fluent Icons" 
+                        FontFamily="Segoe MDL2 Assets" 
                         Glyph="&#xe8b7;"/>
                 </labs:SettingsCard.HeaderIcon>
                 <Button
@@ -83,14 +83,18 @@
                 <StackPanel.DataContext>
                     <viewmodel:OpenProgramViewModel x:Name="OpenProgramViewmodel"/>
                 </StackPanel.DataContext>
+                <InfoBar 
+                    Title="옵션이 비활성화됨"
+                    Message="컴퓨터에서 블루투스를 연결하기 위한 장치가 없으므로 옵션이 비활성화됩니다."
+                    IsOpen="{x:Bind OpenProgramViewmodel.IsOpenNonBluetoothRadio, Mode=TwoWay}"/>
                 <TextBlock Text="블루투스" FontWeight="Bold" Margin="0, 0, 0, 9"/>
                 <labs:SettingsExpander
                 Header="블루투스 자동 제어"
-                Description="원신을 켜기 전이나 끈 후에 무선 게임패드 연결을 위해 자동으로 블루투스를 켜거나 끌지를 설정합니다."
+                Description="원신을 켜기 전이나 끈 후에 무선 게임패드 연결 및 해제을 위해 자동으로 블루투스를 켜거나 끌지를 설정합니다."
                 Margin="0, 0, 0, 5">
                     <labs:SettingsExpander.HeaderIcon>
                         <FontIcon 
-                        FontFamily="Segoe Fluent Icons" 
+                        FontFamily="Segoe MDL2 Assets" 
                         Glyph="&#xe702;"/>
                     </labs:SettingsExpander.HeaderIcon>
                     <labs:SettingsExpander.Items>
@@ -116,7 +120,7 @@
 
             <StackPanel MaxWidth="1260">
                 <StackPanel.DataContext>
-                    <viewmodel:ReshadeViewModel x:Name="Reshadeviewmodel" />
+                    <viewmodel:ExtraArgsViewModel x:Name="ExtraArgsviewmodel" />
                 </StackPanel.DataContext>
                 <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 30, 0, 9"/>
                 <labs:SettingsExpander
@@ -124,7 +128,7 @@
                 Description="원신을 실행하면서 추가할 인수를 설정합니다.">
                     <labs:SettingsExpander.HeaderIcon>
                         <FontIcon 
-                        FontFamily="Segoe Fluent Icons" 
+                        FontFamily="Segoe MDL2 Assets" 
                         Glyph="&#xe713;"/>
                     </labs:SettingsExpander.HeaderIcon>
                     <labs:SettingsExpander.Items>
@@ -136,6 +140,7 @@
                             TextWrapping="Wrap"
                             IsReadOnly="True" 
                             x:Name="ExtraFCon" 
+                            Text="{x:Bind ExtraArgsviewmodel.ExtraArgs, Mode=TwoWay}"
                             Height="130" 
                             PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
                         </labs:SettingsCard>

@@ -23,8 +23,10 @@ namespace Genshin_UtIl.UtIls
 
         public static List<DIsplays> DIsplayLIst { get; } = new();
         public static List<DIsplays> DisplayLIst_Sorted { get; set; } = new();
+        public static List<DIsplays> DisplayLIst_Sorted_lo { get; set; } = new();
         public static List<string> DIsplay_strIng_LIst { get; } = new();
 
+        public static string[] DIsplay_strIng_List_Sorted_lo { get; set; }
 
         public readonly static BackgroundWork.TaskUtil DisplayLoadTask = new(new(InitializeDisplayList));
 
@@ -37,6 +39,8 @@ namespace Genshin_UtIl.UtIls
         public static async Task InitializeDisplayList()
         {
             DIsplayLIst.Clear();
+            DisplayLIst_Sorted.Clear();
+            DisplayLIst_Sorted_lo.Clear();
             DIsplay_strIng_LIst.Clear();
 
             DISPLAY_DEVICE d = new();
@@ -71,6 +75,7 @@ namespace Genshin_UtIl.UtIls
                     d.cb = Marshal.SizeOf(d);
                 }
 
+                DIsplay_strIng_List_Sorted_lo = new string[DIsplay_strIng_LIst.Count];
                 InItIalIzed = true;
             }
 
@@ -79,12 +84,13 @@ namespace Genshin_UtIl.UtIls
                 throw new ExcepClass(ep);
             }
 
-            await Task.Delay(10000);
+            await Task.Delay(5000);
         }
 
         public static void SortDIsplayLIst()
         {
             DisplayLIst_Sorted = DIsplayLIst.OrderBy(p => p.Display_P_x).ToList();
+            DisplayLIst_Sorted_lo = DIsplayLIst.OrderBy(p => p.Display_P_x).ToList();
 
             int tmp = 0;
             while (tmp < DisplayLIst_Sorted.Count)
@@ -100,6 +106,15 @@ namespace Genshin_UtIl.UtIls
 
                 tmp++;
             }
+
+            tmp = 0;
+            foreach (var display in DisplayLIst_Sorted_lo)
+            {
+                DIsplay_strIng_List_Sorted_lo[tmp] = display.DIsplay.Replace(@"\\.\DISPLAY", "디스플레이 ");
+                tmp++;
+            }
+
+            tmp = 0;
         }
 
         public static int GetIndexFromSortedDisplayList(string DIsplay_StrIng) => DisplayLIst_Sorted.FindIndex(p => p.DIsplay == DIsplay_StrIng);

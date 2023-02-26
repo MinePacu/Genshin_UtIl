@@ -11,12 +11,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="WindowConfig_Loaded">
 
+    <Page.Resources>
+        <SolidColorBrush x:Key="CardBrush" Color="{ThemeResource LayerFillColorDefault}" />
+    </Page.Resources>
+    
     <StackPanel  Margin="120, 14, 120, 20" MaxWidth="1000" x:Name="PageStack">
         <StackPanel.DataContext>
             <viewmodel:WindowViewModel x:Name="WindowViewmodel" />
         </StackPanel.DataContext>
 
+
         <Grid ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0, 14, 0, 16" HorizontalAlignment="Center" x:Name="DIsplayLIstUI">
+            <Grid.Resources>
+                <SolidColorBrush x:Key="CardBrush" Color="{ThemeResource LayerFillColorDefault}" />
+            </Grid.Resources>
+
             <Grid.ColumnDefinitions>
             </Grid.ColumnDefinitions>
 
@@ -25,16 +34,32 @@
             </Grid.RowDefinitions>
 
         </Grid>
-        
+        <Button
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Click="Button_Click"
+            ToolTipService.ToolTip="모니터 목록 새로고침">
+            <Button.Content>
+                <FontIcon 
+                    FontFamily="Segoe MDL2 Assets" 
+                    Glyph="&#xe72c;"/>
+            </Button.Content>
+        </Button>
+
+
         <TextBlock Text="디스플레이" FontWeight="Bold" Margin="0, 0, 0, 9"/>
 
+        <InfoBar 
+            Title="옵션 비활성화"
+            Message="모니터가 2개 이상이 아니므로 이 옵션은 비활성화됩니다."
+            IsOpen="{x:Bind WindowViewmodel.IsEnableOptionDisableInfoBar, Mode=TwoWay}"/>
         <labs:SettingsCard
             Header="모니터"
             Description="원신을 실행할 모니터 선택"
             Margin="0, 0, 0, 15">
             <labs:SettingsCard.HeaderIcon>
                 <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
+                    FontFamily="Segoe MDL2 Assets" 
                     Glyph="&#xe7f4;"/>
             </labs:SettingsCard.HeaderIcon>
             
@@ -56,7 +81,7 @@
             Margin="0, 0, 0, 3">
             <labs:SettingsExpander.HeaderIcon>
                 <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
+                    FontFamily="Segoe MDL2 Assets" 
                     Glyph="&#xe713;"/>
             </labs:SettingsExpander.HeaderIcon>
 
@@ -85,7 +110,7 @@
             <labs:SettingsCard.HeaderIcon>
                 <FontIcon 
                     VerticalAlignment="Center"
-                    FontFamily="Segoe Fluent Icons" 
+                    FontFamily="Segoe MDL2 Assets" 
                     Glyph="&#xe7fb;"/>
             </labs:SettingsCard.HeaderIcon>
             <ComboBox 

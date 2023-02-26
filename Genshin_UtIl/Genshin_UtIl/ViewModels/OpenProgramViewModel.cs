@@ -23,6 +23,14 @@ namespace Genshin_UtIl.ViewModels
             }
         }
 
+        private bool _IsOpenNonBluetoothRadio;
+
+        public bool IsOpenNonBluetoothRadio
+        {
+            get => _IsOpenNonBluetoothRadio;
+            set => SetProperty(ref _IsOpenNonBluetoothRadio, value);
+        }
+
         private bool isTurnOnbluetoothEnable;
 
         public bool IsTurnOnbluetoothEnable
@@ -51,9 +59,15 @@ namespace Genshin_UtIl.ViewModels
         {
             BluetoothUtil.InitializeBluetoothRadioDevice();
             if (BluetoothUtil.IsHavingBluetoothRadioDevice == false)
+            {
                 IsHavingBluetoothRadioDevice = false;
+                IsOpenNonBluetoothRadio = true;
+            }
             else
+            {
                 IsHavingBluetoothRadioDevice = true;
+                IsOpenNonBluetoothRadio = false;
+            }
 
             IsTurnOnbluetoothEnable = ConfIg.Instance.BluetoothConfig.IsturnOnBluetooth;
             IsTurnOffbluetoothEnable = ConfIg.Instance.BluetoothConfig.IsturnOffBluetooth;

@@ -44,6 +44,9 @@ namespace Genshin_UtIl.UtIls
                 if (ConfIg.Instance.WInConfIg.WIndowmode == 0)
                     Proce.Arguments = "-popupwindow";
 
+                if (ConfIg.Instance.Args == null == false && ConfIg.Instance.Args.Length > 0)
+                    Proce.Arguments = ConfIg.Instance.Args;
+
                 try
                 {
                     proInfo = Process.Start(Proce);

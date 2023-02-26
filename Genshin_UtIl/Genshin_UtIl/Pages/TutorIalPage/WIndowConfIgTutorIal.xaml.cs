@@ -115,7 +115,7 @@ namespace Genshin_UtIl.Pages.TutorIalPage
 
             FontIcon Icon = new()
             {
-                FontFamily = new("Segoe Fluent Icons"),
+                FontFamily = new("Segoe MDL2 Assets"),
                 Glyph = "\xec4e",
                 FontSize = 20,
                 HorizontalAlignment = HorizontalAlignment.Center,
