@@ -517,7 +517,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -1059,7 +1059,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -1601,7 +1601,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -2146,7 +2146,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -2691,7 +2691,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -3236,7 +3236,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -3781,7 +3781,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -4326,7 +4326,7 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
-          "Microsoft.WindowsAppSDK": "1.2.230118.102",
+          "Microsoft.WindowsAppSDK": "1.2.230217.4",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -7454,7 +7454,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -7553,7 +7553,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "1.2.230118.102에서 1.1.2(으)로 다운그레이드된 패키지 Microsoft.WindowsAppSDK을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.WindowsAppSDK (>= 1.2.230118.102) \r\n Genshin_UtIl (Package) -> Microsoft.WindowsAppSDK (= 1.1.2)",
+      "message": "1.2.230217.4에서 1.1.2(으)로 다운그레이드된 패키지 Microsoft.WindowsAppSDK을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.WindowsAppSDK (>= 1.2.230217.4) \r\n Genshin_UtIl (Package) -> Microsoft.WindowsAppSDK (= 1.1.2)",
       "libraryId": "Microsoft.WindowsAppSDK",
       "targetGraphs": [
         "UAP,Version=v10.0.19041",

@@ -23,7 +23,7 @@ namespace Genshin_UtIl.UtIls
                 if (radio.Kind == RadioKind.Bluetooth)
                 {
                     bluetoothradio = radio;
-                    Debug.WriteLine("Bluetooth Radio Device - " + radio.State);
+                    //Debug.WriteLine("Bluetooth Radio Device - " + radio.State);
                     IsHavingBluetoothRadioDevice = true;
                 }
             }

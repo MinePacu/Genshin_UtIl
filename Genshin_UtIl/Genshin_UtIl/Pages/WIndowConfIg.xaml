@@ -44,7 +44,8 @@
                 VerticalAlignment="Center"
                 Margin="0, 0, 6, 0"
                 x:Name="DIsPlaySelect" 
-                SelectionChanged="DIsplaySelectIonChanged"/>
+                SelectionChanged="DIsplaySelectIonChanged"
+                SelectedIndex="{x:Bind WindowViewmodel.Display, Mode=TwoWay}"/>
         </labs:SettingsCard>
 
         <TextBlock Text="창" FontWeight="Bold" Margin="0, 20, 0, 9"/>

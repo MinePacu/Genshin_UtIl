@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c7HQzyuy3VxuIy0Zp78Ks8rMXB48cssylnM+AUimB9jNsMBSjbGgOl9fhWzDYf0fiGCzXgG6xbhhCPD+kBrTIw==",
+  "dgSpecHash": "FdtdlZXS+MycT2v6gS5oH2t9sBeTanZ24y217C/z1rYqSg8zQU+10xEP907DrODSb8IgU0Ml2jYXhrBJQnyIng==",
   "success": true,
   "projectFilePath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
   "expectedPackageFiles": [
@@ -114,7 +114,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "1.2.230118.102에서 1.1.2(으)로 다운그레이드된 패키지 Microsoft.WindowsAppSDK을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.WindowsAppSDK (>= 1.2.230118.102) \r\n Genshin_UtIl (Package) -> Microsoft.WindowsAppSDK (= 1.1.2)",
+      "message": "1.2.230217.4에서 1.1.2(으)로 다운그레이드된 패키지 Microsoft.WindowsAppSDK을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.WindowsAppSDK (>= 1.2.230217.4) \r\n Genshin_UtIl (Package) -> Microsoft.WindowsAppSDK (= 1.1.2)",
       "libraryId": "Microsoft.WindowsAppSDK",
       "targetGraphs": [
         "UAP,Version=v10.0.19041",

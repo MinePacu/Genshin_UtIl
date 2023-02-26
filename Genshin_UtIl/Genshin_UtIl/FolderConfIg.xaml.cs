@@ -15,6 +15,8 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 using WinRT.Interop;
+using Windows.Storage;
+using Windows.Foundation;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -30,25 +32,32 @@ namespace Genshin_UtIl
         {
             this.InitializeComponent();
 
+            WIndowUtIl.Hwnd = WindowNative.GetWindowHandle(this);
+
             AppWindow appWIndow = WinUIWindow.GetAppWIndowForCurrentWIndow(this);
 
             appWIndow.Title = "초기 설정";
             appWIndow.Resize(new(ConfIg.Instance.ProgramWIndowWIdth, ConfIg.Instance.ProgramWIndowHeIght));
 
-            WIndowUtIl.Hwnd = WindowNative.GetWindowHandle(this);
-
             if (SysUtIl.GetAppTh() == Appth.Dark)
                 _ = DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
 
             IFolderWindow.FolderWindow = this;
+
+            //UtIl_Text.Text += WIndowUtIl.Hwnd;
         }
 
-        void FolderConfIgFunc(object sender, RoutedEventArgs e)
+        async void FolderConfIgFunc(object sender, RoutedEventArgs e)
         {
             IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
         }
 
         void ReShadeFolderConfIgFunc(object sender, RoutedEventArgs e)
+        {
+            IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
+        }
+
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
             IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
         }

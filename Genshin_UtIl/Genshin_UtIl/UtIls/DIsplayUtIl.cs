@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
@@ -12,6 +13,8 @@ namespace Genshin_UtIl.UtIls
     {
         public static bool InItIalIzed { get; set; } = false;
 
+        public static bool Sorted { get; set; } = false;
+
         [DllImport("user32.dll")]
         static extern bool EnumDisplayDevices(string lpDevice, uint iDevNum, ref DISPLAY_DEVICE lpDisplayDevice, uint dwFlags);
 
@@ -19,9 +22,9 @@ namespace Genshin_UtIl.UtIls
         internal static extern bool EnumDisplaySettings(string lpszDevice, int iModeNum, ref Devmode lpDevMode);
 
         public static List<DIsplays> DIsplayLIst { get; } = new();
+        public static List<DIsplays> DisplayLIst_Sorted { get; set; } = new();
         public static List<string> DIsplay_strIng_LIst { get; } = new();
 
-        public static List<string> DIsplay_strIng_LIst_Sorted { get; } = new();
 
         public readonly static BackgroundWork.TaskUtil DisplayLoadTask = new(new(InitializeDisplayList));
 
@@ -35,8 +38,6 @@ namespace Genshin_UtIl.UtIls
         {
             DIsplayLIst.Clear();
             DIsplay_strIng_LIst.Clear();
-            DIsplay_strIng_LIst_Sorted.Clear();
-
 
             DISPLAY_DEVICE d = new();
             Devmode dev = new();
@@ -66,7 +67,6 @@ namespace Genshin_UtIl.UtIls
                         EnumDisplayDevices(d.Device, 0, ref d, 0);
 
                         DIsplay_strIng_LIst.Add("디스플레이 " + (DIsplay_strIng_LIst.Count - (-1)).ToString());
-                        DIsplay_strIng_LIst_Sorted.Add("디스플레이 " + (DIsplay_strIng_LIst_Sorted.Count - (-1)).ToString());
                     }
                     d.cb = Marshal.SizeOf(d);
                 }
@@ -84,42 +84,31 @@ namespace Genshin_UtIl.UtIls
 
         public static void SortDIsplayLIst()
         {
-            int tmp = 0;
-            while (tmp < DIsplayLIst.Count)
-            {
-                if (DIsplayLIst[tmp].IsPrImaryDIsplay == true)
-                {
-                    var tmp_ = DIsplay_strIng_LIst_Sorted[tmp];
-                    DIsplay_strIng_LIst_Sorted.RemoveAt(tmp);
-                    DIsplay_strIng_LIst_Sorted.Insert(0, tmp_);
+            DisplayLIst_Sorted = DIsplayLIst.OrderBy(p => p.Display_P_x).ToList();
 
-                    tmp = DIsplayLIst.Count;
+            int tmp = 0;
+            while (tmp < DisplayLIst_Sorted.Count)
+            {
+                if (DisplayLIst_Sorted[tmp].IsPrImaryDIsplay == true)
+                {
+                    var tmp_ = DisplayLIst_Sorted[tmp];
+                    DisplayLIst_Sorted.Remove(DisplayLIst_Sorted[tmp]);
+                    DisplayLIst_Sorted.Insert(0, tmp_);
+
+                    tmp = DisplayLIst_Sorted.Count;
                 }
 
                 tmp++;
             }
         }
 
-        public static int GetDIsplayN(string DIsplay_StrIng)
-        {
-            int tmp = 0;
-            int n = 0;
+        public static int GetIndexFromSortedDisplayList(string DIsplay_StrIng) => DisplayLIst_Sorted.FindIndex(p => p.DIsplay == DIsplay_StrIng);
 
-            while (tmp < DIsplay_strIng_LIst_Sorted.Count)
-            {
-                if (DIsplay_strIng_LIst_Sorted[tmp] == DIsplay_StrIng)
-                {
-                    n = tmp;
-                    tmp = DIsplay_strIng_LIst_Sorted.Count;
-                }
+        public static int GetNonSortedIndexFromSortedDisplayList(int SortedDisplayindex) => DIsplayLIst.FindIndex(p => p.DIsplay == DisplayLIst_Sorted[SortedDisplayindex].DIsplay);
 
-                else
-                    tmp++;
-            }
+        public static string GetStringFromSortedDisplayList(int DisplayIndexInGenshin) => DisplayLIst_Sorted[DisplayIndexInGenshin].DIsplay;
 
-            return n;
-        }
-
+        /*
         public static int GetDIsplayN_NS(string DIsplay_StrIng)
         {
             int tmp = 0;
@@ -139,6 +128,7 @@ namespace Genshin_UtIl.UtIls
 
             return n;
         }
+        */
 
         static void SwapLIst<T>(this List<T> list, int _from, int _to)
         {

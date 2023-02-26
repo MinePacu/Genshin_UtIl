@@ -51,11 +51,11 @@ namespace Genshin_UtIl.ViewModels
 
         async Task FindGenshinFolder()
         {
-            InitializeText = "프로그램 실행에 필요한 Windows App SDK Rumtime 설치 중";
-            await InstallSDKRumtime();
+            //InitializeText = "프로그램 실행에 필요한 Windows App SDK Rumtime 설치 중";
+            //await InstallSDKRumtime();
 
             InitializeText = "컴퓨터에서 원신 찾는 중";
-            bool _IsGenshinInstalled = await GenshinFolderFinder.CheckGenshinFromUninstallerRegistryList();
+            bool _IsGenshinInstalled = await GenshinFolderFinder.CheckGenshinFromMuiCacheRegistryList();
             Debug.WriteLine("Debug(UninstallerList) - _IsGenshinInstalled == " + _IsGenshinInstalled.ToString());
             await Task.Delay(2000);
 

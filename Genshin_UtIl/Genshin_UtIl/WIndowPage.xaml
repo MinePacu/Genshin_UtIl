@@ -13,11 +13,11 @@
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="DockBottom" Content="게임 창" Tag="WIndow"/>
 
-                <NavigationViewItem Icon="Save" Content="ReShade 필터" Tag="ReShadeCon" />
+                <!--<NavigationViewItem Icon="Save" Content="ReShade 필터" Tag="ReShadeCon" />-->
 
                 <NavigationViewItem Icon="Admin" Content="게임 실행" Tag="OpenGameCon" />
 
-                <NavigationViewItem Icon="Library" Content="튜토리얼" Tag="TutorIal" />
+                <!--<NavigationViewItem Icon="Library" Content="튜토리얼" Tag="TutorIal" />-->
             </NavigationView.MenuItems>
 
             <ScrollViewer>

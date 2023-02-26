@@ -70,7 +70,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -157,7 +157,7 @@
             },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
-              "version": "[1.2.230118.102, )"
+              "version": "[1.2.230217.4, )"
             },
             "System.ServiceProcess.ServiceController": {
               "target": "Package",
@@ -177,19 +177,7 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-              "version": "[7.0.3, 7.0.3]"
-            },
-            {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.3, 7.0.3]"
-            },
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-              "version": "[7.0.3, 7.0.3]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-arm64",
               "version": "[7.0.3, 7.0.3]"
             },
             {
@@ -197,23 +185,11 @@
               "version": "[7.0.3, 7.0.3]"
             },
             {
-              "name": "Microsoft.NETCore.App.Runtime.win-x86",
-              "version": "[7.0.3, 7.0.3]"
-            },
-            {
               "name": "Microsoft.Windows.SDK.NET.Ref",
               "version": "[10.0.19041.28, 10.0.19041.28]"
             },
             {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
-              "version": "[7.0.3, 7.0.3]"
-            },
-            {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.3, 7.0.3]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
               "version": "[7.0.3, 7.0.3]"
             }
           ],
@@ -225,17 +201,14 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
-        "win10-arm64": {
+        "win-x64": {
           "#import": []
         },
         "win10-x64": {
-          "#import": []
-        },
-        "win10-x86": {
           "#import": []
         }
       }

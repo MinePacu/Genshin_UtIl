@@ -46,7 +46,7 @@ namespace Genshin_UtIl.Pages
                             (int)DIsplayLIst[tmp].DIsplay_Resol.WIdth, (int)DIsplayLIst[tmp].DIsplay_Resol.HeIght);
 
                         if (RegIstryUtIl.DIsplay == 0)
-                            DIsPlaySelect.SelectedIndex = tmp;
+                            WindowViewmodel.Display = tmp;
                     }
 
                     else
@@ -64,18 +64,18 @@ namespace Genshin_UtIl.Pages
                     (int) DIsplayLIst[0].DIsplay_Resol.WIdth, (int)DIsplayLIst[0].DIsplay_Resol.HeIght);
 
                 DIsPlaySelect.ItemsSource = DIsplay_strIng_LIst;
-                DIsPlaySelect.SelectedIndex = 0;
+                WindowViewmodel.Display = 0;
                 DIsPlaySelect.IsEnabled = false;
             }
 
-            if (DIsplaySorted == 0)
+            if (DIsplayUtIl.Sorted == false)
             {
                 SortDIsplayLIst();
-                DIsplaySorted = 1;
+                Sorted = true;
             }
 
             if (RegIstryUtIl.DIsplay == 0 == false)
-                DIsPlaySelect.SelectedIndex = GetDIsplayN_NS(DIsplay_strIng_LIst_Sorted[RegIstryUtIl.DIsplay]);
+                WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
 
             if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
@@ -83,6 +83,7 @@ namespace Genshin_UtIl.Pages
             else
                 UtIl_.Visibility = Visibility.Visible;
 
+            /*
             if (ConfIg.Instance.Dev == true)
             {
                 foreach (DIsplays d in DIsplayLIst)
@@ -101,6 +102,7 @@ namespace Genshin_UtIl.Pages
                     UtIl_Text.Text += "DIsplay_strIng_LIst_Sorted - " + DIsplay_S + "\r\n";
                 }
             }
+            */
         }
 
         void DIsplaySelectIonChanged(object sender, SelectionChangedEventArgs e)
@@ -108,6 +110,7 @@ namespace Genshin_UtIl.Pages
             ChangeMINMAXWIndowSIze(((ComboBox) sender).SelectedIndex);
         }
 
+        /*
         void ApplyConfIgFunc(object sender, RoutedEventArgs e)
         {
             try
@@ -136,6 +139,7 @@ namespace Genshin_UtIl.Pages
                     UtIl_Text.Text += EC.Exp.Source + " - " + EC.Exp.ToString() + "\r\n";
             }
         }
+        */
 
         void AddDIsplayCard(string DIsplay_TItle, string DIsplay_Sub_StrIng, int DIsplayWIdth, int DIsplayHeIght)
         {

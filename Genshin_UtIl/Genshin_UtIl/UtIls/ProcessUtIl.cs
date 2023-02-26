@@ -41,7 +41,7 @@ namespace Genshin_UtIl.UtIls
                     Verb = "Runas"
                 };
 
-                if (ConfIg.Instance.WInConfIg.WIndowmode == 1)
+                if (ConfIg.Instance.WInConfIg.WIndowmode == 0)
                     Proce.Arguments = "-popupwindow";
 
                 try
@@ -141,7 +141,7 @@ namespace Genshin_UtIl.UtIls
                 GenshinProcessCheckerTask.Cancel.Cancel();
             }
             else
-                await Task.Delay(1000);
+                await Task.Delay(500);
         }
 
         static async Task CheckClientProcess()
@@ -154,7 +154,7 @@ namespace Genshin_UtIl.UtIls
                 ClientProcessCheckerTask.Cancel.Cancel();
             }
             else
-                await Task.Delay(1000);
+                await Task.Delay(500);
         }
 
         static async Task CheckReshadeProcess()
@@ -167,7 +167,7 @@ namespace Genshin_UtIl.UtIls
                 ReshadeProcessCheckerTask.Cancel.Cancel();
             }
             else
-                await Task.Delay(1000);
+                await Task.Delay(500);
         }
     }
 }

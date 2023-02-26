@@ -9,6 +9,9 @@ using WinRT.Interop;
 using CommunityToolkit.Mvvm.Input;
 using Genshin_UtIl.interfaces.XamlRoot;
 using Genshin_UtIl.interfaces.Window;
+using System.Threading.Tasks;
+using CommunityToolkit.WinUI.UI;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Genshin_UtIl.ViewModels
 {
@@ -47,15 +50,19 @@ namespace Genshin_UtIl.ViewModels
         public ICommand OpenClientCommand { get; }
         public ICommand OpenReshadeWithGenshinCommand { get; }
 
+        public ICommand OpenNonLoadGenshinCommand { get; }
+
         public PathViewModel()
         {
-            ChangeGenshinPathDesCommand = new RelayCommand(FolderConfIgFunc);
+            ChangeGenshinPathDesCommand = new AsyncRelayCommand(FolderConfIgFunc);
             ChangeReshadePathDesCommand = new RelayCommand(ReShadeFolderConfIgFunc);
             ApplyConfIgCommand = new RelayCommand(ApplyConfig);
 
             OpenGenshinCommand = new RelayCommand(OpenGenshin);
             OpenClientCommand = new RelayCommand(OpenClient);
             OpenReshadeWithGenshinCommand = new RelayCommand(OpenReshadeWithGenshin);
+
+            OpenNonLoadGenshinCommand = new RelayCommand(OpenNonLoadGenshinPath);
 
             if (ConfIg.Instance.GenshInFolder.GenshInFolder == null == false)
                 GenshinFolderPath = "폴더 - " + ConfIg.Instance.GenshInFolder.GenshInFolder;
@@ -70,7 +77,7 @@ namespace Genshin_UtIl.ViewModels
         }
 
 
-        async void FolderConfIgFunc()
+        async Task FolderConfIgFunc()
         {
             try
             {
@@ -78,6 +85,8 @@ namespace Genshin_UtIl.ViewModels
 
                 var FIlePIcker = new Windows.Storage.Pickers.FolderPicker();
                 FIlePIcker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
+
+                FIlePIcker.FileTypeFilter.Add("*");
 
                 InitializeWithWindow.Initialize(FIlePIcker, hwnd);
 
@@ -163,6 +172,22 @@ namespace Genshin_UtIl.ViewModels
             catch (Exception)
             {
             }
+        }
+
+        async void OpenNonLoadGenshinPath()
+        {
+            ContentDialog nonLoadGenshinFolder = new()
+            {
+                XamlRoot = IXamlRoot.FolderConfigWindowXamlRoot,
+                Title = "참조",
+                Content = "프로그램에서 원신 폴더를 찾지 못했습니다.\r\n수동으로 원신이 설치된 폴더를 지정해주세요.\r\n원신이 설치된 폴더는 GenshinImpact.exe 파일이 있어야 합니다.",
+                CloseButtonText = "확인",
+                DefaultButton = ContentDialogButton.Close
+            };
+
+            _ = await nonLoadGenshinFolder.ShowAsync();
+
+            return;
         }
 
         async void ApplyConfig()

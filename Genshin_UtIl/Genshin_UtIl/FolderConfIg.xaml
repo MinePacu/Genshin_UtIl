@@ -11,14 +11,21 @@
     xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
-    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260">
+    <StackPanel Margin="120, 14, 120, 20" MaxWidth="1260"
+                Loaded="StackPanel_Loaded">
+        <interactivity:Interaction.Behaviors>
+            <core:EventTriggerBehavior EventName="Loaded">
+                <core:InvokeCommandAction Command="{x:Bind PathViewModel.OpenNonLoadGenshinCommand}" />
+            </core:EventTriggerBehavior>
+        </interactivity:Interaction.Behaviors>
         <StackPanel.DataContext>
             <viewmodels:PathViewModel x:Name="PathViewModel" />
         </StackPanel.DataContext>
         <TextBlock Text="게임 폴더" FontWeight="Bold" Margin="0, 7, 0, 9"/>
 
         <labs:SettingsCard
-            Header="원신 폴더">
+            Header="원신 폴더"
+            Margin="0, 0, 0, 9">
             <labs:SettingsCard.Description>
                 <TextBlock
                     x:Name="GenshinFolderTextBlock"
@@ -35,25 +42,7 @@
                 Style="{StaticResource AccentButtonStyle}"/>
         </labs:SettingsCard>
 
-        <labs:SettingsCard
-            Header="Reshade 폴더 (선택)">
-            <labs:SettingsCard.Description>
-                <TextBlock
-                    x:Name="ReshadeFolderTextBlock"
-                    Text="{x:Bind PathViewModel.ReshadeFolderPath, Mode=TwoWay}" />
-            </labs:SettingsCard.Description>
-
-            <Button
-                Width="190"
-                VerticalAlignment="Center" 
-                Content="폴더 설정" 
-                x:Name="ReShadeFolderConfIg" 
-                Command="{x:Bind PathViewModel.ChangeReshadePathDesCommand}"
-                Click="ReShadeFolderConfIgFunc"
-                Style="{StaticResource AccentButtonStyle}" />
-        </labs:SettingsCard>
-
-        <TextBlock Text="설정 적용" FontWeight="Bold" Margin="0, 7, 0, 9"/>
+        <TextBlock Text="설정 적용" FontWeight="Bold" Margin="0, 17, 0, 9"/>
 
         <labs:SettingsCard
             Header="설정 적용"
@@ -67,48 +56,5 @@
                 Command="{x:Bind PathViewModel.ApplyConfIgCommand}"
                 IsEnabled="{x:Bind PathViewModel.IsApplyEnabled, Mode=TwoWay}"/>
         </labs:SettingsCard>
-
-        <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
-            <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>
-            <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsExpanded="True" Margin="0, 0, 0, 14" >
-
-                <Expander.Header>
-                    <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="30"></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition Width="140"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-
-
-                        <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
-                            <SymbolIcon Symbol="Setting" Width="30"/>
-                        </Grid>
-
-                        <Grid Grid.Column="1" Margin="13, 0, 0, 0">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="9"></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition Height="9"></RowDefinition>
-                            </Grid.RowDefinitions>
-
-                            <TextBlock Grid.Row="1" Text="개발자용 유틸" FontSize="14"/>
-                            <TextBlock Grid.Row="2" Text="개발자가 개발하면서 사용할 수 있는 유틸" FontSize="12" />
-                        </Grid>
-                    </Grid>
-                </Expander.Header>
-
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="49"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
-                    <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="UtIl_Text"/>
-                </Grid>
-
-            </Expander>
-        </StackPanel>
     </StackPanel>
 </Window>

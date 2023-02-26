@@ -15,7 +15,7 @@
             <StackPanel.DataContext>
                 <viewmodel:PathViewModel x:Name="PathViewModel" />
             </StackPanel.DataContext>
-            
+
             <TextBlock Text="게임 열기" FontWeight="Bold" Margin="0, 7, 0, 9"/>
             <labs:SettingsCard
                 Header="게임"
@@ -34,7 +34,7 @@
                     Command="{x:Bind PathViewModel.OpenGenshinCommand}"
                     Style="{StaticResource AccentButtonStyle}"/>
             </labs:SettingsCard>
-    
+
             <labs:SettingsCard
                 Header="클라이언트"
                 Description="원신 클라이언트를 엽니다.&#10;참조 - 클라이언트로 여는 게임은 경계 없는 창모드와 블루투스 자동 제어가 작동되지 않습니다."
@@ -50,25 +50,6 @@
                     Content="클라이언트 열기"
                     x:Name="OpenClIentFIle"
                     Command="{x:Bind PathViewModel.OpenClientCommand}"
-                    Style="{StaticResource AccentButtonStyle}"/>
-            </labs:SettingsCard>
-
-            <labs:SettingsCard
-                Header="ReShade 필터로 게임 열기"
-                Description="ReShade 필터 프로그램를 이용하여 게임을 엽니다."
-                Margin="0, 0, 0, 0">
-                <labs:SettingsCard.HeaderIcon>
-                    <FontIcon 
-                        FontFamily="Segoe Fluent Icons" 
-                        Glyph="&#xf8a5;"/>
-                </labs:SettingsCard.HeaderIcon>
-                <Button 
-                    Width="190"
-                    VerticalAlignment="Center" 
-                    Content="게임 열기"
-                    x:Name="OpenFIlterFIle"
-                    Command="{x:Bind PathViewModel.OpenReshadeWithGenshinCommand}"
-                    IsEnabled="{x:Bind PathViewModel.IsApplyEnabled, Mode=TwoWay}"
                     Style="{StaticResource AccentButtonStyle}"/>
             </labs:SettingsCard>
 
@@ -95,162 +76,115 @@
                     Click="FolderConfIgFunc"/>
             </labs:SettingsCard>
 
-            <labs:SettingsCard
-                Header="ReShade 폴더">
-                <labs:SettingsCard.Description>
-                    <TextBlock
-                        x:Name="ReshadeFolderTextBlock"
-                        Text="{x:Bind PathViewModel.ReshadeFolderPath, Mode=TwoWay}"/>
-                </labs:SettingsCard.Description>
-                <labs:SettingsCard.HeaderIcon>
-                    <FontIcon 
-                    FontFamily="Segoe Fluent Icons" 
-                    Glyph="&#xe8b7;"/>
-                </labs:SettingsCard.HeaderIcon>
-                <Button
-                    Width="190"
-                    VerticalAlignment="Center" 
-                    Content="폴더 설정"
-                    x:Name="ReShadeFolderConfIg"
-                    Command="{x:Bind PathViewModel.ChangeReshadePathDesCommand}"
-                    Click="ReShadeFolderConfIgFunc" />
-            </labs:SettingsCard>
-        </StackPanel>
-        
-        <StackPanel 
-            x:Name="BluetoothPanel"
-            MaxWidth="1260"
-            Margin="0, 30, 0, 0">
-            <StackPanel.DataContext>
-                <viewmodel:OpenProgramViewModel x:Name="OpenProgramViewmodel"/>
-            </StackPanel.DataContext>
-            <TextBlock Text="블루투스" FontWeight="Bold" Margin="0, 0, 0, 9"/>
-            <labs:SettingsExpander
+            <StackPanel 
+                x:Name="BluetoothPanel"
+                MaxWidth="1260"
+                Margin="0, 30, 0, 0">
+                <StackPanel.DataContext>
+                    <viewmodel:OpenProgramViewModel x:Name="OpenProgramViewmodel"/>
+                </StackPanel.DataContext>
+                <TextBlock Text="블루투스" FontWeight="Bold" Margin="0, 0, 0, 9"/>
+                <labs:SettingsExpander
                 Header="블루투스 자동 제어"
                 Description="원신을 켜기 전이나 끈 후에 무선 게임패드 연결을 위해 자동으로 블루투스를 켜거나 끌지를 설정합니다."
                 Margin="0, 0, 0, 5">
-                <labs:SettingsExpander.HeaderIcon>
-                    <FontIcon 
+                    <labs:SettingsExpander.HeaderIcon>
+                        <FontIcon 
                         FontFamily="Segoe Fluent Icons" 
                         Glyph="&#xe702;"/>
-                </labs:SettingsExpander.HeaderIcon>
-                <labs:SettingsExpander.Items>
-                    <labs:SettingsCard>
-                        <labs:SettingsCard.Header>
-                            <CheckBox
+                    </labs:SettingsExpander.HeaderIcon>
+                    <labs:SettingsExpander.Items>
+                        <labs:SettingsCard>
+                            <labs:SettingsCard.Header>
+                                <CheckBox
                                 Content="원신을 켜기 전에 블루투스 켜기"
                                 IsEnabled="{x:Bind OpenProgramViewmodel.IsHavingBluetoothRadioDevice, Mode=TwoWay}"
                                 IsChecked="{x:Bind OpenProgramViewmodel.IsTurnOnbluetoothEnable, Mode=TwoWay}" />
-                        </labs:SettingsCard.Header>
-                    </labs:SettingsCard>
-                    <labs:SettingsCard>
-                        <labs:SettingsCard.Header>
-                            <CheckBox
+                            </labs:SettingsCard.Header>
+                        </labs:SettingsCard>
+                        <labs:SettingsCard>
+                            <labs:SettingsCard.Header>
+                                <CheckBox
                                 Content="원신을 끈 후에 블루투스 끄기"
                                 IsEnabled="{x:Bind OpenProgramViewmodel.IsHavingBluetoothRadioDevice, Mode=TwoWay}"
                                 IsChecked="{x:Bind OpenProgramViewmodel.IsTurnOffbluetoothEnable, Mode=TwoWay}" />
-                        </labs:SettingsCard.Header>
-                    </labs:SettingsCard>
-                </labs:SettingsExpander.Items>
-            </labs:SettingsExpander>
-        </StackPanel>
-        
-        <StackPanel MaxWidth="1260">
-            <StackPanel.DataContext>
-                <viewmodel:ReshadeViewModel x:Name="Reshadeviewmodel" />
-            </StackPanel.DataContext>
-            <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 30, 0, 9"/>
-            <labs:SettingsExpander
+                            </labs:SettingsCard.Header>
+                        </labs:SettingsCard>
+                    </labs:SettingsExpander.Items>
+                </labs:SettingsExpander>
+            </StackPanel>
+
+            <StackPanel MaxWidth="1260">
+                <StackPanel.DataContext>
+                    <viewmodel:ReshadeViewModel x:Name="Reshadeviewmodel" />
+                </StackPanel.DataContext>
+                <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 30, 0, 9"/>
+                <labs:SettingsExpander
                 Header="추가 인수"
                 Description="원신을 실행하면서 추가할 인수를 설정합니다.">
-                <labs:SettingsExpander.HeaderIcon>
-                    <FontIcon 
+                    <labs:SettingsExpander.HeaderIcon>
+                        <FontIcon 
                         FontFamily="Segoe Fluent Icons" 
                         Glyph="&#xe713;"/>
-                </labs:SettingsExpander.HeaderIcon>
-                <labs:SettingsExpander.Items>
-                    <labs:SettingsCard
+                    </labs:SettingsExpander.HeaderIcon>
+                    <labs:SettingsExpander.Items>
+                        <labs:SettingsCard
                         ContentAlignment="Vertical"
                         HorizontalContentAlignment="Stretch">
-                        <TextBox 
+                            <TextBox 
                             AcceptsReturn="True"
                             TextWrapping="Wrap"
                             IsReadOnly="True" 
                             x:Name="ExtraFCon" 
                             Height="130" 
                             PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
-                    </labs:SettingsCard>
-                </labs:SettingsExpander.Items>
-            </labs:SettingsExpander>
+                        </labs:SettingsCard>
+                    </labs:SettingsExpander.Items>
+                </labs:SettingsExpander>
 
-            <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
-                                    Margin="0, 0, 0, 9"
-                                    CornerRadius="7"
-                                    BorderThickness="1"
-                                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-                <Grid Margin="14, 14, 14, 14">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="46"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
+                    <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>
+                    <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsExpanded="True" Margin="0, 0, 0, 14" >
 
-                    <Grid Grid.Column="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
+                        <Expander.Header>
+                            <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="140"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
 
-                        <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="ReShade 자동 다시 시작" FontSize="14"/>
-                        <HyperlinkButton Grid.Row="1" Margin="-13, -13, 0, -14" VerticalAlignment="Center" FontWeight="Bold" Content="이 기능에 대한 자세한 정보" FontSize="12" x:Name="ReStartReShadeTu" Click="ReStartReShadeTuFunc"/>
-                    </Grid>
 
-                    <ToggleSwitch Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 0, -47, 0" Toggled="ReStartReShade" x:Name="ReStartReShadeTg" IsEnabled="{x:Bind Reshadeviewmodel.IsRestartReshadeEnabled, Mode=TwoWay}"/>
-                </Grid>
-            </Border>
+                                <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
+                                    <SymbolIcon Symbol="Setting" Width="30"/>
+                                </Grid>
 
-            <StackPanel Margin="0, 14, 0, 0" x:Name="UtIl_">
-                <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 0, 0, 4"/>
-                <Expander HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsExpanded="True" Margin="0, 0, 0, 14" >
+                                <Grid Grid.Column="1" Margin="13, 0, 0, 0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="10"></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition Height="10"></RowDefinition>
+                                    </Grid.RowDefinitions>
 
-                    <Expander.Header>
-                        <Grid Margin="5, 5, 5, 5" Height="57" VerticalAlignment="Center">
+                                    <TextBlock Grid.Row="1" Text="개발자용 유틸" FontSize="14"/>
+                                    <TextBlock Grid.Row="2" Text="개발자가 개발하면서 사용할 수 있는 유틸" FontSize="12" 
+                                   Foreground="{ThemeResource TextFillColorSecondary}"/>
+                                </Grid>
+                            </Grid>
+                        </Expander.Header>
+
+                        <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="49"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
-                                <ColumnDefinition Width="140"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
-
-                            <Grid Grid.Column="0" Margin="-9, 0, 0, 0">
-                                <SymbolIcon Symbol="Setting" Width="30"/>
-                            </Grid>
-
-                            <Grid Grid.Column="1" Margin="13, 0, 0, 0">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="10"></RowDefinition>
-                                    <RowDefinition></RowDefinition>
-                                    <RowDefinition></RowDefinition>
-                                    <RowDefinition Height="10"></RowDefinition>
-                                </Grid.RowDefinitions>
-
-                                <TextBlock Grid.Row="1" Text="개발자용 유틸" FontSize="14"/>
-                                <TextBlock Grid.Row="2" Text="개발자가 개발하면서 사용할 수 있는 유틸" FontSize="12" 
-                                   Foreground="{ThemeResource TextFillColorSecondary}"/>
-                            </Grid>
+                            <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="UtIl_Text"/>
                         </Grid>
-                    </Expander.Header>
 
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="49"></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-
-                        <TextBox Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" x:Name="UtIl_Text"/>
-                    </Grid>
-
-                </Expander>
+                    </Expander>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </StackPanel>

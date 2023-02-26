@@ -26,7 +26,15 @@ namespace Genshin_UtIl.ViewModels
             set
             {
                 SetProperty(ref display, value);
-                RegIstryUtIl.ApplyDisplay(value);
+                int DIsplayN = 0;
+                if (DIsplayUtIl.Sorted)
+                {
+                    DIsplayN = DIsplayUtIl.GetIndexFromSortedDisplayList(DIsplayUtIl.DIsplayLIst[value].DIsplay);
+                    RegIstryUtIl.ApplyDisplay(DIsplayN);
+                }
+                else
+                    DIsplayN = value;
+                Debug.WriteLine("DisplayN - " + DIsplayN);
             }
         }
 

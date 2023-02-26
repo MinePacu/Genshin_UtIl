@@ -24,6 +24,10 @@ namespace Genshin_UtIl.UtIls.Display.Structure
 
         public bool IsPrImaryDIsplay { get; set; }
 
+        public int Display_P_x { get; }
+
+        public int DIsplay_P_y { get; }
+
         /// <summary>
         /// - 기능
         /// <br/>ㅤ이 컴퓨터의 하나의 디스플레이 스펙을 저정합니다.
@@ -51,6 +55,9 @@ namespace Genshin_UtIl.UtIls.Display.Structure
             DIsplay_P = _DIsplay_P;
             DIsplay_Frequency = _DIsplay_Frequency;
             IsPrImaryDIsplay = _IsPrImaryDIsplay;
+
+            Display_P_x = _DIsplay_P.x;
+            DIsplay_P_y = _DIsplay_P.y;
         }
     }
 }

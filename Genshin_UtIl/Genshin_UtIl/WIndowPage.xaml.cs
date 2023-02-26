@@ -80,15 +80,15 @@ namespace Genshin_UtIl
                 DwmUtil.DwmSetWindowAttribute_(WIndowUtIl.Hwnd, UtIls.Dwm.Enum.DwmWIndowAttrIbute.DWMWA_USE_IMMERSIVE_DARK_MODE, true);
             }
 
-            DIsplayUtIl.DisplayLoadTask.StartTask();
+            //DIsplayUtIl.DisplayLoadTask.StartTask();
         }
 
         List<(string PageStrIng, Type page)> _pages = new()
         {
             ("WIndow", typeof(Pages.WIndowConfIg)),
-            ("ReShadeCon", typeof(Pages.ReShadeConfIg)),
+            //("ReShadeCon", typeof(Pages.ReShadeConfIg)),
             ("OpenGameCon", typeof(Pages.OpenFIleConfIg)),
-            ("TutorIal", typeof(TutorIal))
+            //("TutorIal", typeof(TutorIal))
         };
 
         void N_NavIgate(string PagestrIng, Microsoft.UI.Xaml.Media.Animation.NavigationTransitionInfo tran)

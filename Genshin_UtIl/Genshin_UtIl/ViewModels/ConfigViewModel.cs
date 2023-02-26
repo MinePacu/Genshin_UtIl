@@ -18,7 +18,7 @@ namespace Genshin_UtIl.ViewModels
             }
         }
 
-        private bool isUseDeveloperUtil;
+        private bool isUseDeveloperUtil = false;
 
         public bool IsUseDeveloperUtil
         {
