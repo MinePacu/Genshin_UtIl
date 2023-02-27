@@ -87,5 +87,57 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
     </tr>
   </tbody>
 </table>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">게임 실행 기능</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th></th>
+      <th>기능</th>
+      <th>기타 사항</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&check;</td>
+      <td>게임 파일 또는 클라이언트 실행</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&check;</td>
+      <td>게임 파일에 인수 적용</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">블루투스</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th></th>
+      <th>기능</th>
+      <th>기타 사항</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&check;</td>
+      <td>게임 플레이 시 블루투스 자동 켜짐</td>
+      <td rowspan="2">블루투스 모듈이 없으면 체크 불가하도록 설정</td>
+    </tr>
+    <tr>
+      <td>&check;</td>
+      <td>게임이 꺼지면 블루투스 자동 꺼짐</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 ## 배포에 대하여
 배포는 로드맵에서 Reshade 마스터 토글 기능을 제외한 기능들이 어느 정도 개발되고 버그들이 수정되면 배포할 예정입니다.  
