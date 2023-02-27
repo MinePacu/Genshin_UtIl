@@ -89,8 +89,8 @@ namespace Genshin_UtIl.UtIls
 
         public static void SortDIsplayLIst()
         {
-            DisplayLIst_Sorted = DIsplayLIst.OrderBy(p => p.Display_P_x).ToList();
-            DisplayLIst_Sorted_lo = DIsplayLIst.OrderBy(p => p.Display_P_x).ToList();
+            DisplayLIst_Sorted = DIsplayLIst.OrderBy(p => p.Display_P_x).ThenBy(p => p.DIsplay_P_y).ToList();
+            DisplayLIst_Sorted_lo = DIsplayLIst.OrderBy(p => p.Display_P_x).ThenBy(p => p.DIsplay_P_y).ToList(); ;
 
             int tmp = 0;
             while (tmp < DisplayLIst_Sorted.Count)
@@ -116,7 +116,7 @@ namespace Genshin_UtIl.UtIls
 
             tmp = 0;
         }
-
+         
         public static int GetIndexFromSortedDisplayList(string DIsplay_StrIng) => DisplayLIst_Sorted.FindIndex(p => p.DIsplay == DIsplay_StrIng);
 
         public static int GetNonSortedIndexFromSortedDisplayList(int SortedDisplayindex) => DIsplayLIst.FindIndex(p => p.DIsplay == DisplayLIst_Sorted[SortedDisplayindex].DIsplay);
