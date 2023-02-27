@@ -46,6 +46,14 @@ namespace Genshin_UtIl.ViewModels
             set => SetProperty(ref _IsEnableOptionDisableInfoBar, value);
         }
 
+        private bool _IsOpenResolutionLimitedInfoBar;
+
+        public bool IsOpenResolutionLimitedInfoBar
+        {
+            get => _IsOpenResolutionLimitedInfoBar;
+            set => SetProperty(ref _IsOpenResolutionLimitedInfoBar, value);
+        }
+
         private string width;
 
         public string Width
@@ -58,12 +66,14 @@ namespace Genshin_UtIl.ViewModels
                     SetProperty(ref width, DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth.ToString());
                     RegIstryUtIl.ApplyWidth((int) DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth);
                     Resolution = DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth.ToString() + " x " + Height;
+                    IsOpenResolutionLimitedInfoBar = true;
                 }
                 else
                 {
                     SetProperty(ref width, value);
                     RegIstryUtIl.ApplyWidth(int.Parse(value));
                     Resolution = value.ToString() + " x " + Height;
+                    IsOpenResolutionLimitedInfoBar = false;
                 }
             }
         }
@@ -80,12 +90,14 @@ namespace Genshin_UtIl.ViewModels
                     SetProperty(ref width, DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.HeIght.ToString());
                     RegIstryUtIl.ApplyWidth((int)DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.HeIght);
                     Resolution = Width + " x " + DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.HeIght.ToString();
+                    IsOpenResolutionLimitedInfoBar = true;
                 }
                 else
                 {
                     SetProperty(ref height, value);
                     RegIstryUtIl.ApplyHeight(int.Parse(value));
                     Resolution = Width + " x " + value.ToString();
+                    IsOpenResolutionLimitedInfoBar = false;
                 }
             }
         }
@@ -125,6 +137,7 @@ namespace Genshin_UtIl.ViewModels
             {
                 SetProperty(ref isLimitWindowWidthandHeight, value);
                 ConfIg.Instance.WInConfIg.LImItWIndowSIze = value;
+                IsOpenResolutionLimitedInfoBar = false;
             }
         }
 
@@ -141,6 +154,8 @@ namespace Genshin_UtIl.ViewModels
             {
                 AgreeOpenGameToRegistry();
             }
+
+            IsOpenResolutionLimitedInfoBar = false;
 
             if (DIsplayUtIl.DIsplayLIst.Count < 2)
                 IsEnableOptionDisableInfoBar = true;

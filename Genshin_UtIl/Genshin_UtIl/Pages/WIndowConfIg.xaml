@@ -75,6 +75,10 @@
 
         <TextBlock Text="창" FontWeight="Bold" Margin="0, 20, 0, 9"/>
 
+        <InfoBar 
+            Title="해상도 제한됨"
+            Message="해상도 제한 기능에 의해 헤상도가 적용되지 않았습니다."
+            IsOpen="{x:Bind WindowViewmodel.IsOpenResolutionLimitedInfoBar, Mode=TwoWay}" />
         <labs:SettingsExpander
             Header="게임 해상도"
             Description="실행된 원신 게임 창의 가로, 세로 설정"
