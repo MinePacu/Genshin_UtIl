@@ -34,7 +34,7 @@
             </ComboBox>
         </labs:SettingsCard>
 
-        <TextBlock Text="페이지" FontWeight="Bold" Margin="0, 17, 0, 7"/>
+        <TextBlock Text="페이지" FontWeight="Bold" Margin="0, 30, 0, 7"/>
 
         <labs:SettingsCard
             Header="첫 페이지"
@@ -51,7 +51,7 @@
             </ComboBox>
         </labs:SettingsCard>
 
-        <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 17, 0, 7"/>
+        <TextBlock Text="개발자용" FontWeight="Bold" Margin="0, 30, 0, 7"/>
 
         <labs:SettingsCard
             Header="개발자용 유틸"

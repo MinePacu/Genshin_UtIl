@@ -53,9 +53,18 @@ namespace Genshin_UtIl.ViewModels
             get => width;
             set
             {
-                SetProperty(ref width, value);
-                RegIstryUtIl.ApplyWidth(int.Parse(value));
-                Resolution = value.ToString() + " x " + Height;
+                if (ConfIg.Instance.WInConfIg.LImItWIndowSIze && uint.Parse(value) > DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth)
+                {
+                    SetProperty(ref width, DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth.ToString());
+                    RegIstryUtIl.ApplyWidth((int) DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth);
+                    Resolution = DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth.ToString() + " x " + Height;
+                }
+                else
+                {
+                    SetProperty(ref width, value);
+                    RegIstryUtIl.ApplyWidth(int.Parse(value));
+                    Resolution = value.ToString() + " x " + Height;
+                }
             }
         }
 
@@ -66,9 +75,18 @@ namespace Genshin_UtIl.ViewModels
             get => height;
             set
             {
-                SetProperty(ref height, value);
-                RegIstryUtIl.ApplyHeight(int.Parse(value));
-                Resolution = Width + " x " + value.ToString();
+                if (ConfIg.Instance.WInConfIg.LImItWIndowSIze && uint.Parse(value) > DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.HeIght)
+                {
+                    SetProperty(ref width, DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.HeIght.ToString());
+                    RegIstryUtIl.ApplyWidth((int)DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.HeIght);
+                    Resolution = Width + " x " + DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.HeIght.ToString();
+                }
+                else
+                {
+                    SetProperty(ref height, value);
+                    RegIstryUtIl.ApplyHeight(int.Parse(value));
+                    Resolution = Width + " x " + value.ToString();
+                }
             }
         }
 
