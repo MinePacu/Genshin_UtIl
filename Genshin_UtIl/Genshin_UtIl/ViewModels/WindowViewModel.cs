@@ -55,6 +55,7 @@ namespace Genshin_UtIl.ViewModels
             {
                 if (ConfIg.Instance.WInConfIg.LImItWIndowSIze && uint.Parse(value) > DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth)
                 {
+                    SetProperty(ref width, DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth.ToString());
                     RegIstryUtIl.ApplyWidth((int) DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth);
                     Resolution = DIsplayUtIl.DIsplayLIst[Display].DIsplay_Resol.WIdth.ToString() + " x " + Height;
                 }
@@ -161,8 +162,6 @@ namespace Genshin_UtIl.ViewModels
 
             else if (RegIstryUtIl.FullScreen == 1)
                 WindowMode = 1;
-
-            IsLimitWindowWidthandHeight = ConfIg.Instance.WInConfIg.LImItWIndowSIze;
 
             OpenWindowCommand = new RelayCommand(OpenWindow);
         }
