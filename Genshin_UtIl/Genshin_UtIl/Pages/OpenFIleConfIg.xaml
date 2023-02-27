@@ -83,11 +83,11 @@
                 <StackPanel.DataContext>
                     <viewmodel:OpenProgramViewModel x:Name="OpenProgramViewmodel"/>
                 </StackPanel.DataContext>
+                <TextBlock Text="블루투스" FontWeight="Bold" Margin="0, 0, 0, 9"/>
                 <InfoBar 
                     Title="옵션이 비활성화됨"
                     Message="컴퓨터에서 블루투스를 연결하기 위한 장치가 없으므로 옵션이 비활성화됩니다."
                     IsOpen="{x:Bind OpenProgramViewmodel.IsOpenNonBluetoothRadio, Mode=TwoWay}"/>
-                <TextBlock Text="블루투스" FontWeight="Bold" Margin="0, 0, 0, 9"/>
                 <labs:SettingsExpander
                 Header="블루투스 자동 제어"
                 Description="원신을 켜기 전이나 끈 후에 무선 게임패드 연결 및 해제을 위해 자동으로 블루투스를 켜거나 끌지를 설정합니다."
