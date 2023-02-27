@@ -86,8 +86,6 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
       <td></td>
     </tr>
   </tbody>
-</table>
-<table>
   <thead>
     <tr>
       <th colspan="3">게임 실행 기능</th>
@@ -112,8 +110,6 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
       <td></td>
     </tr>
   </tbody>
-</table>
-<table>
   <thead>
     <tr>
       <th colspan="3">블루투스</th>
@@ -134,10 +130,54 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
     </tr>
     <tr>
       <td>&check;</td>
-      <td>게임이 꺼지면 블루투스 자동 꺼짐</td>
+      <td>게임이 꺼지면 블루투스 자동 꺼짐</td
+    </tr>
+  </tbody>
+  <thead>
+    <tr>
+      <th colspan="3">라이브러리 내장</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th></th>
+      <th>기능</th>
+      <th>기타 사항</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&check;</td>
+      <td>.Net 7 내장</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&check;</td>
+      <td>Windows App SDK Runtime 내장</td>
       <td></td>
     </tr>
   </tbody>
+  <thead>
+    <tr>
+      <th colspan="3">기타 기능</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th></th>
+      <th>기능</th>
+      <th>기타 사항</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&check;</td>
+      <td>MVVM 구조로 변환</td>
+      <td>일부 UI를 제외하고 대부분 MVVM 구조로 변환됨</td>
+    </tr>
+  </tbody>
 </table>
+
+
 ## 배포에 대하여
 배포는 로드맵에서 Reshade 마스터 토글 기능을 제외한 기능들이 어느 정도 개발되고 버그들이 수정되면 배포할 예정입니다.  
