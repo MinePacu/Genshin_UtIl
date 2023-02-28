@@ -16,9 +16,31 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
 
 
 ## 사양
-| 최소 빌드  | 필요 프로그램  |
-|:--:|:-:|
-|  10.0.19041.0 빌드 이상 | .Net 7과 Windows App SDK Runtime 모두 내장 완료 |
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>윈도우 10</th>
+      <th>윈도우 11</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>아키텍쳐</td>
+      <td colspan="2" align="center">64비트</td>
+    </tr>
+    <tr>
+      <td>버전</td>
+      <td>20H1(2004) 이상</td>
+      <td>버전 상관없음</td>
+    </tr>
+    <tr>
+      <td>빌드</td>
+      <td>10.0.19041.0 이상</td>
+      <td>10.0.22000.1 이상</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## 기능 및 로드맵 
