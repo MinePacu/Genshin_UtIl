@@ -19,6 +19,11 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
 <table>
   <thead>
     <tr>
+      <th colspan="3">최소 사양</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
       <th></th>
       <th>윈도우 10</th>
       <th>윈도우 11</th>
