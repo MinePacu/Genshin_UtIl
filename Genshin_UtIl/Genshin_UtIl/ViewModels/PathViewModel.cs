@@ -10,8 +10,6 @@ using CommunityToolkit.Mvvm.Input;
 using Genshin_UtIl.interfaces.XamlRoot;
 using Genshin_UtIl.interfaces.Window;
 using System.Threading.Tasks;
-using CommunityToolkit.WinUI.UI;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Genshin_UtIl.ViewModels
 {
