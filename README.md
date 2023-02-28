@@ -139,7 +139,7 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
     <tr>
       <td>&check;</td>
       <td>MVVM 구조로 변환</td>
-      <td>일부 UI를 제외하고 대부분 MVVM 구조로 변환됨</td>
+      <td>일부 UI를 제외하고 대부분 MVVM 구조로 변환됨<br/>단, mvvm 구조를 독학하다보니 불완전한 내용이 있을 수 있음</td>
     </tr>
   </tbody>
 </table>
