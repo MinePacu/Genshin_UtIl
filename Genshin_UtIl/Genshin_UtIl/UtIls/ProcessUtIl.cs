@@ -144,7 +144,7 @@ namespace Genshin_UtIl.UtIls
                 GenshinProcessCheckerTask.Cancel.Cancel();
             }
             else
-                await Task.Delay(500);
+                await Task.Delay(1000);
         }
 
         static async Task CheckClientProcess()
@@ -157,7 +157,7 @@ namespace Genshin_UtIl.UtIls
                 ClientProcessCheckerTask.Cancel.Cancel();
             }
             else
-                await Task.Delay(500);
+                await Task.Delay(1000);
         }
 
         static async Task CheckReshadeProcess()
@@ -170,7 +170,7 @@ namespace Genshin_UtIl.UtIls
                 ReshadeProcessCheckerTask.Cancel.Cancel();
             }
             else
-                await Task.Delay(500);
+                await Task.Delay(1000);
         }
     }
 }

@@ -16,6 +16,9 @@
 	<PublishTrimmed>true</PublishTrimmed>
 	<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
 	<BaseOutputPath>H:\Visual_Studio__\Genshin_UtIl_Debug</BaseOutputPath>
+	<PackageProjectUrl></PackageProjectUrl>
+	<RepositoryUrl>https://github.com/MinePacu/Genshin_UtIl</RepositoryUrl>
+	<FileVersion>2023.1</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="FolderConfIg.xaml" />
