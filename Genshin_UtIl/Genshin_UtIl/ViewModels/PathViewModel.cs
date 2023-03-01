@@ -144,6 +144,9 @@ namespace Genshin_UtIl.ViewModels
             ConfIg.Instance.GenshInFolder.GenshInFolder = GenshinFolderPath;
             ConfIg.Instance.GenshInFolder.ReshadeFolder = ReshadeFolderPath;
 
+            WIndowPage window = new();
+            window.Activate();
+
             IFolderWindow.FolderWindow.Close();
         }
 

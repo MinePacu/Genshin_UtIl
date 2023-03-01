@@ -52,11 +52,6 @@ namespace Genshin_UtIl
             IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
         }
 
-        void ReShadeFolderConfIgFunc(object sender, RoutedEventArgs e)
-        {
-            IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
-        }
-
         private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
             IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
