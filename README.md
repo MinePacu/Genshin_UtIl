@@ -134,7 +134,7 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
   </thead>
   <thead>
     <tr>
-      <th></th>A
+      <th></th>
       <th>기능</th>
       <th>기타 사항</th>
     </tr>
