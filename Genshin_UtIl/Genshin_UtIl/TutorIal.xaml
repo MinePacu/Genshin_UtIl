@@ -13,12 +13,9 @@
         <NavigationView.MenuItems>
             <NavigationViewItem Icon="DockBottom" Content="게임 창" Tag="WIndow"/>
 
-            <NavigationViewItem Icon="Save" Content="ReShade 필터" Tag="ReShadeCon" />
-
             <NavigationViewItem Icon="Admin" Content="게임 실행" Tag="OpenGameCon" />
         </NavigationView.MenuItems>
         
-
         <ScrollViewer>
             <Frame x:Name="contentFra"/>
         </ScrollViewer>

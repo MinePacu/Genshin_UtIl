@@ -16,7 +16,7 @@
 	    <PublishTrimmed>true</PublishTrimmed>
 	<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
 	<BaseOutputPath>H:\Visual_Studio__\Genshin_UtIl_Debug</BaseOutputPath>
-	<FileVersion>2023.1</FileVersion>
+	<FileVersion>1.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="FolderConfIg.xaml" />
@@ -24,7 +24,6 @@
     <None Remove="Pages\ConfIgPage.xaml" />
     <None Remove="Pages\OpenFIleConfIg.xaml" />
     <None Remove="Pages\TutorIalPage\OpenFIleConfIgTutorIal.xaml" />
-    <None Remove="Pages\TutorIalPage\ReShadeConfIgTutorIal.xaml" />
     <None Remove="Pages\TutorIalPage\WIndowConfIgTutorIal.xaml" />
     <None Remove="Pages\WIndowConfIg.xaml" />
     <None Remove="SampleWIndow.xaml" />
@@ -75,12 +74,6 @@
 
   <ItemGroup>
     <Page Update="Pages\TutorIalPage\OpenFIleConfIgTutorIal.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Pages\TutorIalPage\ReShadeConfIgTutorIal.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

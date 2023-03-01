@@ -13,9 +13,6 @@
     <Page Update="Pages\TutorIalPage\OpenFIleConfIgTutorIal.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\TutorIalPage\ReShadeConfIgTutorIal.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Pages\TutorIalPage\WIndowConfIgTutorIal.xaml">
       <SubType>Designer</SubType>
     </Page>

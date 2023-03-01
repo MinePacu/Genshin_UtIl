@@ -23,7 +23,6 @@ namespace Genshin_UtIl
         List<(string PageStrIng, Type page)> _pages = new()
         {
             ("WIndow", typeof(Pages.TutorIalPage.WIndowConfIgTutorIal)),
-            ("ReShadeCon", typeof(Pages.TutorIalPage.ReShadeConfIgTutorIal)),
             ("OpenGameCon", typeof(Pages.TutorIalPage.OpenFIleConfIgTutorIal))
         };
 
@@ -72,9 +71,6 @@ namespace Genshin_UtIl
 
             if (n_ == 0)
                 N_NavIgate("WIndow", new Microsoft.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
-
-            else if (n_ == 1)
-                N_NavIgate("ReShadeCon", new Microsoft.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
 
             else if (n_ == 2)
                 N_NavIgate("OpenGameCon", new Microsoft.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
