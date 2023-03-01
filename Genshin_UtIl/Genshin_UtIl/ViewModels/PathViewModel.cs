@@ -41,24 +41,21 @@ namespace Genshin_UtIl.ViewModels
         }
 
         public ICommand ChangeGenshinPathDesCommand { get; }
-        public ICommand ChangeReshadePathDesCommand { get; }
         public ICommand ApplyConfIgCommand { get; }
 
         public ICommand OpenGenshinCommand { get; }
         public ICommand OpenClientCommand { get; }
-        public ICommand OpenReshadeWithGenshinCommand { get; }
 
         public ICommand OpenNonLoadGenshinCommand { get; }
 
         public PathViewModel()
         {
             ChangeGenshinPathDesCommand = new AsyncRelayCommand(FolderConfIgFunc);
-            ChangeReshadePathDesCommand = new RelayCommand(ReShadeFolderConfIgFunc);
+
             ApplyConfIgCommand = new RelayCommand(ApplyConfig);
 
             OpenGenshinCommand = new RelayCommand(OpenGenshin);
             OpenClientCommand = new RelayCommand(OpenClient);
-            OpenReshadeWithGenshinCommand = new RelayCommand(OpenReshadeWithGenshin);
 
             OpenNonLoadGenshinCommand = new RelayCommand(OpenNonLoadGenshinPath);
 
@@ -126,52 +123,6 @@ namespace Genshin_UtIl.ViewModels
             }
         }
 
-        async void ReShadeFolderConfIgFunc()
-        {
-            try
-            {
-                var hwnd = WIndowUtIl.Hwnd;
-
-                var FIlePIcker = new Windows.Storage.Pickers.FolderPicker();
-                FIlePIcker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
-
-                InitializeWithWindow.Initialize(FIlePIcker, hwnd);
-
-                Windows.Storage.StorageFolder folder = await FIlePIcker.PickSingleFolderAsync();
-
-                if (folder == null == false)
-                {
-                    if (FolderUtIl.CheckFIle(folder.Path, "ReShade64.dll") == 1)
-                    {
-                        ReshadeFolderPath = "폴더 - " + folder.Path;
-                        ConfIg.Instance.GenshInFolder.ReshadeFolder = folder.Path;
-                    }
-
-                    else
-                    {
-                        ContentDialog nofIleDIalog = new()
-                        {
-                            XamlRoot = IXamlRoot.FolderConfigWindowXamlRoot,
-                            Title = "Reshade.dll 파일이 없음",
-                            Content = "Reshade.dll 파일이 있는 폴더를 다시 지정하세요.",
-                            CloseButtonText = "확인",
-                            DefaultButton = ContentDialogButton.Close
-                        };
-
-                        ContentDialogResult DIalogresult = await nofIleDIalog.ShowAsync();
-                    }
-                    return;
-                }
-
-                else if (folder == null)
-                    return;
-            }
-
-            catch (Exception)
-            {
-            }
-        }
-
         async void OpenNonLoadGenshinPath()
         {
             ContentDialog nonLoadGenshinFolder = new()
@@ -204,11 +155,6 @@ namespace Genshin_UtIl.ViewModels
         void OpenClient()
         {
             ProcessUtIl.OpenProcess(1, ConfIg.Instance.GenshInFolder.GenshInFolder.Replace("Genshin Impact game", "") + "launcher.exe");
-        }
-
-        void OpenReshadeWithGenshin()
-        {
-            ProcessUtIl.OpenProcess(2, ConfIg.Instance.GenshInFolder.ReshadeFolder + "InJect.exe");
         }
     }
 }
