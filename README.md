@@ -49,6 +49,7 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
 <br/>
 
 ## 기능 및 로드맵 
+### 기능
 <table>
   <thead>
     <tr>
@@ -95,7 +96,7 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
     <tr>
       <td>&check;</td>
       <td>게임 파일 또는 클라이언트 실행</td>
-      <td></td>
+      <td>클라이언트로 실행한 게임도 경계 없는 창 모드를 적용하는 기능을 생각 중</td>
     </tr>
     <tr>
       <td>&check;</td>
@@ -125,7 +126,30 @@ PC에서 원신을 플레이하는 사람들을 위한 PC 원신용 유틸리티
       <td>&check;</td>
       <td>게임이 꺼지면 블루투스 자동 꺼짐</td
     </tr>
+  </tbody> 
+  <thead>
+    <tr>
+      <th colspan="3">기타 기능</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th></th>A
+      <th>기능</th>
+      <th>기타 사항</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>paimon.moe 기원 통계 자동 제출용 링크 생성기</td>
+      <td></td>
+    </tr>
   </tbody>
+</table>
+
+### 프로그램 최적화
+<table>
   <thead>
     <tr>
       <th colspan="3">라이브러리 내장</th>
