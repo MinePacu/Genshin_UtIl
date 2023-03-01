@@ -23,7 +23,6 @@
     <None Remove="InitializeProgram.xaml" />
     <None Remove="Pages\ConfIgPage.xaml" />
     <None Remove="Pages\OpenFIleConfIg.xaml" />
-    <None Remove="Pages\ReShadeConfIg.xaml" />
     <None Remove="Pages\TutorIalPage\OpenFIleConfIgTutorIal.xaml" />
     <None Remove="Pages\TutorIalPage\ReShadeConfIgTutorIal.xaml" />
     <None Remove="Pages\TutorIalPage\WIndowConfIgTutorIal.xaml" />
@@ -88,12 +87,6 @@
 
   <ItemGroup>
     <Page Update="TutorIal.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Pages\ReShadeConfIg.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
