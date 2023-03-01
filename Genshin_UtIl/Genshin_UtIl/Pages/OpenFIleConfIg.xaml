@@ -124,8 +124,8 @@
                 </StackPanel.DataContext>
                 <TextBlock Text="기타 설정" FontWeight="Bold" Margin="0, 30, 0, 9"/>
                 <labs:SettingsExpander
-                Header="추가 인수"
-                Description="원신을 실행하면서 추가할 인수를 설정합니다.">
+                Header="추가 인자"
+                Description="원신을 실행하면서 추가할 인자를 설정합니다.">
                     <labs:SettingsExpander.HeaderIcon>
                         <FontIcon 
                         FontFamily="Segoe MDL2 Assets" 
@@ -142,7 +142,7 @@
                             x:Name="ExtraFCon" 
                             Text="{x:Bind ExtraArgsviewmodel.ExtraArgs, Mode=TwoWay}"
                             Height="130" 
-                            PlaceholderText="한 줄당 인수 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
+                            PlaceholderText="한 줄당 인자 하나이며, - 문자를 가장 앞에 추가하세요. 예) -popupwindow"/>
                         </labs:SettingsCard>
                     </labs:SettingsExpander.Items>
                 </labs:SettingsExpander>
