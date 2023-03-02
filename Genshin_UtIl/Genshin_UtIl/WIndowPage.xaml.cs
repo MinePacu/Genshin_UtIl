@@ -1,8 +1,10 @@
-﻿using Genshin_UtIl.UtIls;
+﻿using Genshin_UtIl.interfaces.Window;
+using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
 using Genshin_UtIl.UtIls.Exceptions.Registry;
 
+using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -39,6 +41,13 @@ namespace Genshin_UtIl
 
             WIndowUtIl.Hwnd = WindowNative.GetWindowHandle(this);
 
+            /*
+            if (SysUtIl.GetOSFriendlyVersion().Contains("Windows 11"))
+            {
+                MicaAcrylicHelper.window = this;
+                MicaAcrylicHelper.TrySetMicaBackdrop(true);
+            }
+            */
             n.SelectedItem = n.MenuItems[GetPageN()];
 
             // NavIgateFIrstPage();
@@ -171,7 +180,7 @@ namespace Genshin_UtIl
                 N_NavIgate("OpenGameCon", new Microsoft.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
         }
 
-        void WIndow_Closed(object sender, WindowEventArgs e)
+        void Window_Closed(object sender, WindowEventArgs e)
         {
             var wIndow = (OverlappedPresenter) appwIndow.Presenter;
 
@@ -185,6 +194,13 @@ namespace Genshin_UtIl
             }
 
             ConfIg.Save();
+
+            if (MicaAcrylicHelper.m_micaController != null)
+            {
+                MicaAcrylicHelper.m_micaController.Dispose();
+                MicaAcrylicHelper.m_micaController = null;
+            }
+            MicaAcrylicHelper.m_configurationSource = null;
         }
     }
 }

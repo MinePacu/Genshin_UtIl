@@ -1,10 +1,15 @@
-﻿using Microsoft.Win32;
+﻿using System.Management;
 
-string registry_key = @"SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache";
-using (Microsoft.Win32.RegistryKey key = Registry.CurrentUser.OpenSubKey(registry_key))
+Console.WriteLine("Windows 11 Contains - " + GetOSFriendlyName().Contains("Windows 11"));
+
+string GetOSFriendlyName()
 {
-    foreach (string subvalue_name in key.GetValueNames())
+    string result = string.Empty;
+    ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Caption FROM Win32_OperatingSystem");
+    foreach (ManagementObject os in searcher.Get())
     {
-        Console.WriteLine(subvalue_name);
+        result = os["Caption"].ToString();
+        break;
     }
+    return result;
 }

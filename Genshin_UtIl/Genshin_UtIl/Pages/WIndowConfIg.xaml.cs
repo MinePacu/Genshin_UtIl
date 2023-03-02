@@ -7,8 +7,11 @@ using Genshin_UtIl.UtIls.Exceptions.Registry;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.Windows.AppLifecycle;
+
 using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 using static Genshin_UtIl.UtIls.DIsplayUtIl;
 using static Genshin_UtIl.UtIls.WIndowUtIl;
@@ -28,6 +31,18 @@ namespace Genshin_UtIl.Pages
         public WIndowConfIg()
         {
             this.InitializeComponent();
+
+            IRegistryXamlRoot.WindowConfIgXamlRoot = WIndowUtIl.N.XamlRoot;
+            try
+            {
+                RegIstryUtIl.InItIalIzeRegIstry();
+            }
+
+            catch (GenshinRegistryNullException)
+            {
+                AgreeOpenGameToRegistry();
+                return;
+            }
 
             if (DIsplayUtIl.Sorted == false)
             {
@@ -234,7 +249,42 @@ namespace Genshin_UtIl.Pages
 
         private void WindowConfig_Loaded(object sender, RoutedEventArgs e)
         {
-            IRegistryXamlRoot.WindowConfIgXamlRoot = XamlRoot;
+            IRegistryXamlRoot.WindowConfIgXamlRoot = Content.XamlRoot;
+        }
+
+        async void AgreeOpenGameToRegistry()
+        {
+            ContentDialog contentD = new()
+            {
+                XamlRoot = IRegistryXamlRoot.WindowConfIgXamlRoot,
+                Title = "참조",
+                Content = "원신 게임 파일은 있으나 해상도와 모니터 설정 값을 불러올 수 없습니다.\r\n" +
+                "설정 값을 만들기 위해서는 게임을 한 번 이상 실행해야 합니다.\r\n" +
+                "게임을 실행하려면 게임 실행 버튼을 누르세요.",
+                PrimaryButtonText = "게임 실행",
+                CloseButtonText = "취소",
+                DefaultButton = ContentDialogButton.Primary
+            };
+
+            var contentDR = await contentD.ShowAsync();
+
+            if (contentDR == ContentDialogResult.Primary)
+            {
+                try
+                {
+                    ProcessUtIl.OpenProcess(0, ConfIg.Instance.GenshInFolder.GenshInFolder + "\\GenshinImpact.exe");
+                    await Task.Delay(2000);
+
+                    Environment.Exit(0);
+                }
+                catch (ExcepClass ep)
+                {
+                    Debug.WriteLine("Process - " + ep.Message);
+                }
+
+            }
+            else
+                Environment.Exit(0);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

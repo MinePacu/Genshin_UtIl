@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj": {}
+    "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj": {}
   },
   "projects": {
-    "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj": {
+    "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
+        "projectUniqueName": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
         "projectName": "Genshin_UtIl (Package)",
-        "projectPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
+        "projectPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
         "packagesPath": "C:\\Users\\subin\\.nuget\\packages\\",
-        "outputPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\obj\\",
+        "outputPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "uap10.0.19041": {
             "targetAlias": "net451",
             "projectReferences": {
-              "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj": {
-                "projectPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj"
+              "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj": {
+                "projectPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj"
               }
             }
           }
@@ -97,14 +97,14 @@
         }
       }
     },
-    "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj": {
+    "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj",
+        "projectUniqueName": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj",
         "projectName": "Genshin_UtIl",
-        "projectPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj",
+        "projectPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj",
         "packagesPath": "C:\\Users\\subin\\.nuget\\packages\\",
-        "outputPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\obj\\",
+        "outputPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,6 +158,10 @@
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
               "version": "[1.2.230217.4, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "System.ServiceProcess.ServiceController": {
               "target": "Package",

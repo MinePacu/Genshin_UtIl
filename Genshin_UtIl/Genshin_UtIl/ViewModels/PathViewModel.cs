@@ -125,6 +125,14 @@ namespace Genshin_UtIl.ViewModels
 
         async void OpenNonLoadGenshinPath()
         {
+            /*
+            if (SysUtIl.GetOSFriendlyVersion().Contains("Windows 11"))
+            {
+                MicaAcrylicHelper.window = IFolderWindow.FolderWindow;
+                MicaAcrylicHelper.TrySetMicaBackdrop(false);
+            }
+            */
+
             ContentDialog nonLoadGenshinFolder = new()
             {
                 XamlRoot = IXamlRoot.FolderConfigWindowXamlRoot,

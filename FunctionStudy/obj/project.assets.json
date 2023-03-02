@@ -114,11 +114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Visual_Studio__\\Genshin_UtIl\\FunctionStudy\\FunctionStudy.csproj",
+      "projectUniqueName": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\FunctionStudy\\FunctionStudy.csproj",
       "projectName": "FunctionStudy",
-      "projectPath": "H:\\Visual_Studio__\\Genshin_UtIl\\FunctionStudy\\FunctionStudy.csproj",
+      "projectPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\FunctionStudy\\FunctionStudy.csproj",
       "packagesPath": "C:\\Users\\subin\\.nuget\\packages\\",
-      "outputPath": "H:\\Visual_Studio__\\Genshin_UtIl\\FunctionStudy\\obj\\",
+      "outputPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\FunctionStudy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

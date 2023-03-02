@@ -12,10 +12,9 @@
 	<PublishProfile>Properties\PublishProfiles\win10-x64.pubxml</PublishProfile>
 	    <WindowsPackageType>None</WindowsPackageType>
 	    <SelfContained>true</SelfContained>
-	    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
-	    <PublishTrimmed>true</PublishTrimmed>
+	  <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
 	<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
-	<BaseOutputPath>H:\Visual_Studio__\Genshin_UtIl_Debug</BaseOutputPath>
+	<BaseOutputPath>C:\Users\subin\source\repos\MinePacu\Genshin_UtIl_Debug</BaseOutputPath>
 	<FileVersion>1.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -36,6 +35,7 @@
     <PackageReference Include="CommunityToolkit.WinUI.UI.Behaviors" Version="7.1.2" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.230217.4" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
+    <PackageReference Include="System.Management" Version="7.0.0" />
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="7.0.0" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System.Security.Principal;
+﻿using System.Management;
+using System.Security.Principal;
 
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Microsoft.Win32;
@@ -42,6 +43,16 @@ namespace Genshin_UtIl.UtIls
                 return Appth.Light;
         }
 
-
+        public static string GetOSFriendlyVersion()
+        {
+            string result = string.Empty;
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Caption FROM Win32_OperatingSystem");
+            foreach (ManagementObject os in searcher.Get())
+            {
+                result = os["Caption"].ToString();
+                break;
+            }
+            return result;
+        }
     }
 }

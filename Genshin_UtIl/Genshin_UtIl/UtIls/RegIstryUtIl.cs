@@ -9,7 +9,7 @@ namespace Genshin_UtIl.UtIls
     public static class RegIstryUtIl
     {
         static readonly string GenshInRegIstryStrIng = @"Software\miHoYo\Genshin Impact";
-        static RegistryKey GenshInRegIstry { get; set; }
+        public static RegistryKey GenshInRegIstry { get; set; }
 
         public static int InItIalIzed { get; set; } = 0;
 

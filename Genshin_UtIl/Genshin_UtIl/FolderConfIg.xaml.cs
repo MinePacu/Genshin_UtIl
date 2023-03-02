@@ -13,10 +13,11 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
+using WinRT;
 using WinRT.Interop;
 using Windows.Storage;
 using Windows.Foundation;
+using Microsoft.UI.Composition.SystemBackdrops;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -45,6 +46,7 @@ namespace Genshin_UtIl
             IFolderWindow.FolderWindow = this;
 
             //UtIl_Text.Text += WIndowUtIl.Hwnd;
+
         }
 
         async void FolderConfIgFunc(object sender, RoutedEventArgs e)

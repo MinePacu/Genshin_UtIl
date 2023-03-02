@@ -213,6 +213,19 @@
           }
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -249,6 +262,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -518,6 +547,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -755,6 +785,19 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -791,6 +834,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -1060,6 +1119,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -1297,6 +1357,19 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -1333,6 +1406,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -1602,6 +1691,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -1842,6 +1932,19 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -1878,6 +1981,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -2147,6 +2266,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -2387,6 +2507,19 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -2423,6 +2556,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -2692,6 +2841,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -2932,6 +3082,19 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -2968,6 +3131,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -3237,6 +3416,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -3477,6 +3657,19 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -3513,6 +3706,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -3782,6 +3991,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -4022,6 +4232,19 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/1.3.1": {
         "type": "package",
         "compile": {
@@ -4058,6 +4281,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Management/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
             "related": ".xml"
           }
         }
@@ -4327,6 +4566,7 @@
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.230217.4",
+          "System.Management": "7.0.0",
           "System.ServiceProcess.ServiceController": "7.0.0"
         },
         "compile": {
@@ -5411,6 +5651,33 @@
         "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
       ]
     },
+    "System.CodeDom/7.0.0": {
+      "sha512": "GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "type": "package",
+      "path": "system.codedom/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.CodeDom.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "lib/net462/System.CodeDom.dll",
+        "lib/net462/System.CodeDom.xml",
+        "lib/net6.0/System.CodeDom.dll",
+        "lib/net6.0/System.CodeDom.xml",
+        "lib/net7.0/System.CodeDom.dll",
+        "lib/net7.0/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.7.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Collections.Immutable/1.3.1": {
       "sha512": "n+AGX7zmiZumW9aggOkXaHzUeAS3EfeTErnkKCusyONUozbTv+kMb8VE36m+ldV6kF9g57G2c641KCdgH9E0pg==",
       "type": "package",
@@ -5548,6 +5815,34 @@
         "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.xml",
         "system.diagnostics.eventlog.7.0.0.nupkg.sha512",
         "system.diagnostics.eventlog.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Management/7.0.0": {
+      "sha512": "A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
+      "type": "package",
+      "path": "system.management/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "lib/net462/_._",
+        "lib/net6.0/System.Management.dll",
+        "lib/net6.0/System.Management.xml",
+        "lib/net7.0/System.Management.dll",
+        "lib/net7.0/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net6.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.xml",
+        "runtimes/win/lib/net7.0/System.Management.dll",
+        "runtimes/win/lib/net7.0/System.Management.xml",
+        "system.management.7.0.0.nupkg.sha512",
+        "system.management.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -7391,11 +7686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
+      "projectUniqueName": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
       "projectName": "Genshin_UtIl (Package)",
-      "projectPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
+      "projectPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
       "packagesPath": "C:\\Users\\subin\\.nuget\\packages\\",
-      "outputPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\obj\\",
+      "outputPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7417,8 +7712,8 @@
         "uap10.0.19041": {
           "targetAlias": "net451",
           "projectReferences": {
-            "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj": {
-              "projectPath": "H:\\Visual_Studio__\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj"
+            "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj": {
+              "projectPath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl.csproj"
             }
           }
         }

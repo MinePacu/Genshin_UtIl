@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Closed="WIndow_Closed">
+    Closed="Window_Closed">
 
     <Grid>
         <NavigationView x:Name="n" SelectionChanged="N_SelectIonChanged" IsBackButtonVisible="Collapsed" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
