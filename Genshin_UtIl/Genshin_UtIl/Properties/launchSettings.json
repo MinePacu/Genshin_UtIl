@@ -3,7 +3,10 @@
     "Genshin_UtIl": {
       "commandName": "Project",
       "hotReloadEnabled": true,
-      "nativeDebugging": false
+      "nativeDebugging": false,
+      "remoteDebugEnabled": true,
+      "remoteDebugMachine": "PC-7YRPEQ:4026",
+      "authenticationMode": "None"
     }
   }
 }

@@ -28,7 +28,7 @@ namespace Genshin_UtIl.UtIls
             GenshInRegIstry = Registry.CurrentUser.OpenSubKey(GenshInRegIstryStrIng, true);
 
             if (GenshInRegIstry == null)
-                throw new GenshinRegistryNullException();
+                return;
 
             else
             {

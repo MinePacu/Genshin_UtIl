@@ -33,12 +33,8 @@ namespace Genshin_UtIl.Pages
             this.InitializeComponent();
 
             IRegistryXamlRoot.WindowConfIgXamlRoot = WIndowUtIl.N.XamlRoot;
-            try
-            {
-                RegIstryUtIl.InItIalIzeRegIstry();
-            }
 
-            catch (GenshinRegistryNullException)
+            if (RegIstryUtIl.GenshInRegIstry is null)
             {
                 AgreeOpenGameToRegistry();
                 return;

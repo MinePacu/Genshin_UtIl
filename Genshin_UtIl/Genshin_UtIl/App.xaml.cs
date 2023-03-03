@@ -36,6 +36,7 @@ namespace Genshin_UtIl
             try
             {
                 DIsplayUtIl.InitializeDisplayList();
+                RegIstryUtIl.InItIalIzeRegIstry();
             }
 
             catch (ExcepClass)
