@@ -67,7 +67,7 @@ namespace Genshin_UtIl.UtIls
 
         private static void Window_ThemeChanged(FrameworkElement sender, object args)
         {
-            if (m_configurationSource != null)
+            if (m_configurationSource is null == false)
             {
                 SetConfigurationSourceTheme();
             }
@@ -99,7 +99,7 @@ namespace Genshin_UtIl.UtIls
         object m_dispatcherQueueController = null;
         public void EnsureWindowsSystemDispatcherQueueController()
         {
-            if (Windows.System.DispatcherQueue.GetForCurrentThread() != null)
+            if (Windows.System.DispatcherQueue.GetForCurrentThread() is null == false)
             {
                 // one already exists, so we'll just use it.
                 return;

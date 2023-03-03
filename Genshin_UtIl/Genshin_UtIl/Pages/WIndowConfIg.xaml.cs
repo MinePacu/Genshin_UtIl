@@ -4,6 +4,7 @@ using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.Display.Structure;
 using Genshin_UtIl.UtIls.Exceptions.Registry;
 
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
@@ -11,6 +12,7 @@ using Microsoft.Windows.AppLifecycle;
 
 using System;
 using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 
 using static Genshin_UtIl.UtIls.DIsplayUtIl;
@@ -34,22 +36,10 @@ namespace Genshin_UtIl.Pages
 
             IRegistryXamlRoot.WindowConfIgXamlRoot = WIndowUtIl.N.XamlRoot;
 
-            if (RegIstryUtIl.GenshInRegIstry is null)
-            {
-                AgreeOpenGameToRegistry();
-                return;
-            }
-
             if (DIsplayUtIl.Sorted == false)
             {
                 SortDIsplayLIst();
                 Sorted = true;
-            }
-
-            if (RegIstryUtIl.DIsplay >= DIsplayLIst.Count)
-            {
-                RegIstryUtIl.ApplyDisplay(0);
-                RegIstryUtIl.DIsplay = 0;
             }
 
             UtIl_Text.Text += "DIsplayLIstUI - " + DIsplayLIstUI.Children.Count + "\r\n";
@@ -77,10 +67,6 @@ namespace Genshin_UtIl.Pages
                             (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[tmp].DIsplay_Resol.HeIght);
                     tmp++;
                 }
-                if (RegIstryUtIl.DIsplay == 0)
-                    WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(0);
-                else
-                    WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
             }
 
             else
@@ -90,19 +76,36 @@ namespace Genshin_UtIl.Pages
                     (int)DisplayLIst_Sorted_lo[0].DIsplay_Resol.WIdth, (int)DisplayLIst_Sorted_lo[0].DIsplay_Resol.HeIght);
 
                 DIsPlaySelect.ItemsSource = DIsplay_strIng_LIst;
-                WindowViewmodel.Display = 0;
                 DIsPlaySelect.IsEnabled = false;
             }
-
-
-            if (RegIstryUtIl.DIsplay == 0 == false)
-                WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
-
             if (ConfIg.Instance.Dev == false)
                 UtIl_.Visibility = Visibility.Collapsed;
 
             else
                 UtIl_.Visibility = Visibility.Visible;
+
+            if (RegIstryUtIl.GenshInRegIstry is null)
+            {
+                AgreeOpenGameToRegistry();
+                return;
+            }
+
+            if (DIsplay_strIng_LIst.Count <= 1)
+            {
+                WindowViewmodel.Display = 0;
+            }
+
+            if (RegIstryUtIl.DIsplay >= DIsplayLIst.Count)
+            {
+                RegIstryUtIl.ApplyDisplay(0);
+                RegIstryUtIl.DIsplay = 0;
+            }
+
+            if (RegIstryUtIl.DIsplay == 0)
+                WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(0);
+            else
+                WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
+
 
             /*
             if (ConfIg.Instance.Dev == true)
@@ -269,9 +272,45 @@ namespace Genshin_UtIl.Pages
                 try
                 {
                     ProcessUtIl.OpenProcess(0, ConfIg.Instance.GenshInFolder.GenshInFolder + "\\GenshinImpact.exe");
-                    await Task.Delay(2000);
+                    WindowViewmodel.IsOpenLoadingGenshinRegistry = true;
+                    WindowViewmodel.IsEnableChagneoption = false;
+                    WIndowUtIl.N.IsEnabled = false;
 
-                    Environment.Exit(0);
+                    var presenter = (OverlappedPresenter) WIndowUtIl.appwIndow.Presenter;
+                    presenter.SetBorderAndTitleBar(true, false);
+
+                    await ProcessUtIl.SimpleCheckingGenshinProcess();
+                    await Task.Delay(10000);
+
+                    RegIstryUtIl.InItIalIzeRegIstry();
+                    //Debug.WriteLine("Initialized Registry");
+
+                    WIndowUtIl.N.IsEnabled = true;
+                    WindowViewmodel.IsOpenLoadingGenshinRegistry = false;
+                    WindowViewmodel.IsEnableChagneoption = true;
+
+                    WindowViewmodel.RefreshViewmodel();
+                    presenter.SetBorderAndTitleBar(true, true);
+
+
+                    if (DIsplay_strIng_LIst.Count <= 1)
+                    {
+                        WindowViewmodel.Display = 0;
+                    }
+
+                    if (RegIstryUtIl.DIsplay >= DIsplayLIst.Count)
+                    {
+                        RegIstryUtIl.ApplyDisplay(0);
+                        RegIstryUtIl.DIsplay = 0;
+                    }
+
+                    if (RegIstryUtIl.DIsplay == 0)
+                        WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(0);
+                    else
+                        WindowViewmodel.Display = GetNonSortedIndexFromSortedDisplayList(RegIstryUtIl.DIsplay);
+                    //Debug.WriteLine("Refreshed Viewmodel");
+
+                    //Environment.Exit(0);
                 }
                 catch (ExcepClass ep)
                 {

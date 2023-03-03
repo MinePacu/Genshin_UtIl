@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -137,6 +138,22 @@ namespace Genshin_UtIl.ViewModels
             }
         }
 
+        private bool isOpenLoadingGenshinRegistry = false;
+
+        public bool IsOpenLoadingGenshinRegistry
+        {
+            get => isOpenLoadingGenshinRegistry;
+            set => SetProperty(ref isOpenLoadingGenshinRegistry, value);
+        }
+
+        private bool isEnableChangeoption = true;
+
+        public bool IsEnableChagneoption
+        {
+            get => isEnableChangeoption;
+            set => SetProperty(ref isEnableChangeoption, value);
+        }
+
         public ICommand OpenWindowCommand { get; }
 
         public WindowViewModel()
@@ -169,8 +186,29 @@ namespace Genshin_UtIl.ViewModels
 
             OpenWindowCommand = new RelayCommand(OpenWindow);
         }
+        
+        public void RefreshViewmodel()
+        {
 
+            if (RegIstryUtIl.GenshInRegIstry is null == false)
+            {
+                Width = RegIstryUtIl.ScreenWIdth.ToString();
+                Height = RegIstryUtIl.ScreenHeIght.ToString();
 
+                Resolution = Width + " x " + Height;
+
+                if (RegIstryUtIl.FullScreen == 0)
+                {
+                    if (ConfIg.Instance.WInConfIg.WIndowmode == 0)
+                        WindowMode = 0;
+                    else if (ConfIg.Instance.WInConfIg.WIndowmode == 2)
+                        WindowMode = 2;
+                }
+
+                else if (RegIstryUtIl.FullScreen == 1)
+                    WindowMode = 1;
+            }
+        }
 
         void OpenWindow()
         {

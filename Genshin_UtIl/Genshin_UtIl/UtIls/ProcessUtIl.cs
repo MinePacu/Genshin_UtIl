@@ -88,5 +88,15 @@ namespace Genshin_UtIl.UtIls
             else
                 await Task.Delay(1000);
         }
+
+        public static async Task SimpleCheckingGenshinProcess()
+        {
+            Process[] GenshinProcess = Process.GetProcessesByName("genshinimpact");
+            while (GenshinProcess.Length < 1)
+            {
+                GenshinProcess = Process.GetProcessesByName("genshinimpact");
+                await Task.Delay(1000);
+            }
+        }
     }
 }

@@ -20,6 +20,27 @@
             <viewmodel:WindowViewModel x:Name="WindowViewmodel" />
         </StackPanel.DataContext>
 
+        <InfoBar
+            IsIconVisible="false"
+            IsClosable="false"
+            IsOpen="{x:Bind WindowViewmodel.IsOpenLoadingGenshinRegistry, Mode=TwoWay}">
+            <InfoBar.Content>
+                <Grid
+                    Margin="0, 12, 0, 12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <ProgressRing 
+                        Grid.Column="0"/>
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="5, 0, 0, 0"
+                        VerticalAlignment="Center"
+                        Text="원신 실행 및 설정 값 로드 대기 중...&#10;프로그램을 끄지 마세요."/>
+                </Grid>
+            </InfoBar.Content>
+        </InfoBar>
 
         <Grid ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0, 14, 0, 16" HorizontalAlignment="Center" x:Name="DIsplayLIstUI">
             <Grid.Resources>
@@ -97,12 +118,14 @@
                     Header="가로">
                     <TextBox 
                         Text="{x:Bind WindowViewmodel.Width, Mode=TwoWay}"
+                        IsEnabled="{x:Bind WindowViewmodel.IsEnableChagneoption, Mode=TwoWay}"
                         Width="150"/>
                 </labs:SettingsCard>
                 <labs:SettingsCard
                     Header="세로">
                     <TextBox 
                         Text="{x:Bind WindowViewmodel.Height, Mode=TwoWay}"
+                        IsEnabled="{x:Bind WindowViewmodel.IsEnableChagneoption, Mode=TwoWay}"
                         Width="150"/>
                 </labs:SettingsCard>
             </labs:SettingsExpander.Items>
@@ -123,6 +146,7 @@
                 VerticalAlignment="Center"
                 Margin="0, 0, 6, 0" 
                 x:Name="WIndowmode" 
+                IsEnabled="{x:Bind WindowViewmodel.IsEnableChagneoption, Mode=TwoWay}"
                 SelectedIndex="{x:Bind WindowViewmodel.WindowMode, Mode=TwoWay}">
                 <ComboBoxItem 
                     Content="경계 없는 창"/>
@@ -141,6 +165,7 @@
                 VerticalAlignment="Center" 
                 Content="창 미리보기"
                 x:Name="PreWIndow"
+                IsEnabled="{x:Bind WindowViewmodel.IsEnableChagneoption, Mode=TwoWay}"
                 Command="{x:Bind WindowViewmodel.OpenWindowCommand}"/>
         </labs:SettingsCard>
 
@@ -152,6 +177,7 @@
             <ToggleSwitch 
                 VerticalAlignment="Center"
                 IsOn="{x:Bind WindowViewmodel.IsLimitWindowWidthandHeight, Mode=TwoWay}"
+                IsEnabled="{x:Bind WindowViewmodel.IsEnableChagneoption, Mode=TwoWay}"
                 x:Name="LImItWIndow"/>
         </labs:SettingsCard>
 
