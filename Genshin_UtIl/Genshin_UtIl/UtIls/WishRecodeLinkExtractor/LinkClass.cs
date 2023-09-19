@@ -1,16 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Management.Automation;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 
 namespace Genshin_UtIl.UtIls.WishRecodeLinkExtractor
 {
-    public static class Main
+    public static class LinkClass
     {
+        /// <summary>
+        /// <see href="https://paimon.moe">페이몬 모에</see> 사이트에서 이용하는 원신 가챠 기록 링크를 로드합니다.
+        /// </summary>
+        /// <param name="Link">링크를 로드하기 위한 인스턴스</param>
+        /// <returns>링크가 로드되었으면 <c>true</c>, 아니면 <c>false</c>를 반환합니다.</returns>
         public static bool TryGetGenshinGachaLink(out string Link)
         {
             if (File.Exists(ConfIg.Instance.GenshInFolder.GenshInFolder) == false)
