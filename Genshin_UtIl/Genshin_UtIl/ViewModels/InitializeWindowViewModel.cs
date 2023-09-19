@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -66,6 +67,13 @@ namespace Genshin_UtIl.ViewModels
 
                 if (_IsGenshinInstalled)
                     ConfIg.Instance.GenshInFolder.GenshInFolder = GenshinFolderFinder.GenshinPath;
+
+                else
+                {
+                    _IsGenshinInstalled = GenshinFolderFinder.CheckGetGenshinPathFromLogFile(System.Environment.ExpandEnvironmentVariables(@"%userprofile%\AppData\LocalLow\miHoYo\Genshin Impact\output_log.txt"), out string GenshinPath);
+                    if (_IsGenshinInstalled)
+                        ConfIg.Instance.GenshInFolder.GenshInFolder = GenshinPath;
+                }
             }
 
             IsGenshinInstalled = _IsGenshinInstalled;
@@ -83,6 +91,7 @@ namespace Genshin_UtIl.ViewModels
             IinitializeWindow.InitializeWindow.Close();
         }
 
+        [Obsolete]
         async Task InstallSDKRumtime()
         {
             await AppSDKRuntimeInstaller.InstallSDKRuntime();

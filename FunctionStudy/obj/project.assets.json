@@ -18,7 +18,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Management/7.0.0": {
+      "System.Management/7.0.2": {
         "type": "package",
         "dependencies": {
           "System.CodeDom": "7.0.0"
@@ -73,10 +73,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Management/7.0.0": {
-      "sha512": "A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
+    "System.Management/7.0.2": {
+      "sha512": "/qEUN91mP/MUQmJnM5y5BdT7ZoPuVrtxnFlbJ8a3kBJGhe2wCzBfnPFtK2wTtEEcf3DMGR9J00GZZfg6HRI6yA==",
       "type": "package",
-      "path": "system.management/7.0.0",
+      "path": "system.management/7.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -96,7 +96,7 @@
         "runtimes/win/lib/net6.0/System.Management.xml",
         "runtimes/win/lib/net7.0/System.Management.dll",
         "runtimes/win/lib/net7.0/System.Management.xml",
-        "system.management.7.0.0.nupkg.sha512",
+        "system.management.7.0.2.nupkg.sha512",
         "system.management.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -104,7 +104,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "System.Management >= 7.0.0"
+      "System.Management >= 7.0.2"
     ]
   },
   "packageFolders": {
@@ -155,7 +155,7 @@
         "dependencies": {
           "System.Management": {
             "target": "Package",
-            "version": "[7.0.0, )"
+            "version": "[7.0.2, )"
           }
         },
         "imports": [

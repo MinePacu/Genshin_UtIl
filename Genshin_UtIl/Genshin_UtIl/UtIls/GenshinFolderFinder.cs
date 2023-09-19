@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 
 using Microsoft.Win32;
 using System;
+using System.Linq;
 
 namespace Genshin_UtIl.UtIls
 {
@@ -39,7 +40,7 @@ namespace Genshin_UtIl.UtIls
 
                     catch (NullReferenceException)
                     {
-
+                        return false;
                     }
                 }
             }
@@ -69,6 +70,32 @@ namespace Genshin_UtIl.UtIls
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// 원신 로그 파일을 이용하여 원신의 설치 폴더 경로를 로드합니다.
+        /// </summary>
+        /// <param name="LogFile">원신 로그 파일 경로</param>
+        /// <param name="GenshinFolderPath">로드된 원신 설치 폴더 경로를 저장할 인스턴스</param>
+        /// <returns></returns>
+        public static bool CheckGetGenshinPathFromLogFile(string LogFile, out string GenshinFolderPath)
+        {
+            if (File.Exists(LogFile) == false)
+            {
+                GenshinFolderPath = string.Empty;
+                return false;
+            }
+
+            else
+            {
+                GenshinFolderPath = File.ReadLines(LogFile)
+                                        .SkipWhile(line => line.Contains("GenshinImpact_Data") == false || line.Contains("YuanShen_Data") == false)
+                                        .ToArray()[0]
+                                        .Split("file ")[1]
+                                        .Split("/GenshinImpact_Data")[0];
+
+                return true;
+            }
         }
     }
 }

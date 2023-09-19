@@ -12,8 +12,14 @@ namespace Genshin_UtIl.UtIls
     {
         static Radio bluetoothradio { get; set; }
 
+        /// <summary>
+        /// 블루투스 디바이스가 기기에 있는지 여부입니다.
+        /// </summary>
         public static bool IsHavingBluetoothRadioDevice { get; set; } = false;
 
+        /// <summary>
+        /// 블루투스 디바이스 목록을 로드하며 인스턴스를 초기화합니다.
+        /// </summary>
         public async static void InitializeBluetoothRadioDevice()
         {
             IReadOnlyList<Radio> radioList = await Radio.GetRadiosAsync();
@@ -29,6 +35,11 @@ namespace Genshin_UtIl.UtIls
             }
         }
 
+        /// <summary>
+        /// 블루투스를 켜거나 끕니다.
+        /// </summary>
+        /// <param name="onoff">이 매개 변수가 <c>true</c>이면 블루투스를 켭니다. <c>false</c>이면 블루투스를 끕니다.</param>
+        /// <returns>완료된 작업(<see cref="Task"/>)</returns>
         public async static Task OnOffBluetooth(bool onoff)
         {
             await OnOffBluetoothService(onoff);

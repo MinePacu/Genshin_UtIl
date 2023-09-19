@@ -138,6 +138,10 @@
               "target": "Package",
               "version": "[7.1.2, )"
             },
+            "Microsoft.PowerShell.SDK": {
+              "target": "Package",
+              "version": "[7.3.6, )"
+            },
             "Microsoft.Windows.SDK.BuildTools": {
               "target": "Package",
               "version": "[10.0.22621.755, )"
@@ -148,11 +152,11 @@
             },
             "System.Management": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "System.ServiceProcess.ServiceController": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [

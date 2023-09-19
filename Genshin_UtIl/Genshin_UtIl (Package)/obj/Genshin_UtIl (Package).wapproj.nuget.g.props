@@ -19,5 +19,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\subin\.nuget\packages\uno.winui\4.6.18</PkgUno_WinUI>
     <PkgMicrosoft_WindowsAppSDK Condition=" '$(PkgMicrosoft_WindowsAppSDK)' == '' ">C:\Users\subin\.nuget\packages\microsoft.windowsappsdk\1.2.230217.4</PkgMicrosoft_WindowsAppSDK>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\subin\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
   </PropertyGroup>
 </Project>

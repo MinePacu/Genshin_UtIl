@@ -179,28 +179,5 @@ namespace Genshin_UtIl
             else if (n_ == 2)
                 N_NavIgate("OpenGameCon", new Microsoft.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
         }
-
-        void Window_Closed(object sender, WindowEventArgs e)
-        {
-            var wIndow = (OverlappedPresenter) appwIndow.Presenter;
-
-            if (wIndow.State == OverlappedPresenterState.Minimized == false)
-            {
-                ConfIg.Instance.ProgramWIndowWIdth = appwIndow.Size.Width;
-                ConfIg.Instance.ProgramWIndowHeIght = appwIndow.Size.Height;
-
-                ConfIg.Instance.Programconfig.x = appwIndow.Position.X;
-                ConfIg.Instance.Programconfig.y = appwIndow.Position.Y;
-            }
-
-            ConfIg.Save();
-
-            if (MicaAcrylicHelper.m_micaController != null)
-            {
-                MicaAcrylicHelper.m_micaController.Dispose();
-                MicaAcrylicHelper.m_micaController = null;
-            }
-            MicaAcrylicHelper.m_configurationSource = null;
-        }
     }
 }

@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace Genshin_UtIl.UtIls
 {
+    [Obsolete]
     public static class AppSDKRuntimeInstaller
     {
         static readonly string InstallerFile = Environment.CurrentDirectory + "\\WindowsAppRuntimeInstall.exe";
 
+        [Obsolete]
         public async static Task InstallSDKRuntime()
         {
             ProcessStartInfo AppSdkInstaller = new ProcessStartInfo(InstallerFile)
