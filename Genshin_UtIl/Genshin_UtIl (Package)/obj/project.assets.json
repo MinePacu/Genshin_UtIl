@@ -158,25 +158,36 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
@@ -185,9 +196,17 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         },
         "runtimeTargets": {
-          "runtimes/win10-x64/native/_._": {
+          "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
             "assetType": "native",
             "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
           }
         }
       },
@@ -715,25 +734,36 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
@@ -1287,25 +1317,36 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
@@ -1859,30 +1900,41 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "native": {
-          "runtimes/win10-arm64/native/_._": {}
+          "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -2434,30 +2486,41 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "native": {
-          "runtimes/win10-x64/native/_._": {}
+          "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -3009,30 +3072,41 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "native": {
-          "runtimes/win10-x64/native/_._": {}
+          "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -3584,30 +3658,41 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "native": {
-          "runtimes/win10-x86/native/_._": {}
+          "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -4159,30 +4244,41 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
         "type": "package",
         "build": {
-          "build/Microsoft.Windows.SDK.BuildTools.props": {},
-          "build/Microsoft.Windows.SDK.BuildTools.targets": {}
+          "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.2": {
+      "Microsoft.WindowsAppSDK/1.2.230217.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
         },
         "compile": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/uap10.0.18362/_._": {
+          "lib/uap10.0.18362/Microsoft.Foundation.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.Graphics.winmd": {
+            "related": ".xml"
+          },
+          "lib/uap10.0.18362/Microsoft.UI.winmd": {
             "related": ".xml"
           }
         },
         "native": {
-          "runtimes/win10-x86/native/_._": {}
+          "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -4780,151 +4876,206 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
-      "sha512": "4L0P3zqut466SIqT3VBeLTNUQTxCBDOrTRymRuROCRJKazcK7ibLz9yAO1nKWRt50ttCj39oAa2Iuz9ZTDmLlg==",
+    "Microsoft.Windows.SDK.BuildTools/10.0.22621.755": {
+      "sha512": "zGXDCZc2/slVjpNtopNETCjnOqH9KiEdo9dPCcjtNWwK5W+EmOcEn7X5Ftj3tOE9kLvroga1s7WwLh2a5jQEEg==",
       "type": "package",
-      "path": "microsoft.windows.sdk.buildtools/10.0.22000.194",
+      "path": "microsoft.windows.sdk.buildtools/10.0.22621.755",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "bin/10.0.22000.0/arm/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
-        "bin/10.0.22000.0/arm/DeployUtil.exe",
-        "bin/10.0.22000.0/arm64/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
-        "bin/10.0.22000.0/arm64/DeployUtil.exe",
-        "bin/10.0.22000.0/x64/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
-        "bin/10.0.22000.0/x64/ComparePackage.exe",
-        "bin/10.0.22000.0/x64/DeployUtil.exe",
-        "bin/10.0.22000.0/x64/MakeCert.exe",
-        "bin/10.0.22000.0/x64/Microsoft.ComparePackage.Lib.dll",
-        "bin/10.0.22000.0/x64/Microsoft.Diagnostics.Tracing.EventSource.dll",
-        "bin/10.0.22000.0/x64/Microsoft.PackageEditor.Lib.dll",
-        "bin/10.0.22000.0/x64/Microsoft.Tools.Connectivity.dll",
-        "bin/10.0.22000.0/x64/Microsoft.Tools.Deploy.dll",
-        "bin/10.0.22000.0/x64/Microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest",
-        "bin/10.0.22000.0/x64/Microsoft.Windows.Build.Appx.AppxSip.dll.manifest",
-        "bin/10.0.22000.0/x64/Microsoft.Windows.Build.Appx.OpcServices.dll.manifest",
-        "bin/10.0.22000.0/x64/Microsoft.Windows.Build.Signing.mssign32.dll.manifest",
-        "bin/10.0.22000.0/x64/Microsoft.Windows.Build.Signing.wintrust.dll.manifest",
-        "bin/10.0.22000.0/x64/PackageEditor.exe",
-        "bin/10.0.22000.0/x64/SirepClient.assembly.manifest",
-        "bin/10.0.22000.0/x64/SirepClient.dll",
-        "bin/10.0.22000.0/x64/SirepInterop.dll",
-        "bin/10.0.22000.0/x64/SshClient.dll",
-        "bin/10.0.22000.0/x64/WinAppDeployCmd.exe",
-        "bin/10.0.22000.0/x64/WinAppDeployCommon.dll",
-        "bin/10.0.22000.0/x64/appxpackaging.dll",
-        "bin/10.0.22000.0/x64/appxsip.dll",
-        "bin/10.0.22000.0/x64/en-US/AppxPackaging.dll.mui",
-        "bin/10.0.22000.0/x64/en/Microsoft.Tools.Deploy.resources.dll",
-        "bin/10.0.22000.0/x64/en/WinAppDeployCmd.resources.dll",
-        "bin/10.0.22000.0/x64/ipoverusb.discoverpartners.dll",
-        "bin/10.0.22000.0/x64/makeappx.exe",
-        "bin/10.0.22000.0/x64/makecat.exe",
-        "bin/10.0.22000.0/x64/makecat.exe.manifest",
-        "bin/10.0.22000.0/x64/makepri.exe",
-        "bin/10.0.22000.0/x64/mc.exe",
-        "bin/10.0.22000.0/x64/mdmerge.exe",
-        "bin/10.0.22000.0/x64/midl.exe",
-        "bin/10.0.22000.0/x64/midlc.exe",
-        "bin/10.0.22000.0/x64/midlrt.exe",
-        "bin/10.0.22000.0/x64/midlrtmd.dll",
-        "bin/10.0.22000.0/x64/mrmsupport.dll",
-        "bin/10.0.22000.0/x64/msisip.dll",
-        "bin/10.0.22000.0/x64/mssign32.dll",
-        "bin/10.0.22000.0/x64/mt.exe",
-        "bin/10.0.22000.0/x64/mt.exe.config",
-        "bin/10.0.22000.0/x64/opcservices.dll",
-        "bin/10.0.22000.0/x64/rc.exe",
-        "bin/10.0.22000.0/x64/rcdll.dll",
-        "bin/10.0.22000.0/x64/signtool.exe",
-        "bin/10.0.22000.0/x64/signtool.exe.manifest",
-        "bin/10.0.22000.0/x64/tracewpp.exe",
-        "bin/10.0.22000.0/x64/winmdidl.exe",
-        "bin/10.0.22000.0/x64/wintrust.dll",
-        "bin/10.0.22000.0/x64/wintrust.dll.ini",
-        "bin/10.0.22000.0/x86/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
-        "bin/10.0.22000.0/x86/ComparePackage.exe",
-        "bin/10.0.22000.0/x86/DeployUtil.exe",
-        "bin/10.0.22000.0/x86/MakeCert.exe",
-        "bin/10.0.22000.0/x86/Microsoft.ComparePackage.Lib.dll",
-        "bin/10.0.22000.0/x86/Microsoft.Diagnostics.Tracing.EventSource.dll",
-        "bin/10.0.22000.0/x86/Microsoft.PackageEditor.Lib.dll",
-        "bin/10.0.22000.0/x86/Microsoft.Tools.Connectivity.dll",
-        "bin/10.0.22000.0/x86/Microsoft.Tools.Deploy.dll",
-        "bin/10.0.22000.0/x86/Microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest",
-        "bin/10.0.22000.0/x86/Microsoft.Windows.Build.Appx.AppxSip.dll.manifest",
-        "bin/10.0.22000.0/x86/Microsoft.Windows.Build.Appx.OpcServices.dll.manifest",
-        "bin/10.0.22000.0/x86/Microsoft.Windows.Build.Signing.mssign32.dll.manifest",
-        "bin/10.0.22000.0/x86/Microsoft.Windows.Build.Signing.wintrust.dll.manifest",
-        "bin/10.0.22000.0/x86/PackageEditor.exe",
-        "bin/10.0.22000.0/x86/SirepClient.assembly.manifest",
-        "bin/10.0.22000.0/x86/SirepClient.dll",
-        "bin/10.0.22000.0/x86/SirepInterop.dll",
-        "bin/10.0.22000.0/x86/SshClient.dll",
-        "bin/10.0.22000.0/x86/WinAppDeployCmd.exe",
-        "bin/10.0.22000.0/x86/WinAppDeployCommon.dll",
-        "bin/10.0.22000.0/x86/appxpackaging.dll",
-        "bin/10.0.22000.0/x86/appxsip.dll",
-        "bin/10.0.22000.0/x86/en-US/AppxPackaging.dll.mui",
-        "bin/10.0.22000.0/x86/en/Microsoft.Tools.Deploy.resources.dll",
-        "bin/10.0.22000.0/x86/en/WinAppDeployCmd.resources.dll",
-        "bin/10.0.22000.0/x86/ipoverusb.discoverpartners.dll",
-        "bin/10.0.22000.0/x86/makeappx.exe",
-        "bin/10.0.22000.0/x86/makecat.exe",
-        "bin/10.0.22000.0/x86/makecat.exe.manifest",
-        "bin/10.0.22000.0/x86/makepri.exe",
-        "bin/10.0.22000.0/x86/mc.exe",
-        "bin/10.0.22000.0/x86/mdmerge.exe",
-        "bin/10.0.22000.0/x86/midl.exe",
-        "bin/10.0.22000.0/x86/midlc.exe",
-        "bin/10.0.22000.0/x86/midlrt.exe",
-        "bin/10.0.22000.0/x86/midlrtmd.dll",
-        "bin/10.0.22000.0/x86/mrmsupport.dll",
-        "bin/10.0.22000.0/x86/msisip.dll",
-        "bin/10.0.22000.0/x86/mssign32.dll",
-        "bin/10.0.22000.0/x86/mt.exe",
-        "bin/10.0.22000.0/x86/mt.exe.config",
-        "bin/10.0.22000.0/x86/opcservices.dll",
-        "bin/10.0.22000.0/x86/rc.exe",
-        "bin/10.0.22000.0/x86/rcdll.dll",
-        "bin/10.0.22000.0/x86/signtool.exe",
-        "bin/10.0.22000.0/x86/signtool.exe.manifest",
-        "bin/10.0.22000.0/x86/tracewpp.exe",
-        "bin/10.0.22000.0/x86/winmdidl.exe",
-        "bin/10.0.22000.0/x86/wintrust.dll",
-        "bin/10.0.22000.0/x86/wintrust.dll.ini",
+        "bin/10.0.22621.0/arm/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
+        "bin/10.0.22621.0/arm/DeployUtil.exe",
+        "bin/10.0.22621.0/arm64/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
+        "bin/10.0.22621.0/arm64/ComparePackage.exe",
+        "bin/10.0.22621.0/arm64/DeployUtil.exe",
+        "bin/10.0.22621.0/arm64/MakeCert.exe",
+        "bin/10.0.22621.0/arm64/Microsoft.ComparePackage.Lib.dll",
+        "bin/10.0.22621.0/arm64/Microsoft.Diagnostics.Tracing.EventSource.dll",
+        "bin/10.0.22621.0/arm64/Microsoft.PackageEditor.Lib.dll",
+        "bin/10.0.22621.0/arm64/Microsoft.Tools.Connectivity.dll",
+        "bin/10.0.22621.0/arm64/Microsoft.Tools.Deploy.dll",
+        "bin/10.0.22621.0/arm64/Microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest",
+        "bin/10.0.22621.0/arm64/Microsoft.Windows.Build.Appx.AppxSip.dll.manifest",
+        "bin/10.0.22621.0/arm64/Microsoft.Windows.Build.Appx.OpcServices.dll.manifest",
+        "bin/10.0.22621.0/arm64/Microsoft.Windows.Build.Signing.mssign32.dll.manifest",
+        "bin/10.0.22621.0/arm64/Microsoft.Windows.Build.Signing.wintrust.dll.manifest",
+        "bin/10.0.22621.0/arm64/PackageEditor.exe",
+        "bin/10.0.22621.0/arm64/ServicingCommon.dll",
+        "bin/10.0.22621.0/arm64/SirepClient.assembly.manifest",
+        "bin/10.0.22621.0/arm64/SirepClient.dll",
+        "bin/10.0.22621.0/arm64/SirepInterop.dll",
+        "bin/10.0.22621.0/arm64/SshClient.dll",
+        "bin/10.0.22621.0/arm64/WinAppDeployCmd.exe",
+        "bin/10.0.22621.0/arm64/WinAppDeployCommon.dll",
+        "bin/10.0.22621.0/arm64/appxpackaging.dll",
+        "bin/10.0.22621.0/arm64/appxsip.dll",
+        "bin/10.0.22621.0/arm64/en-US/AppxPackaging.dll.mui",
+        "bin/10.0.22621.0/arm64/en/Microsoft.Tools.Deploy.resources.dll",
+        "bin/10.0.22621.0/arm64/en/WinAppDeployCmd.resources.dll",
+        "bin/10.0.22621.0/arm64/ipoverusb.discoverpartners.dll",
+        "bin/10.0.22621.0/arm64/makeappx.exe",
+        "bin/10.0.22621.0/arm64/makecat.exe",
+        "bin/10.0.22621.0/arm64/makecat.exe.manifest",
+        "bin/10.0.22621.0/arm64/makepri.exe",
+        "bin/10.0.22621.0/arm64/mc.exe",
+        "bin/10.0.22621.0/arm64/mdmerge.exe",
+        "bin/10.0.22621.0/arm64/midl.exe",
+        "bin/10.0.22621.0/arm64/midlc.exe",
+        "bin/10.0.22621.0/arm64/midlrt.exe",
+        "bin/10.0.22621.0/arm64/midlrtmd.dll",
+        "bin/10.0.22621.0/arm64/mrmsupport.dll",
+        "bin/10.0.22621.0/arm64/msisip.dll",
+        "bin/10.0.22621.0/arm64/mssign32.dll",
+        "bin/10.0.22621.0/arm64/mt.exe",
+        "bin/10.0.22621.0/arm64/mt.exe.config",
+        "bin/10.0.22621.0/arm64/opcservices.dll",
+        "bin/10.0.22621.0/arm64/rc.exe",
+        "bin/10.0.22621.0/arm64/rcdll.dll",
+        "bin/10.0.22621.0/arm64/signtool.exe",
+        "bin/10.0.22621.0/arm64/signtool.exe.manifest",
+        "bin/10.0.22621.0/arm64/tracewpp.exe",
+        "bin/10.0.22621.0/arm64/uuidgen.exe",
+        "bin/10.0.22621.0/arm64/winmdidl.exe",
+        "bin/10.0.22621.0/arm64/wintrust.dll",
+        "bin/10.0.22621.0/arm64/wintrust.dll.ini",
+        "bin/10.0.22621.0/x64/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
+        "bin/10.0.22621.0/x64/ComparePackage.exe",
+        "bin/10.0.22621.0/x64/DeployUtil.exe",
+        "bin/10.0.22621.0/x64/MakeCert.exe",
+        "bin/10.0.22621.0/x64/Microsoft.ComparePackage.Lib.dll",
+        "bin/10.0.22621.0/x64/Microsoft.Diagnostics.Tracing.EventSource.dll",
+        "bin/10.0.22621.0/x64/Microsoft.PackageEditor.Lib.dll",
+        "bin/10.0.22621.0/x64/Microsoft.Tools.Connectivity.dll",
+        "bin/10.0.22621.0/x64/Microsoft.Tools.Deploy.dll",
+        "bin/10.0.22621.0/x64/Microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest",
+        "bin/10.0.22621.0/x64/Microsoft.Windows.Build.Appx.AppxSip.dll.manifest",
+        "bin/10.0.22621.0/x64/Microsoft.Windows.Build.Appx.OpcServices.dll.manifest",
+        "bin/10.0.22621.0/x64/Microsoft.Windows.Build.Signing.mssign32.dll.manifest",
+        "bin/10.0.22621.0/x64/Microsoft.Windows.Build.Signing.wintrust.dll.manifest",
+        "bin/10.0.22621.0/x64/PackageEditor.exe",
+        "bin/10.0.22621.0/x64/ServicingCommon.dll",
+        "bin/10.0.22621.0/x64/SirepClient.assembly.manifest",
+        "bin/10.0.22621.0/x64/SirepClient.dll",
+        "bin/10.0.22621.0/x64/SirepInterop.dll",
+        "bin/10.0.22621.0/x64/SshClient.dll",
+        "bin/10.0.22621.0/x64/WinAppDeployCmd.exe",
+        "bin/10.0.22621.0/x64/WinAppDeployCommon.dll",
+        "bin/10.0.22621.0/x64/appxpackaging.dll",
+        "bin/10.0.22621.0/x64/appxsip.dll",
+        "bin/10.0.22621.0/x64/en-US/AppxPackaging.dll.mui",
+        "bin/10.0.22621.0/x64/en/Microsoft.Tools.Deploy.resources.dll",
+        "bin/10.0.22621.0/x64/en/WinAppDeployCmd.resources.dll",
+        "bin/10.0.22621.0/x64/ipoverusb.discoverpartners.dll",
+        "bin/10.0.22621.0/x64/makeappx.exe",
+        "bin/10.0.22621.0/x64/makecat.exe",
+        "bin/10.0.22621.0/x64/makecat.exe.manifest",
+        "bin/10.0.22621.0/x64/makepri.exe",
+        "bin/10.0.22621.0/x64/mc.exe",
+        "bin/10.0.22621.0/x64/mdmerge.exe",
+        "bin/10.0.22621.0/x64/midl.exe",
+        "bin/10.0.22621.0/x64/midlc.exe",
+        "bin/10.0.22621.0/x64/midlrt.exe",
+        "bin/10.0.22621.0/x64/midlrtmd.dll",
+        "bin/10.0.22621.0/x64/mrmsupport.dll",
+        "bin/10.0.22621.0/x64/msisip.dll",
+        "bin/10.0.22621.0/x64/mssign32.dll",
+        "bin/10.0.22621.0/x64/mt.exe",
+        "bin/10.0.22621.0/x64/mt.exe.config",
+        "bin/10.0.22621.0/x64/opcservices.dll",
+        "bin/10.0.22621.0/x64/rc.exe",
+        "bin/10.0.22621.0/x64/rcdll.dll",
+        "bin/10.0.22621.0/x64/signtool.exe",
+        "bin/10.0.22621.0/x64/signtool.exe.manifest",
+        "bin/10.0.22621.0/x64/tracewpp.exe",
+        "bin/10.0.22621.0/x64/uuidgen.exe",
+        "bin/10.0.22621.0/x64/winmdidl.exe",
+        "bin/10.0.22621.0/x64/wintrust.dll",
+        "bin/10.0.22621.0/x64/wintrust.dll.ini",
+        "bin/10.0.22621.0/x86/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll",
+        "bin/10.0.22621.0/x86/ComparePackage.exe",
+        "bin/10.0.22621.0/x86/DeployUtil.exe",
+        "bin/10.0.22621.0/x86/MakeCert.exe",
+        "bin/10.0.22621.0/x86/Microsoft.ComparePackage.Lib.dll",
+        "bin/10.0.22621.0/x86/Microsoft.Diagnostics.Tracing.EventSource.dll",
+        "bin/10.0.22621.0/x86/Microsoft.PackageEditor.Lib.dll",
+        "bin/10.0.22621.0/x86/Microsoft.Tools.Connectivity.dll",
+        "bin/10.0.22621.0/x86/Microsoft.Tools.Deploy.dll",
+        "bin/10.0.22621.0/x86/Microsoft.Windows.Build.Appx.AppxPackaging.dll.manifest",
+        "bin/10.0.22621.0/x86/Microsoft.Windows.Build.Appx.AppxSip.dll.manifest",
+        "bin/10.0.22621.0/x86/Microsoft.Windows.Build.Appx.OpcServices.dll.manifest",
+        "bin/10.0.22621.0/x86/Microsoft.Windows.Build.Signing.mssign32.dll.manifest",
+        "bin/10.0.22621.0/x86/Microsoft.Windows.Build.Signing.wintrust.dll.manifest",
+        "bin/10.0.22621.0/x86/PackageEditor.exe",
+        "bin/10.0.22621.0/x86/ServicingCommon.dll",
+        "bin/10.0.22621.0/x86/SirepClient.assembly.manifest",
+        "bin/10.0.22621.0/x86/SirepClient.dll",
+        "bin/10.0.22621.0/x86/SirepInterop.dll",
+        "bin/10.0.22621.0/x86/SshClient.dll",
+        "bin/10.0.22621.0/x86/WinAppDeployCmd.exe",
+        "bin/10.0.22621.0/x86/WinAppDeployCommon.dll",
+        "bin/10.0.22621.0/x86/appxpackaging.dll",
+        "bin/10.0.22621.0/x86/appxsip.dll",
+        "bin/10.0.22621.0/x86/en-US/AppxPackaging.dll.mui",
+        "bin/10.0.22621.0/x86/en/Microsoft.Tools.Deploy.resources.dll",
+        "bin/10.0.22621.0/x86/en/WinAppDeployCmd.resources.dll",
+        "bin/10.0.22621.0/x86/ipoverusb.discoverpartners.dll",
+        "bin/10.0.22621.0/x86/makeappx.exe",
+        "bin/10.0.22621.0/x86/makecat.exe",
+        "bin/10.0.22621.0/x86/makecat.exe.manifest",
+        "bin/10.0.22621.0/x86/makepri.exe",
+        "bin/10.0.22621.0/x86/mc.exe",
+        "bin/10.0.22621.0/x86/mdmerge.exe",
+        "bin/10.0.22621.0/x86/midl.exe",
+        "bin/10.0.22621.0/x86/midlc.exe",
+        "bin/10.0.22621.0/x86/midlrt.exe",
+        "bin/10.0.22621.0/x86/midlrtmd.dll",
+        "bin/10.0.22621.0/x86/mrmsupport.dll",
+        "bin/10.0.22621.0/x86/msisip.dll",
+        "bin/10.0.22621.0/x86/mssign32.dll",
+        "bin/10.0.22621.0/x86/mt.exe",
+        "bin/10.0.22621.0/x86/mt.exe.config",
+        "bin/10.0.22621.0/x86/opcservices.dll",
+        "bin/10.0.22621.0/x86/rc.exe",
+        "bin/10.0.22621.0/x86/rcdll.dll",
+        "bin/10.0.22621.0/x86/signtool.exe",
+        "bin/10.0.22621.0/x86/signtool.exe.manifest",
+        "bin/10.0.22621.0/x86/tracewpp.exe",
+        "bin/10.0.22621.0/x86/uuidgen.exe",
+        "bin/10.0.22621.0/x86/winmdidl.exe",
+        "bin/10.0.22621.0/x86/wintrust.dll",
+        "bin/10.0.22621.0/x86/wintrust.dll.ini",
         "build/Microsoft.Windows.SDK.BuildTools.props",
         "build/Microsoft.Windows.SDK.BuildTools.targets",
-        "microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
+        "microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
         "microsoft.windows.sdk.buildtools.nuspec",
-        "schemas/10.0.22000.0/winrt/AppxManifestSchema.xsd",
-        "schemas/10.0.22000.0/winrt/AppxManifestSchema2010_v2.xsd",
-        "schemas/10.0.22000.0/winrt/AppxManifestSchema2013.xsd",
-        "schemas/10.0.22000.0/winrt/FoundationManifestSchema.xsd",
-        "schemas/10.0.22000.0/winrt/FoundationManifestSchema_v2.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v10.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v11.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v12.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v13.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v2.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v3.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v4.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v5.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v6.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v7.xsd",
-        "schemas/10.0.22000.0/winrt/UapManifestSchema_v8.xsd"
+        "schemas/10.0.22621.0/winrt/AppxManifestSchema.xsd",
+        "schemas/10.0.22621.0/winrt/AppxManifestSchema2010_v2.xsd",
+        "schemas/10.0.22621.0/winrt/AppxManifestSchema2013.xsd",
+        "schemas/10.0.22621.0/winrt/FoundationManifestSchema.xsd",
+        "schemas/10.0.22621.0/winrt/FoundationManifestSchema_v2.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v10.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v11.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v12.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v13.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v2.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v3.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v4.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v5.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v6.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v7.xsd",
+        "schemas/10.0.22621.0/winrt/UapManifestSchema_v8.xsd"
       ]
     },
-    "Microsoft.WindowsAppSDK/1.1.2": {
-      "sha512": "fE9hgOXTTCJcQ92ItilQ7a2cw6Hg6t8igFOEKuNw640k3/fXKBZ+R9vrFPna/z7PscJ6M/ceqkymlipF4uJ45w==",
+    "Microsoft.WindowsAppSDK/1.2.230217.4": {
+      "sha512": "mGFBn5UKpH569iYAUZq7dS2ALG9vzxe25n/xGRBK3sdfm96BgyIiL1GZ/vb3M8BFwMj65GbcgFxseNZeajJXOg==",
       "type": "package",
-      "path": "microsoft.windowsappsdk/1.1.2",
+      "path": "microsoft.windowsappsdk/1.2.230217.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "AppxManifest.xml",
+        "NOTICE.txt",
         "WindowsAppSDK-VersionInfo.json",
         "WindowsAppSDK-VersionInfo.xml",
         "build/AppDevPackageScripts/Add-AppDevPackage.ps1",
@@ -4981,6 +5132,8 @@
         "build/Microsoft.WindowsAppSDK.DWrite.ProjectCapabilities.props",
         "build/Microsoft.WindowsAppSDK.DWrite.props",
         "build/Microsoft.WindowsAppSDK.DWrite.targets",
+        "build/Microsoft.WindowsAppSDK.DeploymentManager.CS.targets",
+        "build/Microsoft.WindowsAppSDK.DeploymentManagerCommon.targets",
         "build/Microsoft.WindowsAppSDK.Foundation.props",
         "build/Microsoft.WindowsAppSDK.Foundation.targets",
         "build/Microsoft.WindowsAppSDK.InteractiveExperiences.props",
@@ -4989,6 +5142,7 @@
         "build/Microsoft.WindowsAppSDK.SelfContained.targets",
         "build/Microsoft.WindowsAppSDK.UndockedRegFreeWinRT.CS.targets",
         "build/Microsoft.WindowsAppSDK.UndockedRegFreeWinRTCommon.targets",
+        "build/Microsoft.WindowsAppSDK.Widgets.targets",
         "build/Microsoft.WindowsAppSDK.WinUI.Build.props",
         "build/Microsoft.WindowsAppSDK.WinUI.props",
         "build/Microsoft.WindowsAppSDK.WinUI.targets",
@@ -5069,6 +5223,7 @@
         "build/native/Microsoft.WindowsAppSDK.Foundation.targets",
         "build/native/Microsoft.WindowsAppSDK.InteractiveExperiences.props",
         "build/native/Microsoft.WindowsAppSDK.InteractiveExperiences.targets",
+        "build/native/Microsoft.WindowsAppSDK.Widgets.targets",
         "build/native/Microsoft.WindowsAppSDK.WinUI.props",
         "build/native/Microsoft.WindowsAppSDK.WinUI.targets",
         "build/native/Microsoft.WindowsAppSDK.props",
@@ -5078,6 +5233,7 @@
         "build/native/MrtCore.targets",
         "build/native/WindowsAppSDK-Nuget-Native.Bootstrap.targets",
         "build/native/WindowsAppSDK-Nuget-Native.C.props",
+        "build/native/WindowsAppSDK-Nuget-Native.DeploymentManager.targets",
         "build/native/WindowsAppSDK-Nuget-Native.UndockedRegFreeWinRT.targets",
         "build/native/WindowsAppSDK-Nuget-Native.WinRt.props",
         "buildTransitive/AppDevPackageScripts/Add-AppDevPackage.ps1",
@@ -5134,6 +5290,8 @@
         "buildTransitive/Microsoft.WindowsAppSDK.DWrite.ProjectCapabilities.props",
         "buildTransitive/Microsoft.WindowsAppSDK.DWrite.props",
         "buildTransitive/Microsoft.WindowsAppSDK.DWrite.targets",
+        "buildTransitive/Microsoft.WindowsAppSDK.DeploymentManager.CS.targets",
+        "buildTransitive/Microsoft.WindowsAppSDK.DeploymentManagerCommon.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.Foundation.props",
         "buildTransitive/Microsoft.WindowsAppSDK.Foundation.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.InteractiveExperiences.props",
@@ -5142,6 +5300,7 @@
         "buildTransitive/Microsoft.WindowsAppSDK.SelfContained.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.UndockedRegFreeWinRT.CS.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.UndockedRegFreeWinRTCommon.targets",
+        "buildTransitive/Microsoft.WindowsAppSDK.Widgets.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.WinUI.Build.props",
         "buildTransitive/Microsoft.WindowsAppSDK.WinUI.props",
         "buildTransitive/Microsoft.WindowsAppSDK.WinUI.targets",
@@ -5222,6 +5381,7 @@
         "buildTransitive/native/Microsoft.WindowsAppSDK.Foundation.targets",
         "buildTransitive/native/Microsoft.WindowsAppSDK.InteractiveExperiences.props",
         "buildTransitive/native/Microsoft.WindowsAppSDK.InteractiveExperiences.targets",
+        "buildTransitive/native/Microsoft.WindowsAppSDK.Widgets.targets",
         "buildTransitive/native/Microsoft.WindowsAppSDK.WinUI.props",
         "buildTransitive/native/Microsoft.WindowsAppSDK.WinUI.targets",
         "buildTransitive/native/Microsoft.WindowsAppSDK.props",
@@ -5231,16 +5391,21 @@
         "buildTransitive/native/MrtCore.targets",
         "buildTransitive/native/WindowsAppSDK-Nuget-Native.Bootstrap.targets",
         "buildTransitive/native/WindowsAppSDK-Nuget-Native.C.props",
+        "buildTransitive/native/WindowsAppSDK-Nuget-Native.DeploymentManager.targets",
         "buildTransitive/native/WindowsAppSDK-Nuget-Native.UndockedRegFreeWinRT.targets",
         "buildTransitive/native/WindowsAppSDK-Nuget-Native.WinRt.props",
+        "include/DeploymentManagerAutoInitializer.cpp",
+        "include/DeploymentManagerAutoInitializer.cs",
         "include/MRM.h",
         "include/MddBootstrap.h",
         "include/MddBootstrapAutoInitializer.cpp",
         "include/MddBootstrapAutoInitializer.cs",
         "include/Microsoft.UI.Composition.Interop.h",
+        "include/Microsoft.UI.Input.InputCursor.Interop.h",
         "include/Microsoft.UI.Interop.h",
         "include/Microsoft.Windows.ApplicationModel.Resources.idl",
         "include/MsixDynamicDependency.h",
+        "include/Security.AccessControl.h",
         "include/UndockedRegFreeWinRT-AutoInitializer.cpp",
         "include/UndockedRegFreeWinRT-AutoInitializer.cs",
         "include/WebView2.h",
@@ -5263,49 +5428,56 @@
         "include/microsoft.ui.xaml.window.idl",
         "include/wil_msixdynamicdependency.h",
         "include/winrt/Microsoft.UI.Composition.Interop.h",
+        "include/winrt/Microsoft.UI.Input.InputCursor.Interop.h",
         "include/winrt/Microsoft.UI.Interop.h",
         "include/winrtdirect3d11.h",
         "include/winrtdirectxcommon.h",
         "include/xamlom.winui.h",
         "include/xamlom.winui.idl",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.xml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.WinUI.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.WinUI.xml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.WinUI/Themes/generic.xaml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.AppLifecycle.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.AppLifecycle.Projection.xml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.AppNotifications.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.xml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.Resources.Projection.xml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.xml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.PushNotifications.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.xml",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.Windows.System.Projection.dll",
-        "lib/net5.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.xml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.xml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI/Themes/generic.xaml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.xml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.xml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.xml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.xml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.xml",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll",
-        "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.xml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.WinUI.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.WinUI.xml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.WinUI/Themes/generic.xaml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.AppLifecycle.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.AppLifecycle.Projection.xml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.AppNotifications.Builder.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.AppNotifications.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.xml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.Resources.Projection.xml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.xml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.PushNotifications.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.Security.AccessControl.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.xml",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.Widgets.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.xml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.xml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI/Themes/generic.xaml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.xml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Builder.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.xml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.xml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.xml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Security.AccessControl.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.xml",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
         "lib/uap10.0.17763/Microsoft.Foundation.winmd",
         "lib/uap10.0.17763/Microsoft.Foundation.xml",
         "lib/uap10.0.17763/Microsoft.Graphics.winmd",
@@ -5328,6 +5500,7 @@
         "lib/uap10.0/Microsoft.Web.WebView2.Core.winmd",
         "lib/uap10.0/Microsoft.Windows.AppLifecycle.winmd",
         "lib/uap10.0/Microsoft.Windows.AppLifecycle.xml",
+        "lib/uap10.0/Microsoft.Windows.AppNotifications.Builder.winmd",
         "lib/uap10.0/Microsoft.Windows.AppNotifications.winmd",
         "lib/uap10.0/Microsoft.Windows.ApplicationModel.DynamicDependency.winmd",
         "lib/uap10.0/Microsoft.Windows.ApplicationModel.DynamicDependency.xml",
@@ -5337,10 +5510,12 @@
         "lib/uap10.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.xml",
         "lib/uap10.0/Microsoft.Windows.PushNotifications.winmd",
         "lib/uap10.0/Microsoft.Windows.PushNotifications.xml",
+        "lib/uap10.0/Microsoft.Windows.Security.AccessControl.winmd",
         "lib/uap10.0/Microsoft.Windows.System.Power.winmd",
         "lib/uap10.0/Microsoft.Windows.System.Power.xml",
         "lib/uap10.0/Microsoft.Windows.System.winmd",
         "lib/uap10.0/Microsoft.Windows.System.xml",
+        "lib/uap10.0/Microsoft.Windows.Widgets.winmd",
         "lib/win10-arm64/DWriteCore.lib",
         "lib/win10-arm64/MRM.lib",
         "lib/win10-arm64/Microsoft.WindowsAppRuntime.Bootstrap.lib",
@@ -5357,26 +5532,26 @@
         "manifests/Microsoft.InteractiveExperiences.manifest",
         "manifests/Microsoft.WindowsAppSdk.Foundation.manifest",
         "manifests/manifests/Microsoft.WindowsAppSdk.WinUI.manifest",
-        "microsoft.windowsappsdk.1.1.2.nupkg.sha512",
+        "microsoft.windowsappsdk.1.2.230217.4.nupkg.sha512",
         "microsoft.windowsappsdk.nuspec",
         "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "tools/MSIX/win10-arm64/MSIX.inventory",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.1.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.1.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.1.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.1.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.2.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.2.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.2.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.2.msix",
         "tools/MSIX/win10-x64/MSIX.inventory",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.1.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.1.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.1.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.1.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.2.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.2.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.2.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.2.msix",
         "tools/MSIX/win10-x86/MSIX.inventory",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.1.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.1.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.1.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.1.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.2.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.2.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.2.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.2.msix",
         "tools/NOTICE.txt",
         "tools/arm64/GenXbf.dll",
         "tools/net472/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -5385,7 +5560,6 @@
         "tools/net472/Microsoft.Build.Utilities.Core.dll",
         "tools/net472/Microsoft.Build.dll",
         "tools/net472/Microsoft.Cci.dll",
-        "tools/net472/Microsoft.Diagnostics.Tracing.EventSource.dll",
         "tools/net472/Microsoft.UI.Xaml.Markup.Compiler.IO.dll",
         "tools/net472/Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.dll",
         "tools/net472/Microsoft.UI.Xaml.Markup.Compiler.dll",
@@ -5393,6 +5567,7 @@
         "tools/net472/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
         "tools/net472/Microsoft.VisualStudio.Telemetry.dll",
         "tools/net472/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net472/Newtonsoft.Json.dll",
         "tools/net472/System.Buffers.dll",
         "tools/net472/System.Collections.Immutable.dll",
         "tools/net472/System.Memory.dll",
@@ -5469,6 +5644,7 @@
         "tools/net5.0/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
         "tools/net5.0/Microsoft.VisualStudio.Telemetry.dll",
         "tools/net5.0/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net5.0/Newtonsoft.Json.dll",
         "tools/net5.0/System.Runtime.CompilerServices.Unsafe.dll",
         "tools/net5.0/System.Text.Encodings.Web.dll",
         "tools/net5.0/System.Text.Json.dll",
@@ -7674,9 +7850,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.19041": [
-      "Genshin_UtIl >= 1.0.0",
-      "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194 <= 10.0.22000.194",
-      "Microsoft.WindowsAppSDK >= 1.1.2 <= 1.1.2"
+      "Genshin_UtIl >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7722,18 +7896,6 @@
     "frameworks": {
       "uap10.0.19041": {
         "targetAlias": "net451",
-        "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": {
-            "include": "Build",
-            "target": "Package",
-            "version": "[10.0.22000.194, 10.0.22000.194]"
-          },
-          "Microsoft.WindowsAppSDK": {
-            "include": "Build",
-            "target": "Package",
-            "version": "[1.1.2, 1.1.2]"
-          }
-        },
         "imports": [
           "net6.0-windows10.0.22000",
           "netcoreapp3.1",
@@ -7744,12 +7906,11 @@
           "net471",
           "net472",
           "net48",
-          "net7.0-windows10.0.22000",
+          "net8.0-windows10.0.22000",
           "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     },
     "runtimes": {
@@ -7781,7 +7942,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -7791,7 +7952,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI.UI",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -7801,7 +7962,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Animations 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Animations 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI.UI.Animations",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -7811,7 +7972,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Behaviors 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Behaviors 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI.UI.Behaviors",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -7821,44 +7982,10 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'Microsoft.Xaml.Behaviors.WinUI.Managed 2.0.8'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'Microsoft.Xaml.Behaviors.WinUI.Managed 2.0.8'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "Microsoft.Xaml.Behaviors.WinUI.Managed",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "10.0.22621.755에서 10.0.22000.194(으)로 다운그레이드된 패키지 Microsoft.Windows.SDK.BuildTools을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.Windows.SDK.BuildTools (>= 10.0.22621.755) \r\n Genshin_UtIl (Package) -> Microsoft.Windows.SDK.BuildTools (= 10.0.22000.194)",
-      "libraryId": "Microsoft.Windows.SDK.BuildTools",
-      "targetGraphs": [
-        "UAP,Version=v10.0.19041",
-        "UAP,Version=v10.0.19041/win10-arm",
-        "UAP,Version=v10.0.19041/win10-arm-aot",
-        "UAP,Version=v10.0.19041/win10-arm64-aot",
-        "UAP,Version=v10.0.19041/win10-x64",
-        "UAP,Version=v10.0.19041/win10-x64-aot",
-        "UAP,Version=v10.0.19041/win10-x86",
-        "UAP,Version=v10.0.19041/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "1.2.230217.4에서 1.1.2(으)로 다운그레이드된 패키지 Microsoft.WindowsAppSDK을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.WindowsAppSDK (>= 1.2.230217.4) \r\n Genshin_UtIl (Package) -> Microsoft.WindowsAppSDK (= 1.1.2)",
-      "libraryId": "Microsoft.WindowsAppSDK",
-      "targetGraphs": [
-        "UAP,Version=v10.0.19041",
-        "UAP,Version=v10.0.19041/win10-arm",
-        "UAP,Version=v10.0.19041/win10-arm-aot",
-        "UAP,Version=v10.0.19041/win10-arm64-aot",
-        "UAP,Version=v10.0.19041/win10-x64",
-        "UAP,Version=v10.0.19041/win10-x64-aot",
-        "UAP,Version=v10.0.19041/win10-x86",
-        "UAP,Version=v10.0.19041/win10-x86-aot"
       ]
     }
   ]

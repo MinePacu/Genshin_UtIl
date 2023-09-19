@@ -49,7 +49,7 @@ namespace Genshin_UtIl
 
         }
 
-        async void FolderConfIgFunc(object sender, RoutedEventArgs e)
+        private void FolderConfIgFunc(object sender, RoutedEventArgs e)
         {
             IXamlRoot.FolderConfigWindowXamlRoot = this.Content.XamlRoot;
         }

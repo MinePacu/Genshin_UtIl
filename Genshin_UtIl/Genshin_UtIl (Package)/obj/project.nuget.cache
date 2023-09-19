@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wEZU9rFiXmM45LVK4UjfLcA/5XMUh6y8S7pWRLLQm7tIbmLKjYY9tNqjyPfEsIX5ZbBvIVALfZIQfBQz3kiTlg==",
+  "dgSpecHash": "9p6uH3CeBKqM3GHvIaS88phseNoPgQxJDqn/KuI9MZc/PoDq7FSymCu4l2PGOkASKZfH8qZlduufkqDweHIohQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\subin\\source\\repos\\MinePacu\\Genshin_UtIl\\Genshin_UtIl\\Genshin_UtIl (Package)\\Genshin_UtIl (Package).wapproj",
   "expectedPackageFiles": [
@@ -14,8 +14,8 @@
     "C:\\Users\\subin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\subin\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
-    "C:\\Users\\subin\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.2\\microsoft.windowsappsdk.1.1.2.nupkg.sha512",
+    "C:\\Users\\subin\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
+    "C:\\Users\\subin\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.230217.4\\microsoft.windowsappsdk.1.2.230217.4.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\microsoft.xaml.behaviors.winui.managed\\2.0.8\\microsoft.xaml.behaviors.winui.managed.2.0.8.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\subin\\.nuget\\packages\\runtime.aot.system.runtime\\4.3.0\\runtime.aot.system.runtime.4.3.0.nupkg.sha512",
@@ -49,7 +49,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -59,7 +59,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI.UI",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -69,7 +69,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Animations 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Animations 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI.UI.Animations",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -79,7 +79,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Behaviors 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'CommunityToolkit.WinUI.UI.Behaviors 7.1.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "CommunityToolkit.WinUI.UI.Behaviors",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
@@ -89,44 +89,10 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'Microsoft.Xaml.Behaviors.WinUI.Managed 2.0.8'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "message": "프로젝트 대상 프레임워크 'UAP,Version=v10.0.19041' 대신 'net6.0-windows10.0.22000, .NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net8.0-windows10.0.22000, .NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'Microsoft.Xaml.Behaviors.WinUI.Managed 2.0.8'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "Microsoft.Xaml.Behaviors.WinUI.Managed",
       "targetGraphs": [
         "UAP,Version=v10.0.19041"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "10.0.22621.755에서 10.0.22000.194(으)로 다운그레이드된 패키지 Microsoft.Windows.SDK.BuildTools을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.Windows.SDK.BuildTools (>= 10.0.22621.755) \r\n Genshin_UtIl (Package) -> Microsoft.Windows.SDK.BuildTools (= 10.0.22000.194)",
-      "libraryId": "Microsoft.Windows.SDK.BuildTools",
-      "targetGraphs": [
-        "UAP,Version=v10.0.19041",
-        "UAP,Version=v10.0.19041/win10-arm",
-        "UAP,Version=v10.0.19041/win10-arm-aot",
-        "UAP,Version=v10.0.19041/win10-arm64-aot",
-        "UAP,Version=v10.0.19041/win10-x64",
-        "UAP,Version=v10.0.19041/win10-x64-aot",
-        "UAP,Version=v10.0.19041/win10-x86",
-        "UAP,Version=v10.0.19041/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "1.2.230217.4에서 1.1.2(으)로 다운그레이드된 패키지 Microsoft.WindowsAppSDK을(를) 발견했습니다. 프로젝트에서 패키지를 직접 참조하여 다른 버전을 선택하세요. \r\n Genshin_UtIl (Package) -> Genshin_UtIl -> Microsoft.WindowsAppSDK (>= 1.2.230217.4) \r\n Genshin_UtIl (Package) -> Microsoft.WindowsAppSDK (= 1.1.2)",
-      "libraryId": "Microsoft.WindowsAppSDK",
-      "targetGraphs": [
-        "UAP,Version=v10.0.19041",
-        "UAP,Version=v10.0.19041/win10-arm",
-        "UAP,Version=v10.0.19041/win10-arm-aot",
-        "UAP,Version=v10.0.19041/win10-arm64-aot",
-        "UAP,Version=v10.0.19041/win10-x64",
-        "UAP,Version=v10.0.19041/win10-x64-aot",
-        "UAP,Version=v10.0.19041/win10-x86",
-        "UAP,Version=v10.0.19041/win10-x86-aot"
       ]
     }
   ]
