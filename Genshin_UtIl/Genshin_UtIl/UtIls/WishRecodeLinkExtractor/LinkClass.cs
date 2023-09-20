@@ -80,13 +80,6 @@ namespace Genshin_UtIl.UtIls.WishRecodeLinkExtractor
                             .AddCommand("ConvertFrom-json")
                             .Invoke();
 
-            Console.WriteLine("ps1.Length : " + ps.Count);
-
-            Console.WriteLine("retcode : " + ps[0].Members["retcode"].Value);
-
-            if (Convert.ToInt32(ps[0].Members["retcode"].Value) == 0)
-                Console.WriteLine("Data : " + ps[0].Members["data"].Value);
-
             return Convert.ToInt32(ps[0].Members["retcode"].Value) == 0;
         }
     }
