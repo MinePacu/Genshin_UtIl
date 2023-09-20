@@ -36,6 +36,7 @@ namespace Genshin_UtIl.UtIls.WishRecodeLinkExtractor
                                         .Split("1/0/")[1]
                                         .Split("game_biz")[0]
                                         + "game_biz=hk4e_global";
+                File.Delete(tmpfile);
 
                 if (TestUrl(GachaLink, false))
                 {

@@ -1,4 +1,6 @@
-﻿using Genshin_UtIl.interfaces.Window;
+﻿using CustomWIndow.UtIl;
+
+using Genshin_UtIl.interfaces.Window;
 using Genshin_UtIl.UtIls;
 using Genshin_UtIl.UtIls.AppColor.Enum;
 using Genshin_UtIl.UtIls.Dwm;
@@ -24,6 +26,7 @@ namespace Genshin_UtIl
     public sealed partial class WIndowPage : Window
     {
         AppWindow appwIndow;
+        MicaHelper mica_helper;
 
         public WIndowPage()
         {
@@ -41,13 +44,8 @@ namespace Genshin_UtIl
 
             WIndowUtIl.Hwnd = WindowNative.GetWindowHandle(this);
 
-            /*
-            if (SysUtIl.GetOSFriendlyVersion().Contains("Windows 11"))
-            {
-                MicaAcrylicHelper.window = this;
-                MicaAcrylicHelper.TrySetMicaBackdrop(true);
-            }
-            */
+            mica_helper = new(this);
+            mica_helper.TrySetMica(true, true, true);
             n.SelectedItem = n.MenuItems[GetPageN()];
 
             // NavIgateFIrstPage();
